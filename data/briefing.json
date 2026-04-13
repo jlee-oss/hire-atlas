@@ -1,0 +1,6917 @@
+{
+  "generatedAt": "2026-04-12T10:29:14.702035+00:00",
+  "source": {
+    "mode": "google_sheets_api",
+    "spreadsheetId": "1bG-aT9L_N3SEPT04ZZZ-2jdRqW_agYhrqsn4fNanA5s",
+    "gid": "2026513640",
+    "sheetTitle": "master 탭",
+    "spreadsheetTitle": "career_scraper_V2",
+    "serviceAccountEmail": "sheets-automation@scraper-491619.iam.gserviceaccount.com",
+    "rowCount": 187,
+    "stage2Deploy": {
+      "enabled": true,
+      "deployCsvPath": "/Users/junheelee/Desktop/career_dashboard/data/stage2_deploy_candidates_latest.csv",
+      "deployRows": 187,
+      "sourceRows": 187,
+      "mergedRows": 187,
+      "changedFields": {
+        "focus": 34,
+        "summary": 36,
+        "role": 10,
+        "keywords": 24
+      }
+    }
+  },
+  "overview": {
+    "totalJobs": 187,
+    "activeJobs": 172,
+    "companies": 62,
+    "recentJobs7d": 81,
+    "aiEnriched": 0,
+    "aiReviewNeeded": 25,
+    "highPriorityReview": 11,
+    "normalizedCoverage": {
+      "experience": 92,
+      "track": 100,
+      "focus": 100,
+      "skills": 76,
+      "tasks": 88,
+      "requirements": 89
+    }
+  },
+  "pipeline": {
+    "stages": [
+      {
+        "label": "원본 수집",
+        "count": 187,
+        "description": "스크래핑된 공고 원문"
+      },
+      {
+        "label": "규칙 정규화",
+        "count": 187,
+        "description": "직무/경력/트랙/스킬 표준 태그 정리"
+      },
+      {
+        "label": "AI 보정 필요",
+        "count": 25,
+        "description": "Qwen 같은 저비용 모델로 우선 재해석할 후보"
+      },
+      {
+        "label": "AI 반영 완료",
+        "count": 0,
+        "description": "보정 결과가 브리핑에 반영된 공고"
+      },
+      {
+        "label": "고우선 검수",
+        "count": 11,
+        "description": "제목이 모호하거나 필드 누락이 많은 공고"
+      }
+    ],
+    "notes": [
+      "경력수준, 트랙, 초점, 기술, 주요업무, 자격요건을 우선 보정 대상으로 봅니다.",
+      "직무명은 4개 메인 역할로 고정해 교육회사 관점의 벤치마킹이 가능하도록 맞췄습니다.",
+      "AI 보정은 OpenAI 호환 엔드포인트에 연결하면 즉시 적용 가능한 구조로 준비했습니다."
+    ]
+  },
+  "roleBriefs": [
+    {
+      "roleKey": "ai_engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "totalJobs": 142,
+      "activeJobs": 131,
+      "activeRate": 92,
+      "recentJobs7d": 68,
+      "companyCount": 55,
+      "topExperience": "경력(연차 미기재)",
+      "topTracks": [
+        "일반채용",
+        "학사",
+        "박사",
+        "석사"
+      ],
+      "topFocuses": [
+        "인프라",
+        "AI반도체",
+        "LLM",
+        "최적화"
+      ],
+      "topSkills": [
+        "Python",
+        "LLM",
+        "Computer Vision",
+        "GPU",
+        "PyTorch"
+      ],
+      "topCompanies": [
+        {
+          "name": "모빌린트",
+          "count": 14
+        },
+        {
+          "name": "업스테이지",
+          "count": 13
+        },
+        {
+          "name": "스트라드비젼",
+          "count": 11
+        },
+        {
+          "name": "노타",
+          "count": 7
+        }
+      ],
+      "qualityCoverage": {
+        "experience": 90,
+        "track": 100,
+        "focus": 100,
+        "skills": 75,
+        "tasks": 86,
+        "requirements": 88
+      },
+      "averageQualityScore": 94,
+      "reviewNeeded": 22,
+      "narrative": "중견/중소 채용이 중심이고, 경력(연차 미기재) 수요가 가장 두드러집니다. 일반채용 트랙 비중이 높으며, Python, LLM, Computer Vision 스택과 인프라 초점이 반복적으로 나타납니다."
+    },
+    {
+      "roleKey": "ai_researcher",
+      "roleLabel": "인공지능 리서처",
+      "totalJobs": 23,
+      "activeJobs": 22,
+      "activeRate": 96,
+      "recentJobs7d": 6,
+      "companyCount": 14,
+      "topExperience": "경력(연차 미기재)",
+      "topTracks": [
+        "박사",
+        "석사",
+        "인턴",
+        "전문연구요원"
+      ],
+      "topFocuses": [
+        "LLM",
+        "최적화",
+        "비전",
+        "헬스케어"
+      ],
+      "topSkills": [
+        "Python",
+        "LLM",
+        "PyTorch",
+        "Computer Vision",
+        "Multimodal"
+      ],
+      "topCompanies": [
+        {
+          "name": "크래프톤",
+          "count": 6
+        },
+        {
+          "name": "카카오모빌리티",
+          "count": 3
+        },
+        {
+          "name": "딥노이드",
+          "count": 2
+        },
+        {
+          "name": "뷰노",
+          "count": 2
+        }
+      ],
+      "qualityCoverage": {
+        "experience": 96,
+        "track": 100,
+        "focus": 100,
+        "skills": 74,
+        "tasks": 91,
+        "requirements": 96
+      },
+      "averageQualityScore": 96,
+      "reviewNeeded": 2,
+      "narrative": "대기업 채용이 중심이고, 경력(연차 미기재) 수요가 가장 두드러집니다. 박사 트랙 비중이 높으며, Python, LLM, PyTorch 스택과 LLM 초점이 반복적으로 나타납니다."
+    },
+    {
+      "roleKey": "data_analyst",
+      "roleLabel": "데이터 분석가",
+      "totalJobs": 14,
+      "activeJobs": 12,
+      "activeRate": 86,
+      "recentJobs7d": 7,
+      "companyCount": 8,
+      "topExperience": "경력(연차 미기재)",
+      "topTracks": [
+        "일반채용",
+        "인턴",
+        "학사",
+        "계약직"
+      ],
+      "topFocuses": [
+        "BI",
+        "지표분석",
+        "데이터플랫폼",
+        "ETL"
+      ],
+      "topSkills": [
+        "SQL",
+        "Tableau",
+        "AWS",
+        "GCP",
+        "ETL"
+      ],
+      "topCompanies": [
+        {
+          "name": "당근",
+          "count": 3
+        },
+        {
+          "name": "데브시스터즈",
+          "count": 3
+        },
+        {
+          "name": "카카오모빌리티",
+          "count": 2
+        },
+        {
+          "name": "쿠팡",
+          "count": 2
+        }
+      ],
+      "qualityCoverage": {
+        "experience": 100,
+        "track": 100,
+        "focus": 100,
+        "skills": 86,
+        "tasks": 93,
+        "requirements": 86
+      },
+      "averageQualityScore": 97,
+      "reviewNeeded": 1,
+      "narrative": "중견/중소 채용이 중심이고, 경력(연차 미기재) 수요가 가장 두드러집니다. 일반채용 트랙 비중이 높으며, SQL, Tableau, AWS 스택과 BI 초점이 반복적으로 나타납니다."
+    },
+    {
+      "roleKey": "data_scientist",
+      "roleLabel": "데이터 사이언티스트",
+      "totalJobs": 8,
+      "activeJobs": 7,
+      "activeRate": 88,
+      "recentJobs7d": 0,
+      "companyCount": 8,
+      "topExperience": "경력(연차 미기재)",
+      "topTracks": [
+        "석사",
+        "일반채용",
+        "학사",
+        "인턴"
+      ],
+      "topFocuses": [
+        "시계열",
+        "추천",
+        "최적화",
+        "인프라"
+      ],
+      "topSkills": [
+        "SQL",
+        "Python",
+        "MLOps",
+        "AWS",
+        "GCP"
+      ],
+      "topCompanies": [
+        {
+          "name": "고위드",
+          "count": 1
+        },
+        {
+          "name": "메디컬에이아이",
+          "count": 1
+        },
+        {
+          "name": "몰로코",
+          "count": 1
+        },
+        {
+          "name": "신세계",
+          "count": 1
+        }
+      ],
+      "qualityCoverage": {
+        "experience": 100,
+        "track": 100,
+        "focus": 100,
+        "skills": 88,
+        "tasks": 100,
+        "requirements": 88
+      },
+      "averageQualityScore": 98,
+      "reviewNeeded": 0,
+      "narrative": "중견/중소 채용이 중심이고, 경력(연차 미기재) 수요가 가장 두드러집니다. 석사 트랙 비중이 높으며, SQL, Python, MLOps 스택과 시계열 초점이 반복적으로 나타납니다."
+    }
+  ],
+  "reviewQueue": [
+    {
+      "id": "52b449ba9e386190ca9134debbb8ed3fe5152b1d4dc8f1b6862e29f1b28339f5",
+      "company": "실리콘아츠",
+      "title": "GPU Design Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "reviewPriority": "high",
+      "reviewIssues": [
+        "경력수준 불명확",
+        "핵심기술 부족",
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "qualityScore": 56,
+      "firstSeenAt": "2026-04-10T02:21:55+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "aiInstruction": "경력수준 불명확, 핵심기술 부족, 주요업무 부족",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "612cf32e38ba66f7ac225ee055f8b7aaa22d3579c39cbaf64e437e8a4eeb022f",
+      "company": "링크업솔루션 주식회사",
+      "title": "AI Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "reviewPriority": "high",
+      "reviewIssues": [
+        "핵심기술 부족",
+        "주요업무 부족",
+        "제목이 지나치게 포괄적"
+      ],
+      "qualityScore": 64,
+      "firstSeenAt": "2026-04-02T02:08:16+09:00",
+      "lastSeenAt": "2026-04-02T02:50:03+09:00",
+      "aiInstruction": "핵심기술 부족, 주요업무 부족, 제목이 지나치게 포괄적",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "295f24c5156e197ea7a2f0370415d710c1f391e2f88fd95a1a95d7c9889d8a32",
+      "company": "라온시큐어",
+      "title": "(주)엠케이디 채용시 마감 엠케이디 Python AI 개발자 채용 (경력 또는 석/박사) E-7 비자지원 정규직 인턴 연구·R&D, IT개발·데이터 부산 남구 기초 회화 가능 E-7",
+      "roleLabel": "인공지능 엔지니어",
+      "reviewPriority": "high",
+      "reviewIssues": [
+        "핵심기술 부족",
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "qualityScore": 68,
+      "firstSeenAt": "2026-04-11T22:22:15+09:00",
+      "lastSeenAt": "2026-04-12T14:39:19+09:00",
+      "aiInstruction": "핵심기술 부족, 주요업무 부족, 자격요건 부족",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "bedd913f43f7a277f6bb5567cce3c5b533944ca6a22a043b72549c549d06ec37",
+      "company": "서울로보틱스",
+      "title": "Senior Software Engineer- System",
+      "roleLabel": "인공지능 엔지니어",
+      "reviewPriority": "high",
+      "reviewIssues": [
+        "핵심기술 부족",
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "qualityScore": 68,
+      "firstSeenAt": "2026-04-07T03:33:00+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "aiInstruction": "핵심기술 부족, 주요업무 부족, 자격요건 부족",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "bc4ea07a6f45a0ccbc0f6d95c56568c3ea5f6208c3119e7a94173dd15791e0e3",
+      "company": "세미파이브",
+      "title": "SoC Design Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "reviewPriority": "high",
+      "reviewIssues": [
+        "경력수준 불명확",
+        "핵심기술 부족",
+        "주요업무 부족"
+      ],
+      "qualityScore": 68,
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "aiInstruction": "경력수준 불명확, 핵심기술 부족, 주요업무 부족",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "cf090531b692204dcf636b51b9c2b86b3b4a1860c7761966dcb676c594d455d2",
+      "company": "스트라드비젼",
+      "title": "ADAS Application Engineer - Team Lead (Application Team)",
+      "roleLabel": "인공지능 엔지니어",
+      "reviewPriority": "high",
+      "reviewIssues": [
+        "핵심기술 부족",
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "qualityScore": 68,
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "aiInstruction": "핵심기술 부족, 주요업무 부족, 자격요건 부족",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "5f920781cdc8e1391db5eb6437e77d463748efa13d30c40b25c6532821aa5c81",
+      "company": "엠엔비젼",
+      "title": "(주)엠케이디 채용시 마감 엠케이디 LLM 개발자 채용 (경력 또는 석/박사) E-7 비자지원 정규직 인턴 연구·R&D, IT개발·데이터 부산 남구 기초 회화 가능 E-7",
+      "roleLabel": "인공지능 엔지니어",
+      "reviewPriority": "high",
+      "reviewIssues": [
+        "핵심기술 부족",
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "qualityScore": 68,
+      "firstSeenAt": "2026-04-11T22:22:15+09:00",
+      "lastSeenAt": "2026-04-12T03:55:13+09:00",
+      "aiInstruction": "핵심기술 부족, 주요업무 부족, 자격요건 부족",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "800c930f817175a5b21d7cd8ebb472b13718b2be83a019d227977ce3c1dc6979",
+      "company": "퓨리오사",
+      "title": "Hardware - High Speed Interface(IO) Design Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "reviewPriority": "high",
+      "reviewIssues": [
+        "경력수준 불명확",
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "qualityScore": 68,
+      "firstSeenAt": "2026-04-10T02:21:55+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "aiInstruction": "경력수준 불명확, 주요업무 부족, 자격요건 부족",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "bd9903da56200d00c4120bd504a65935699a8ccbeb97d0b1d34370e2a43fe3a9",
+      "company": "퓨리오사",
+      "title": "Hardware - High-Speed IO IP Design Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "reviewPriority": "high",
+      "reviewIssues": [
+        "경력수준 불명확",
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "qualityScore": 68,
+      "firstSeenAt": "2026-04-10T02:21:55+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "aiInstruction": "경력수준 불명확, 주요업무 부족, 자격요건 부족",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "ad9c48113c5ab0ae92997e2a20f7ebca473512af67b83239fa7c9d394d3e6790",
+      "company": "한국생산기술연구원",
+      "title": "(한국생산기술연구원) 2026년 제1차 정규직(연구직) 공개채용 [출연(연) 공동채용 2026년 03월]",
+      "roleLabel": "인공지능 엔지니어",
+      "reviewPriority": "high",
+      "reviewIssues": [
+        "경력수준 불명확",
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "qualityScore": 68,
+      "firstSeenAt": "2026-04-12T05:46:47+09:00",
+      "lastSeenAt": "2026-04-12T15:04:01+09:00",
+      "aiInstruction": "경력수준 불명확, 주요업무 부족, 자격요건 부족",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "cc0adeb93a5b46041d229ed86fa95db8bf8104c21ae04a4dcf17f27b124e1257",
+      "company": "아키드로우",
+      "title": "AI Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "reviewPriority": "high",
+      "reviewIssues": [
+        "핵심기술 부족",
+        "제목이 지나치게 포괄적"
+      ],
+      "qualityScore": 80,
+      "firstSeenAt": "2026-04-03T05:49:54+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "aiInstruction": "핵심기술 부족, 제목이 지나치게 포괄적",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "e5f1e4d387aa3e41c6c6d1c62efd6ac353bc3e05c534f1171bb57d20141bd424",
+      "company": "데이터메이커",
+      "title": "AI개발자_ML개발자",
+      "roleLabel": "인공지능 엔지니어",
+      "reviewPriority": "medium",
+      "reviewIssues": [
+        "경력수준 불명확",
+        "주요업무 부족"
+      ],
+      "qualityScore": 80,
+      "firstSeenAt": "2026-04-02T08:42:14+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "aiInstruction": "경력수준 불명확, 주요업무 부족",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "b8b2fff13f42640489832974f5d0d914170617a3a5fd2534056e99aa47c979df",
+      "company": "몰로코",
+      "title": "Senior Machine Learning Engineer (시니어 머신러닝 엔지니어)",
+      "roleLabel": "인공지능 엔지니어",
+      "reviewPriority": "medium",
+      "reviewIssues": [
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "qualityScore": 80,
+      "firstSeenAt": "2026-04-09T20:27:16+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "aiInstruction": "주요업무 부족, 자격요건 부족",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "8cacf1a51d7ebb7b9570370b3cf8c73c1c0f7d91062f7849811806336a1a6bef",
+      "company": "스켈터랩스",
+      "title": "Applied AI Technical Engineer (ML) / 전문연구요원 가능",
+      "roleLabel": "인공지능 엔지니어",
+      "reviewPriority": "medium",
+      "reviewIssues": [
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "qualityScore": 80,
+      "firstSeenAt": "2026-04-02T19:39:40+09:00",
+      "lastSeenAt": "2026-04-12T13:57:53+09:00",
+      "aiInstruction": "주요업무 부족, 자격요건 부족",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    }
+  ],
+  "jobs": [
+    {
+      "id": "bedd913f43f7a277f6bb5567cce3c5b533944ca6a22a043b72549c549d06ec37",
+      "company": "서울로보틱스",
+      "title": "Senior Software Engineer- System",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "시니어",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "로보틱스",
+        "시뮬레이션"
+      ],
+      "skills": [
+        "GPU"
+      ],
+      "qualityScore": 68,
+      "reviewPriority": "high",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "핵심기술 부족",
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-07T03:33:00+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://job-boards.greenhouse.io/seoulrobotics/jobs/5176875008",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "bc4ea07a6f45a0ccbc0f6d95c56568c3ea5f6208c3119e7a94173dd15791e0e3",
+      "company": "세미파이브",
+      "title": "SoC Design Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "미기재",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "AI반도체"
+      ],
+      "skills": [
+        "GPU"
+      ],
+      "qualityScore": 68,
+      "reviewPriority": "high",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "경력수준 불명확",
+        "핵심기술 부족",
+        "주요업무 부족"
+      ],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://semifive.com/company/careers/open-roles/soc-design-engineer/",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "cf090531b692204dcf636b51b9c2b86b3b4a1860c7761966dcb676c594d455d2",
+      "company": "스트라드비젼",
+      "title": "ADAS Application Engineer - Team Lead (Application Team)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "리드",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "자율주행"
+      ],
+      "skills": [
+        "1"
+      ],
+      "qualityScore": 68,
+      "reviewPriority": "high",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "핵심기술 부족",
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://stradvision.career.greetinghr.com/ko/o/195983",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "52b449ba9e386190ca9134debbb8ed3fe5152b1d4dc8f1b6862e29f1b28339f5",
+      "company": "실리콘아츠",
+      "title": "GPU Design Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "미기재",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "AI반도체"
+      ],
+      "skills": [
+        "GPU"
+      ],
+      "qualityScore": 56,
+      "reviewPriority": "high",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "경력수준 불명확",
+        "핵심기술 부족",
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-10T02:21:55+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://www.siliconarts.com/jobs-2/gpu-design-engineer",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "cc0adeb93a5b46041d229ed86fa95db8bf8104c21ae04a4dcf17f27b124e1257",
+      "company": "아키드로우",
+      "title": "AI Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "박사"
+      ],
+      "focusLabels": [
+        "연구"
+      ],
+      "skills": [
+        "MLOps"
+      ],
+      "qualityScore": 80,
+      "reviewPriority": "high",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "핵심기술 부족",
+        "제목이 지나치게 포괄적"
+      ],
+      "firstSeenAt": "2026-04-03T05:49:54+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://archisketch.career.greetinghr.com/ko/o/203583",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "800c930f817175a5b21d7cd8ebb472b13718b2be83a019d227977ce3c1dc6979",
+      "company": "퓨리오사",
+      "title": "Hardware - High Speed Interface(IO) Design Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "미기재",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "하드웨어"
+      ],
+      "skills": [
+        "AI",
+        "디지털설계",
+        "High-Speed IO"
+      ],
+      "qualityScore": 68,
+      "reviewPriority": "high",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "경력수준 불명확",
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-10T02:21:55+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://furiosa.ai/careers/hardware-high-speed-interfaceio-design-engineer-2",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "bd9903da56200d00c4120bd504a65935699a8ccbeb97d0b1d34370e2a43fe3a9",
+      "company": "퓨리오사",
+      "title": "Hardware - High-Speed IO IP Design Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "미기재",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "하드웨어"
+      ],
+      "skills": [
+        "High-Speed IO",
+        "IP 설계"
+      ],
+      "qualityScore": 68,
+      "reviewPriority": "high",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "경력수준 불명확",
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-10T02:21:55+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://furiosa.ai/careers/hardware-high-speed-interfaceio-ip-design-engineer",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "ad9c48113c5ab0ae92997e2a20f7ebca473512af67b83239fa7c9d394d3e6790",
+      "company": "한국생산기술연구원",
+      "title": "(한국생산기술연구원) 2026년 제1차 정규직(연구직) 공개채용 [출연(연) 공동채용 2026년 03월]",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "공공·연구기관",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "미기재",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "연구"
+      ],
+      "skills": [
+        "연구개발",
+        "제조기술",
+        "인공지능"
+      ],
+      "qualityScore": 68,
+      "reviewPriority": "high",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "경력수준 불명확",
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-12T05:46:47+09:00",
+      "lastSeenAt": "2026-04-12T15:04:01+09:00",
+      "jobUrl": "https://recruit.kitech.re.kr/announcement/detail/89",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "295f24c5156e197ea7a2f0370415d710c1f391e2f88fd95a1a95d7c9889d8a32",
+      "company": "라온시큐어",
+      "title": "(주)엠케이디 채용시 마감 엠케이디 Python AI 개발자 채용 (경력 또는 석/박사) E-7 비자지원 정규직 인턴 연구·R&D, IT개발·데이터 부산 남구 기초 회화 가능 E-7",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "인턴",
+      "trackLabels": [
+        "박사",
+        "인턴"
+      ],
+      "focusLabels": [
+        "연구"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "qualityScore": 68,
+      "reviewPriority": "high",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "핵심기술 부족",
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-11T22:22:15+09:00",
+      "lastSeenAt": "2026-04-12T14:39:19+09:00",
+      "jobUrl": "https://komate.saramin.co.kr/recruits/53580217?target=blank&isCuration=true",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "5f920781cdc8e1391db5eb6437e77d463748efa13d30c40b25c6532821aa5c81",
+      "company": "엠엔비젼",
+      "title": "(주)엠케이디 채용시 마감 엠케이디 LLM 개발자 채용 (경력 또는 석/박사) E-7 비자지원 정규직 인턴 연구·R&D, IT개발·데이터 부산 남구 기초 회화 가능 E-7",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "인턴",
+      "trackLabels": [
+        "박사",
+        "인턴"
+      ],
+      "focusLabels": [
+        "LLM"
+      ],
+      "skills": [
+        "LLM"
+      ],
+      "qualityScore": 68,
+      "reviewPriority": "high",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "핵심기술 부족",
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-11T22:22:15+09:00",
+      "lastSeenAt": "2026-04-12T03:55:13+09:00",
+      "jobUrl": "https://komate.saramin.co.kr/recruits/53580292?target=blank&isCuration=true",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "612cf32e38ba66f7ac225ee055f8b7aaa22d3579c39cbaf64e437e8a4eeb022f",
+      "company": "링크업솔루션 주식회사",
+      "title": "AI Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": false,
+      "recordState": "미발견",
+      "experienceLabel": "신입",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "모델링",
+        "최적화"
+      ],
+      "skills": [
+        "AI"
+      ],
+      "qualityScore": 64,
+      "reviewPriority": "high",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "핵심기술 부족",
+        "주요업무 부족",
+        "제목이 지나치게 포괄적"
+      ],
+      "firstSeenAt": "2026-04-02T02:08:16+09:00",
+      "lastSeenAt": "2026-04-02T02:50:03+09:00",
+      "jobUrl": "https://www.haijob.co.kr/posting/11641",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "e5f1e4d387aa3e41c6c6d1c62efd6ac353bc3e05c534f1171bb57d20141bd424",
+      "company": "데이터메이커",
+      "title": "AI개발자_ML개발자",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "변경",
+      "experienceLabel": "미기재",
+      "trackLabels": [
+        "박사"
+      ],
+      "focusLabels": [
+        "인프라",
+        "LLM"
+      ],
+      "skills": [
+        "PyTorch",
+        "TensorFlow",
+        "Docker",
+        "Kubernetes",
+        "엠엘플로",
+        "LLM",
+        "강화학습",
+        "깃"
+      ],
+      "qualityScore": 80,
+      "reviewPriority": "medium",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "경력수준 불명확",
+        "주요업무 부족"
+      ],
+      "firstSeenAt": "2026-04-02T08:42:14+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://datamaker.io/ko/company/career/job-openings/53",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "b8b2fff13f42640489832974f5d0d914170617a3a5fd2534056e99aa47c979df",
+      "company": "몰로코",
+      "title": "Senior Machine Learning Engineer (시니어 머신러닝 엔지니어)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "외국계 한국법인",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "시니어",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "모델링",
+        "최적화"
+      ],
+      "skills": [
+        "Python",
+        "TensorFlow",
+        "BigQuery",
+        "Computer Vision"
+      ],
+      "qualityScore": 80,
+      "reviewPriority": "medium",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-09T20:27:16+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://job-boards.greenhouse.io/moloco/jobs/5820201003",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "800d7f4b7af63cc4fcbd923b8d76aee2c4c2ebfdb3777297f9a976986c765009",
+      "company": "스트라드비젼",
+      "title": "Senior VSLAM Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "시니어",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "자율주행"
+      ],
+      "skills": [
+        "Python",
+        "Computer Vision"
+      ],
+      "qualityScore": 80,
+      "reviewPriority": "medium",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-03T05:21:26+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://stradvision.career.greetinghr.com/ko/o/151160",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "d2d66165e6c3bd206f67aa16e0c14a32799abdbf7652a8cec243834f81681188",
+      "company": "실리콘아츠",
+      "title": "Digital Design Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "미기재",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "하드웨어"
+      ],
+      "skills": [
+        "Python",
+        "GPU"
+      ],
+      "qualityScore": 80,
+      "reviewPriority": "medium",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "경력수준 불명확",
+        "주요업무 부족"
+      ],
+      "firstSeenAt": "2026-04-10T02:21:55+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://www.siliconarts.com/jobs-2/digital-design-engineer",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "2b33ff845a05b9cb6dc3bf458a94cc3749c9b65cc3ebf41c20d86e649f199e5b",
+      "company": "안랩",
+      "title": "[경력] ML/MLOps 엔지니어",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "변경",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "학사",
+        "석사",
+        "박사"
+      ],
+      "focusLabels": [
+        "인프라",
+        "문서AI"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Spark",
+        "MLOps"
+      ],
+      "qualityScore": 80,
+      "reviewPriority": "medium",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-01T22:48:57+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://ahnlab.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=244200",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "27d87f5823728bd942a9fec26e6f1c0c0b828194eff15dafb89d7dca17fdb18d",
+      "company": "업스테이지",
+      "title": "[독파모] AI Research Engineer - LLM Eval Internship (정규직 전환형)",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "인턴",
+      "trackLabels": [
+        "인턴"
+      ],
+      "focusLabels": [
+        "LLM",
+        "RAG"
+      ],
+      "skills": [
+        "LLM"
+      ],
+      "qualityScore": 80,
+      "reviewPriority": "medium",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "핵심기술 부족",
+        "주요업무 부족"
+      ],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://careers.upstage.ai/ko/o/194889",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "2eeb50f90af20cac9fea54684d0fe8b67e4534bd87608436fef980f75b1c39b1",
+      "company": "업스테이지",
+      "title": "[독파모] AI Research Engineer - LLM Post-training",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "LLM",
+        "최적화"
+      ],
+      "skills": [
+        "근무 형태",
+        "정규직",
+        "모집 절차 - 전체 온라인으로 진행",
+        "서류 전형",
+        "알고리즘 코딩 테스트",
+        "딥러닝 코딩테스트",
+        "기술 인터뷰 (1차)",
+        "기술 인터뷰 (2차)",
+        "컬처 인터뷰",
+        "최종 인터뷰",
+        "최종 결과 발표",
+        "*절차는 상황에 따라 조정될 수 있습니다.",
+        "근무환경",
+        "! ‘어디서든’ 함께 일할 수 있습니다."
+      ],
+      "qualityScore": 80,
+      "reviewPriority": "medium",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://careers.upstage.ai/ko/o/194876",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "9d459c7d147a5eb65ed511c363f78c3143d62e5a299bb8631d45ba240cd9c401",
+      "company": "카카오모빌리티",
+      "title": "자율주행 SLAM 엔지니어 (R&D)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "박사"
+      ],
+      "focusLabels": [
+        "자율주행",
+        "로보틱스"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "qualityScore": 80,
+      "reviewPriority": "medium",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "핵심기술 부족",
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-12T05:23:47+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://kakaomobility.career.greetinghr.com/ko/o/205618",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "a0aa4617ba36915aef1033bef69d0cf1d52ea2672d30c5f454acab05172c764c",
+      "company": "카카오모빌리티",
+      "title": "자율주행 HW 엔지니어 (R&D)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "자율주행",
+        "시스템"
+      ],
+      "skills": [
+        "자율주행"
+      ],
+      "qualityScore": 80,
+      "reviewPriority": "medium",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "핵심기술 부족",
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-12T05:23:47+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://kakaomobility.career.greetinghr.com/ko/o/205630",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "cabf319313ae3772a8f055600b01f71185c457e6ab35797936f4bd45f467ef79",
+      "company": "카카오모빌리티",
+      "title": "자율주행 E/E 엔지니어 (R&D)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "미기재",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "자율주행",
+        "시스템"
+      ],
+      "skills": [
+        "자율주행"
+      ],
+      "qualityScore": 80,
+      "reviewPriority": "medium",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "경력수준 불명확",
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-12T05:23:47+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://kakaomobility.career.greetinghr.com/ko/o/205635",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "f8316d3bdd6605a9eaebcc4a41a27e87db716137a0320e4509b8ac920b35eabc",
+      "company": "퓨리오사",
+      "title": "Hardware - Design Verification Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "미기재",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "검증"
+      ],
+      "skills": [
+        "@인공지능",
+        "​"
+      ],
+      "qualityScore": 80,
+      "reviewPriority": "medium",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "경력수준 불명확",
+        "주요업무 부족"
+      ],
+      "firstSeenAt": "2026-04-10T02:21:55+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://furiosa.ai/careers/design-verification-engineer",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "c10f217fc006e9a4713e226a0786b2aee0c80ce1396f280017fc3dfe02498955",
+      "company": "티오리한국",
+      "title": "Offensive Security Researcher",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "미기재",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "보안연구",
+        "취약점분석"
+      ],
+      "skills": [
+        "보안"
+      ],
+      "qualityScore": 80,
+      "reviewPriority": "medium",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "경력수준 불명확",
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-12T05:23:47+09:00",
+      "lastSeenAt": "2026-04-12T15:04:01+09:00",
+      "jobUrl": "https://careers.theori.io/ko/o/16295",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "8cacf1a51d7ebb7b9570370b3cf8c73c1c0f7d91062f7849811806336a1a6bef",
+      "company": "스켈터랩스",
+      "title": "Applied AI Technical Engineer (ML) / 전문연구요원 가능",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "박사",
+        "전문연구요원"
+      ],
+      "focusLabels": [
+        "AI플랫폼",
+        "MLOps"
+      ],
+      "skills": [
+        "Spark",
+        "Kubernetes",
+        "MLOps"
+      ],
+      "qualityScore": 80,
+      "reviewPriority": "medium",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "주요업무 부족",
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-02T19:39:40+09:00",
+      "lastSeenAt": "2026-04-12T13:57:53+09:00",
+      "jobUrl": "https://www.skelterlabs.com/creer/applied-ai-technical-engineer-ml",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "1944dd875c1f1cc95a71f449745f14ac6b53afb6e36c74e5d81335d6a2d5a966",
+      "company": "케이플러스",
+      "title": "케이플러스",
+      "roleLabel": "데이터 분석가",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "신입",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "리스크",
+        "데이터분석"
+      ],
+      "skills": [
+        "리스크분석"
+      ],
+      "qualityScore": 80,
+      "reviewPriority": "medium",
+      "needsAiReview": true,
+      "reviewIssues": [
+        "핵심기술 부족",
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-11T00:05:45+09:00",
+      "lastSeenAt": "2026-04-12T13:57:53+09:00",
+      "jobUrl": "https://kplus.biz/incruit/recruit_chk",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "acdeca3194f547cfa91dce4b0228dcf48979618d1eaf14564ec5bf4693cabec6",
+      "company": "가치랩스",
+      "title": "[병역특례 전문연구요원] AI 기술 및 응용솔루션 R&D 엔지니어 (1명)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "석사",
+        "전문연구요원"
+      ],
+      "focusLabels": [
+        "검색",
+        "LLM"
+      ],
+      "skills": [
+        "Python",
+        "AWS",
+        "Docker",
+        "ETL",
+        "LLM",
+        "RAG",
+        "Computer Vision",
+        "Multimodal",
+        "랭체인"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-02T23:41:59+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://gazzi.ai/careers/ai-rnd-engineer-special",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "54239f62f548257f4700c0d0ba9515e8f4838f7f021654f664282a7763b783bc",
+      "company": "거대한에이아이실험실 주식회사",
+      "title": "AI 개발자(AI Model Developer/Researcher)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력 3년+",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "최적화",
+        "문서AI"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "AWS",
+        "Azure",
+        "NLP",
+        "Computer Vision",
+        "Recommender Systems"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T02:11:18+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://hugeailab.com/recruit#role-ai-개발자-ai-model-developer-researcher",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "e8e8ab27dd23da088f9d9f77d16788cb21728e1865cb15209f69f6dc79714c0f",
+      "company": "거대한에이아이실험실 주식회사",
+      "title": "서비스 개발자(Service Developer)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력 3년+",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "최적화"
+      ],
+      "skills": [
+        "SQL"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://hugeailab.com/recruit#role-서비스-개발자-service-developer",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "8c08ef4b136652711f3422ff39e2882374f32045ad131d850abf42c2ea4d77ba",
+      "company": "고위드",
+      "title": "[공통] Data Scientist",
+      "roleLabel": "데이터 사이언티스트",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "시계열",
+        "인프라"
+      ],
+      "skills": [
+        "SQL",
+        "MLOps"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://gowid.career.greetinghr.com/ko/o/165121",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "1ca357b80df38943238b62a05c7565408b612ce1d13af84710e2ba1c3abf59cc",
+      "company": "노타",
+      "title": "[NetsPresso] Senior Edge AI Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "시니어",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "인프라"
+      ],
+      "skills": [
+        "PyTorch",
+        "MLOps",
+        "LLM",
+        "Computer Vision",
+        "GPU"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T20:27:16+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://career.nota.ai/ko/o/199230",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "4ef20800f7901b2adc1ebdeb33c888f6c4569fbac7858a390fdcde0a397d04d1",
+      "company": "노타",
+      "title": "[NetsPresso] DevOps Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "AI반도체"
+      ],
+      "skills": [
+        "Python",
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "MLOps",
+        "LLM",
+        "Computer Vision",
+        "GPU",
+        "GitHub"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://career.nota.ai/ko/o/199925",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "70c40025f4e22a077dd1b921d0c297acc6b8ef4932e039799bf6eaeaed4b6f83",
+      "company": "노타",
+      "title": "[NetsPresso] AI Platform Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "AI플랫폼",
+        "MLOps"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "Docker",
+        "Kubernetes",
+        "MLOps",
+        "LLM",
+        "Computer Vision",
+        "GPU"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://career.nota.ai/ko/o/192331",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "7aa542840a6fc01cf4ea4f6afe6afd8eabd499e394f8f93f5ad5e395517a9f24",
+      "company": "노타",
+      "title": "[NetsPresso] AI Compiler Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "최적화"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Docker",
+        "Computer Vision",
+        "GPU",
+        "GitHub",
+        "깃"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://career.nota.ai/ko/o/200080",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "8a25403f7a740f550ed6c7b152cbcf648ac6fd9b7e98682f59f414029ad73597",
+      "company": "노타",
+      "title": "[Solution] Global Software Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "문서AI",
+        "비전"
+      ],
+      "skills": [
+        "LLM",
+        "Computer Vision",
+        "GitHub"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://career.nota.ai/ko/o/207626",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "d4ebcf1914b69150717dc042ba1ffa7ce5955f4561bda4278525ec98451648b2",
+      "company": "노타",
+      "title": "[Solution] AI Software Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "문서AI",
+        "검증"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Docker",
+        "Kubernetes",
+        "LLM",
+        "Computer Vision",
+        "GitHub"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://career.nota.ai/ko/o/187819",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "eea0d014aecd6b17c6740052bd3d8a96f7c119795734da8893a886d596a368c4",
+      "company": "노타",
+      "title": "[Solution AIE] AI Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "비전",
+        "검증"
+      ],
+      "skills": [
+        "PyTorch",
+        "TensorFlow",
+        "MLOps",
+        "Computer Vision",
+        "Multimodal"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://career.nota.ai/ko/o/197296",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "21c775134814c2093772c137d26538340832b3dc2a96317c7bf6e52c9b281a8e",
+      "company": "당근",
+      "title": "Data Analyst",
+      "roleLabel": "데이터 분석가",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "제품분석",
+        "성장분석"
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "BigQuery"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-01T00:27:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://about.daangn.com?gh_jid=6775986003",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "f8af919f04d0240fceffe9d8d707878b8bffcd04c293caaec29400661f5ef44c",
+      "company": "당근",
+      "title": "UX Researcher (인턴) | 로컬 비즈니스",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "인턴",
+      "trackLabels": [
+        "인턴"
+      ],
+      "focusLabels": [
+        "최적화"
+      ],
+      "skills": [
+        "SQL"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-12T05:23:47+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://about.daangn.com?gh_jid=6617687003",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "8786444f3f104784fd27ec8f3d6175597c74b69a776b0f608f86a0e22e1feb85",
+      "company": "당근",
+      "title": "Data Analytics Engineer | 테크코어 (데이터 가치화)",
+      "roleLabel": "데이터 분석가",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "BI",
+        "지표분석"
+      ],
+      "skills": [
+        "SQL",
+        "AWS",
+        "GCP",
+        "ETL"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-02T21:30:31+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://about.daangn.com?gh_jid=7507320003",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "9037a48ac4f6c7539cccb53a7c488a8309a66a17406403d58febc94f1cb2eb40",
+      "company": "당근",
+      "title": "[2026 당근 ML] Software Engineer, Machine Learning (석사)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "신입",
+      "trackLabels": [
+        "석사"
+      ],
+      "focusLabels": [
+        "추천",
+        "LLM"
+      ],
+      "skills": [
+        "LLM",
+        "Recommender Systems"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://about.daangn.com?gh_jid=7647084003",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "ea06e254b3613a3ea4c239b5368094c4b99ccd4e28d38b49692aecb0f4adfa13",
+      "company": "당근",
+      "title": "Software Engineer, Machine Learning | ML 인프라",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력 3년+",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "LLM"
+      ],
+      "skills": [
+        "Python",
+        "GCP",
+        "LLM"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-01T00:27:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://about.daangn.com?gh_jid=7498021003",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "ff7da7a26113a65fefb3c39d5c29d6b1de3c2923fcee9230db50ce0ddaef5692",
+      "company": "당근",
+      "title": "Software Engineer, Machine Learning | 검색 (품질)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "검색",
+        "추천"
+      ],
+      "skills": [
+        "Python",
+        "NLP",
+        "Recommender Systems"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://about.daangn.com?gh_jid=6610455003",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "0bbd5a1107ce876a35b628b35024f5e2de7cbc571b03c0f2644effc508b81d38",
+      "company": "딥노이드",
+      "title": "AI Researcher (Multimodal)",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "석사"
+      ],
+      "focusLabels": [
+        "비전",
+        "AI반도체"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "LLM",
+        "GPU",
+        "Computer Vision",
+        "Multimodal",
+        "GitHub"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://deepnoid.career.greetinghr.com/ko/o/197509",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "8279086f9af0ac44eca61f72714b435681e26840a64fca18b1a96c8cbc265785",
+      "company": "딥노이드",
+      "title": "임상연구전문가 (Clinical Research Scientist)",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "학사",
+        "석사"
+      ],
+      "focusLabels": [
+        "헬스케어",
+        "비전"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://deepnoid.career.greetinghr.com/ko/o/188663",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "14ac45625bdb2881ff30ddd874871663eb1bea0e55b86eef907e11f42f0a6a65",
+      "company": "딥노이드",
+      "title": "Application Developer (Medical AI)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "헬스케어",
+        "비전"
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "GPU"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T20:27:16+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://deepnoid.career.greetinghr.com/ko/o/209658",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "5d5e2ba2737958d1cb7ba49862740d9ea95a402732d1e80709c3dbb69355c0c8",
+      "company": "딥노이드",
+      "title": "Field Application Engineer (SaMD)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "헬스케어",
+        "의료데이터"
+      ],
+      "skills": [
+        "헬스케어"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://deepnoid.career.greetinghr.com/ko/o/202876",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "5b3a3658c21f565a1b2fe78dd3923fb93c1474123539a12171f827817991b625",
+      "company": "리벨리온",
+      "title": "Design Validation Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력 15년+",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "검증",
+        "LLM"
+      ],
+      "skills": [
+        "LLM"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://rebellions.career.greetinghr.com/ko/o/200327",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "b3e29f75eb8ebfd79db6753b9ab936407ea18a4c0b1d2be32c257b758acd034b",
+      "company": "리벨리온",
+      "title": "IP Design Verification Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력 4년+",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "하드웨어"
+      ],
+      "skills": [
+        "NPU",
+        "AI반도체",
+        "IP 설계"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://rebellions.career.greetinghr.com/ko/o/200326",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "05541b533318e70a66223d3a797723aa46bc9303e9a2fb3f452b327e5603d57b",
+      "company": "마키나락스",
+      "title": "Infrastructure Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "최적화",
+        "인프라"
+      ],
+      "skills": [
+        "Kubernetes"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-02T21:41:52+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://makinarocks.career.greetinghr.com/ko/o/199960",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "2bf2217022d30e9f6b81315d8da93935980546867e65e23031b384a4daf2d027",
+      "company": "마키나락스",
+      "title": "AI Research Engineer (Junior)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "주니어",
+      "trackLabels": [
+        "석사"
+      ],
+      "focusLabels": [
+        "문서AI",
+        "비전"
+      ],
+      "skills": [
+        "Computer Vision"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-02T01:40:42+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://makinarocks.career.greetinghr.com/ko/o/200237",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "5d82b86e2b0284097897d2de62b81e5de193c41a8ce51e2e65392b3f0db5021c",
+      "company": "마키나락스",
+      "title": "Forward Deployed Engineer - LLM",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "석사"
+      ],
+      "focusLabels": [
+        "LLM",
+        "인프라"
+      ],
+      "skills": [
+        "Python",
+        "MLOps",
+        "LLM",
+        "RAG"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-31T01:43:21+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://makinarocks.career.greetinghr.com/ko/o/115446",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "736e0a1c6554eedc036eb7fc97ea6198336baa16ee35a0b6386707de4998e779",
+      "company": "마키나락스",
+      "title": "Forward Deployed Software Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "LLM"
+      ],
+      "skills": [
+        "Python",
+        "Docker",
+        "Kubernetes",
+        "LLM",
+        "GitHub",
+        "깃"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "주요업무 부족"
+      ],
+      "firstSeenAt": "2026-04-02T21:41:52+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://makinarocks.career.greetinghr.com/ko/o/202057",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "b68935592e75dd70b0ecac9a9b0c303480e0f0554657940c66137ade4dd7013d",
+      "company": "마키나락스",
+      "title": "Forward Deployed Engineer - ML/DS",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "제조",
+        "최적화"
+      ],
+      "skills": [
+        "MLOps"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-01T22:48:57+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://makinarocks.career.greetinghr.com/ko/o/169369",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "cca8f744faac52e4b712b665ce07bc8ae7dc68c42c513597fc42435841e8dd46",
+      "company": "마키나락스",
+      "title": "Forward Deployed Engineer - LLM Quantization",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "LLM",
+        "AI반도체"
+      ],
+      "skills": [
+        "PyTorch",
+        "LLM"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-01T00:27:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://makinarocks.career.greetinghr.com/ko/o/191537",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "d5527fef542a659d966f8a3b672f7831681564b25a9701ae58e5c3f645876575",
+      "company": "마키나락스",
+      "title": "Forward Deployed Engineer - MLOps",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "데이터플랫폼"
+      ],
+      "skills": [
+        "PyTorch",
+        "에어플로",
+        "Docker",
+        "Kubernetes",
+        "MLOps",
+        "엠엘플로",
+        "LLM",
+        "GPU"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-01T22:48:57+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://makinarocks.career.greetinghr.com/ko/o/169698",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "c7566b4fd5f33aae584d6b7fce0d7528831ea047e4aaeae349880e3638767c30",
+      "company": "메디컬에이아이",
+      "title": "메디컬그룹 DS(Data Science)팀 연구원",
+      "roleLabel": "데이터 사이언티스트",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "신입",
+      "trackLabels": [
+        "석사"
+      ],
+      "focusLabels": [
+        "헬스케어",
+        "의료데이터"
+      ],
+      "skills": [
+        "생체신호",
+        "헬스케어",
+        "QA"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-02T22:28:29+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://medicalai.com/en/recruit?recruit_id=2",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "4a3ed9bd1250863f7b090cdadbea3067d3d3a355bc038b02e5ddebcd28a5faf4",
+      "company": "모레",
+      "title": "SRE/DevOps Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "인프라"
+      ],
+      "skills": [
+        "Python",
+        "Docker",
+        "Kubernetes",
+        "GPU"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://moreh.career.greetinghr.com/ko/o/199470",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "7b1509e2da2f3974e53bc722eb07d60af2753c80457cd851bae733efec9d153a",
+      "company": "모레",
+      "title": "NPU Software Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "박사"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "제조"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "GPU"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://moreh.career.greetinghr.com/ko/o/158834",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "9a529966d11df7ac681e16f45c9ef7673631d305b0733bf2587c414ca2dcedc6",
+      "company": "모레",
+      "title": "GPU Software Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "박사"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "LLM"
+      ],
+      "skills": [
+        "LLM",
+        "GPU"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://moreh.career.greetinghr.com/ko/o/158838",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "a402fbce83efcc397c7de7fcb80efad18c4094cc168eae46fb44ed72c6b27ab1",
+      "company": "모레",
+      "title": "AI System Software Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "박사",
+        "전문연구요원"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "LLM"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "LLM",
+        "GPU"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T01:51:07+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://moreh.career.greetinghr.com/ko/o/158839",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "c020b10462a235dbb9c0b5e5c677397117286eb51c7ef64f7bf5ab68f2a3d94f",
+      "company": "모레",
+      "title": "LLM Platform Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "LLM",
+        "인프라"
+      ],
+      "skills": [
+        "Python",
+        "Kubernetes",
+        "LLM",
+        "GPU"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T01:51:07+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://moreh.career.greetinghr.com/ko/o/191672",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "14f5df29aff3b2c02640a37aab45cf30f888b15f0a55ef35f8c9606b854b2fb8",
+      "company": "모빌린트",
+      "title": "NPU Field Application Engineer (H/W)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "최적화"
+      ],
+      "skills": [
+        "GPU"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://mobilinthire.career.greetinghr.com/ko/o/133040",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "2233d3266907c2588e0b015d76182f5d801ff66a8199e14b716d7e5a42ea09d8",
+      "company": "모빌린트",
+      "title": "SDK Field Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "문서AI"
+      ],
+      "skills": [
+        "Python",
+        "GPU"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-07T03:33:00+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://mobilinthire.career.greetinghr.com/ko/o/171220",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "2e6ff10615c27cf989145df1a678ad8dc60c90bcce1188dbc4a988ea7da6025e",
+      "company": "모빌린트",
+      "title": "NPU Core Engineer (RTL)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "석사",
+        "박사"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "최적화"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-07T03:33:00+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://mobilinthire.career.greetinghr.com/ko/o/148636",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "323683418b12a931a122e02e0a3742fd94bb38e208f31fc0d75ba9a31a35cfc1",
+      "company": "모빌린트",
+      "title": "Deep Learning Research Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "최적화"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "Computer Vision"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-07T03:33:00+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://mobilinthire.career.greetinghr.com/ko/o/69889",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "600c4889c58c3c58a29c77c78556df508a32f5d5cb32ab5167fafb63a818617a",
+      "company": "모빌린트",
+      "title": "Software Engineer (NPU SDK)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "인프라"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-07T03:33:00+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://mobilinthire.career.greetinghr.com/ko/o/67144",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "755aa2b91bb02e73fbe5f050f505a4a3b2d385feda15dd0e05ac9fc8e515b99a",
+      "company": "모빌린트",
+      "title": "ARM Architecture Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "최적화",
+        "AI반도체"
+      ],
+      "skills": [
+        "깃"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://mobilinthire.career.greetinghr.com/ko/o/171119",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "8585662928f5ad392209af6fde575ef19ca74ea260c03c33203ef4bb7318ebe3",
+      "company": "모빌린트",
+      "title": "NPU Verification Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "검증"
+      ],
+      "skills": [
+        "Python",
+        "GPU"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://mobilinthire.career.greetinghr.com/ko/o/136320",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "9597b85b3aca7e49d58ebedfe7d85f07a8ff2b377354ca0f60a3f55c56556278",
+      "company": "모빌린트",
+      "title": "System Software Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "하드웨어"
+      ],
+      "skills": [
+        "NPU",
+        "AI반도체"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://mobilinthire.career.greetinghr.com/ko/o/69899",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "95f3e5eabacbfa10024881abe08f9144bed0c1fb707d4005c49c21127afc4fe1",
+      "company": "모빌린트",
+      "title": "Windows Driver Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "문서AI"
+      ],
+      "skills": [
+        "PyTorch",
+        "TensorFlow",
+        "깃"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-07T03:33:00+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://mobilinthire.career.greetinghr.com/ko/o/144487",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "9bdd68cd61396a760d9b31339ba97d66992f8d3d6ac5736b0ae668f524f7a1e1",
+      "company": "모빌린트",
+      "title": "Deep Learning Compiler Engineer (Frontend & Graph Optimization)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "최적화",
+        "인프라"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "Multimodal"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-07T03:33:00+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://mobilinthire.career.greetinghr.com/ko/o/196632",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "ae35562a8cc59fd90838e8adf787ef7236052ece4f974aa12fafcfdae27a84ff",
+      "company": "모빌린트",
+      "title": "SoC Design Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "추천"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://mobilinthire.career.greetinghr.com/ko/o/67139",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "be95d22fcce81bc56774e950750d73e14fdb00fd79c825648c8b4e544f53a21d",
+      "company": "모빌린트",
+      "title": "NPU Compiler Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "최적화"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-07T03:33:00+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://mobilinthire.career.greetinghr.com/ko/o/67145",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "c2d2b6199e099e11606bb0f5a72b35401054885cec0f0edd1de2c24fe7ac2bc0",
+      "company": "모빌린트",
+      "title": "Deep Learning Optimization Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "최적화",
+        "AI반도체"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "GPU"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-07T03:33:00+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://mobilinthire.career.greetinghr.com/ko/o/67147",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "e7fa2af5786a826cf23ba90abe2893e43423bbbe50812e892c8d563acd36b9ba",
+      "company": "모빌린트",
+      "title": "AI Inference Software Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "최적화",
+        "문서AI"
+      ],
+      "skills": [
+        "Python",
+        "MLOps",
+        "LLM",
+        "Computer Vision",
+        "GitHub"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-07T03:33:00+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://mobilinthire.career.greetinghr.com/ko/o/171183",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "8276f363942d373702856aaa8469f0132dcd2c0d7dcf665d1327d0d98985e961",
+      "company": "뷰노",
+      "title": "(전문연지원가능) Clinical Researcher",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "전문연구요원"
+      ],
+      "focusLabels": [
+        "문서AI",
+        "헬스케어"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-12T05:23:47+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://vunohire.career.greetinghr.com/ko/o/201394",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "8ec4b988febdc770d35d8484c429516096bdc5f2ba719c091ea2c05a132d2820",
+      "company": "뷰노",
+      "title": "(전문연지원가능) AI Research Engineer / Scientist",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "전문연구요원"
+      ],
+      "focusLabels": [
+        "생체신호",
+        "헬스케어"
+      ],
+      "skills": [
+        "생체신호",
+        "헬스케어"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://vunohire.career.greetinghr.com/ko/o/203397",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "b5132c7b35b33487247ef50c227481e8ea937dda8da9d22341d64109f4ba39f5",
+      "company": "블루닷 주식회사",
+      "title": "[경력] 반도체 회로 설계 개발자 채용",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "전문연구요원"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "최적화"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-12T13:57:53+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://blue-dot.career.greetinghr.com/ko/o/69927",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "f9fe665ad69db75dce19398efd1f348ef32a82ff9abc5a9dfc12d1d65d057cab",
+      "company": "센드버드",
+      "title": "AI Agent Engineer, Intern",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "인턴",
+      "trackLabels": [
+        "인턴"
+      ],
+      "focusLabels": [
+        "LLM",
+        "문서AI"
+      ],
+      "skills": [
+        "Python",
+        "AWS",
+        "GCP",
+        "LLM",
+        "RAG",
+        "랭체인"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://sendbird.com/careers?gh_jid=8276676002",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "3df159f3833ac42a707314ca7d1d01c164fcebe7b0bb14fb6b71a6e8167f19fb",
+      "company": "슈어소프트테크",
+      "title": "[AI시험인증2팀] AI 검증 및 개발 (신입/경력)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "신입",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "검증",
+        "LLM"
+      ],
+      "skills": [
+        "LLM"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-09T03:33:23+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://careers.suresofttech.com/job_posting/tNdMfEVv",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "7670db978bd54591e6665e3cdc71ad29e103bdedeaca605c275d717d932b4e66",
+      "company": "스캐터랩",
+      "title": "ML Researcher [전문연 가능]",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "전문연구요원"
+      ],
+      "focusLabels": [
+        "LLM",
+        "인프라"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "LLM"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "주요업무 부족"
+      ],
+      "firstSeenAt": "2026-04-03T05:21:26+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://www.scatterlab.co.kr/ko/o/148529",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "4f1ad494f86464493921a068ec6dda48f02b8479274f05407c90030867708bc6",
+      "company": "스캐터랩",
+      "title": "Site Reliability Engineer (DevOps)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "데이터플랫폼"
+      ],
+      "skills": [
+        "LLM",
+        "GPU"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-07T03:33:00+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://www.scatterlab.co.kr/ko/o/122939",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "5b6acb9ae5b2a41bd54b7bf427cb308d4f6bf27b0d1197facd74e8d96094c779",
+      "company": "스캐터랩",
+      "title": "Mobile Engineer (React Native) 모바일 엔지니어",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력 3년+",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "BI",
+        "지표분석"
+      ],
+      "skills": [
+        "React Native",
+        "모바일앱"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-10T02:21:55+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://www.scatterlab.co.kr/ko/o/206309",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "0f9c8ea367833870d90dc5c9ac503ca3b4e887d82f6293bd40a0039d568c8614",
+      "company": "스트라드비젼",
+      "title": "ADAS System Integration & Application Engineer (전문연구요원 지원 가능)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "학사",
+        "전문연구요원"
+      ],
+      "focusLabels": [
+        "자율주행",
+        "시스템"
+      ],
+      "skills": [
+        "자율주행"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-03T05:21:26+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://stradvision.career.greetinghr.com/ko/o/181800",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "46533418b07ea3bcbf28e53b5992f60761da78725a1b93d93508ca3dc583631b",
+      "company": "스트라드비젼",
+      "title": "Data Engineer (Data Service Team) - Team Lead",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "리드",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "인프라",
+        "데이터플랫폼"
+      ],
+      "skills": [
+        "AWS"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-12T05:23:47+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://stradvision.career.greetinghr.com/ko/o/177408",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "4b881d193164e8d403d5283090ae8196a0811997794f8a6149d855f5fb2d4aa9",
+      "company": "스트라드비젼",
+      "title": "Platform Engineer (전문연구요원 지원 가능)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "전문연구요원"
+      ],
+      "focusLabels": [
+        "인프라",
+        "AI반도체"
+      ],
+      "skills": [
+        "Computer Vision"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-03T05:21:26+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://stradvision.career.greetinghr.com/ko/o/112968",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "6f259c260fd07e5d14192f6a169fc4ba13d5685c9a1c26a08cf2bafbf0b5d3d1",
+      "company": "스트라드비젼",
+      "title": "Sr. Deep Learning Algorithm Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "시니어",
+      "trackLabels": [
+        "석사",
+        "박사"
+      ],
+      "focusLabels": [
+        "비전",
+        "최적화"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "강화학습"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T05:21:26+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://stradvision.career.greetinghr.com/ko/o/180022",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "887f271c5c0b8422d834683dd5409acfd2f74d56e5c62eac5ef72008c00a0308",
+      "company": "스트라드비젼",
+      "title": "Software Testing Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "모델링",
+        "최적화"
+      ],
+      "skills": [
+        "Computer Vision"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://stradvision.career.greetinghr.com/ko/o/208547",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "95e0bd563d26ffd7d9146e5fd040fd79c7a95d17a44b10de74e8ba093b26fcc3",
+      "company": "스트라드비젼",
+      "title": "VSLAM Engineer - Team Lead (Visual Positioning Team)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "리드",
+      "trackLabels": [
+        "석사"
+      ],
+      "focusLabels": [
+        "자율주행",
+        "로보틱스"
+      ],
+      "skills": [
+        "Python",
+        "Computer Vision"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T05:21:26+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://stradvision.career.greetinghr.com/ko/o/197327",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "b685cfa01a00aef947a357b05a0b88532075f84553a888591851f7baeb67181e",
+      "company": "스트라드비젼",
+      "title": "Algorithm Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "학사",
+        "석사",
+        "박사"
+      ],
+      "focusLabels": [
+        "문서AI"
+      ],
+      "skills": [
+        "Python",
+        "Computer Vision",
+        "깃"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T05:21:26+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://stradvision.career.greetinghr.com/ko/o/166953",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "d3a4e2bff2d6fa6904ebf270d626db6382a2886adf904b57fcd80f9406f15fa3",
+      "company": "스트라드비젼",
+      "title": "Data Collection Engineer (Dongtan)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "로보틱스",
+        "시뮬레이션"
+      ],
+      "skills": [
+        "로보틱스",
+        "자율주행",
+        "QA"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://stradvision.career.greetinghr.com/ko/o/195478",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "d8e2caf7690b4d1a3327ad80c420ae3ff7275a43a8532463ad535132768f54b9",
+      "company": "스트라드비젼",
+      "title": "System Software Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "문서AI",
+        "AI반도체"
+      ],
+      "skills": [
+        "Python",
+        "Docker",
+        "GPU",
+        "GitHub"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "주요업무 부족"
+      ],
+      "firstSeenAt": "2026-04-03T05:21:26+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://stradvision.career.greetinghr.com/ko/o/166047",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "63de83568195cbd071ff89ba6727634f622f63c83f3d36c0516947c4dcb78d4e",
+      "company": "신세계",
+      "title": "[신세계아이앤씨] 데이터분석(데이터사이언스) 인재모집(채용 시 마감)",
+      "roleLabel": "데이터 사이언티스트",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력 3년+",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "시계열",
+        "추천"
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "AWS",
+        "GCP",
+        "Azure",
+        "스노우플레이크",
+        "데이터브릭스",
+        "BigQuery"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-02T04:23:10+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://shinsegaeinc.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=248920",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "2dd5872cc3c2fb7ff34905a410a3f9c27119ecf14dcdb0ccb8f16fa55587c8fa",
+      "company": "신세계",
+      "title": "[신세계아이앤씨] AI서비스개발 직무 인재모집(채용 시 마감)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "검색",
+        "LLM"
+      ],
+      "skills": [
+        "Python",
+        "AWS",
+        "LLM",
+        "RAG",
+        "랭체인",
+        "벡터 데이터베이스"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-02T04:23:10+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://shinsegaeinc.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=247276",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "5ee2d7b14e690a3ae12bd7c746db01350776327c7fea219907f671ae9b9f947e",
+      "company": "씨어스테크놀로지",
+      "title": "[경력] Data Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "석사"
+      ],
+      "focusLabels": [
+        "검증",
+        "헬스케어"
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "Spark",
+        "Kubernetes",
+        "MLOps",
+        "LLM"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T20:50:17+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://seers.career.greetinghr.com/ko/o/200644",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "97bbbb5a3b77d0c5217c68f2430ca2707631942a39ac1a7593a35be20300b8d6",
+      "company": "씨어스테크놀로지",
+      "title": "[경력] MLOps Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "인프라",
+        "AI반도체"
+      ],
+      "skills": [
+        "Python",
+        "에어플로",
+        "GCP",
+        "Docker",
+        "MLOps",
+        "엠엘플로",
+        "GPU",
+        "Multimodal"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://seers.career.greetinghr.com/ko/o/200640",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "a6f2207233f56fadf5749e029b568eacd87240b63e39ddde269e7a13c9c89d50",
+      "company": "씨어스테크놀로지",
+      "title": "[경력] LLM Developer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "석사"
+      ],
+      "focusLabels": [
+        "LLM",
+        "검색"
+      ],
+      "skills": [
+        "Python",
+        "AWS",
+        "GCP",
+        "Azure",
+        "LLM",
+        "RAG",
+        "NLP",
+        "랭체인",
+        "벡터 데이터베이스"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-01T22:58:06+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://seers.career.greetinghr.com/ko/o/200636",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "b12d2bb03c4b9cc46a7095a838f6885bc5925b0b30edb4e3ad6e8103d2acf69e",
+      "company": "씨어스테크놀로지",
+      "title": "[경력] AI Developer/Researcher",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "석사"
+      ],
+      "focusLabels": [
+        "비전",
+        "헬스케어"
+      ],
+      "skills": [
+        "Python",
+        "Multimodal"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://seers.career.greetinghr.com/ko/o/200631",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "34a1d613558a8bbfd602ce7815d8c6314a46d9f03e1b9523db3843957935046b",
+      "company": "아키드로우",
+      "title": "Robotics Simulation & Data Engineer (Isaac Sim / ROS)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "로보틱스",
+        "인프라"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-03T05:49:54+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://archisketch.career.greetinghr.com/ko/o/208403",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "066babfbf04a840b279cfc5550a40155d27676a0e66e9598ec15df874bcc3ff8",
+      "company": "업스테이지",
+      "title": "AI Research Engineer - Agents & Workflows",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "문서AI",
+        "LLM"
+      ],
+      "skills": [
+        "PyTorch",
+        "LLM",
+        "NLP",
+        "Computer Vision",
+        "랭체인"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://careers.upstage.ai/ko/o/194857",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "12fa8761d600d3689ed78c954c232d386991bf5ecb5dc467bfa67b8b0428c34f",
+      "company": "업스테이지",
+      "title": "AI DevOps",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "검증"
+      ],
+      "skills": [
+        "Python",
+        "AWS",
+        "GCP",
+        "Azure",
+        "Docker",
+        "Kubernetes",
+        "LLM",
+        "광학문자인식",
+        "Computer Vision",
+        "GPU",
+        "깃"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://careers.upstage.ai/ko/o/194852",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "1b3f3f55e38ba7fee5c91ddb22e15cc70713d99a1a07655f6562167cf0bdf851",
+      "company": "업스테이지",
+      "title": "AI Model Production - Document AI",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "문서AI"
+      ],
+      "skills": [
+        "Python",
+        "LLM",
+        "광학문자인식",
+        "Computer Vision"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://careers.upstage.ai/ko/o/194670",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "3543a48f994851a41c5a1814c51c76c35b13843108c0ff133fbd68701685eee7",
+      "company": "업스테이지",
+      "title": "[독파모] AI Research Engineer - Vision Language Model Internship (체험형)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "인턴",
+      "trackLabels": [
+        "인턴"
+      ],
+      "focusLabels": [
+        "비전",
+        "문서AI"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "LLM",
+        "NLP",
+        "광학문자인식",
+        "Computer Vision",
+        "Multimodal"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://careers.upstage.ai/ko/o/194886",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "48984c65a686325bb0af2d48c0f95fe08b739a77c53848c900313741e5fc1d22",
+      "company": "업스테이지",
+      "title": "Software Engineer - Console",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "문서AI"
+      ],
+      "skills": [
+        "AWS",
+        "GCP",
+        "LLM",
+        "Computer Vision"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://careers.upstage.ai/ko/o/204305",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "80b8a7290e21e34ef41b61ceb8243739cdb1f195494cee402cf9082af197a1c7",
+      "company": "업스테이지",
+      "title": "[독파모] AI Research Engineer - Vision Language Model",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "비전",
+        "문서AI"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "LLM",
+        "NLP",
+        "광학문자인식",
+        "Computer Vision",
+        "Multimodal"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://careers.upstage.ai/ko/o/194884",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "9ccd3bacba93c3054ae3d739f7c6998140b9158c9f866860d670d3f0d6e66fdc",
+      "company": "업스테이지",
+      "title": "Platform Software Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "AI반도체"
+      ],
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "LLM",
+        "Computer Vision",
+        "GPU",
+        "GitHub"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://careers.upstage.ai/ko/o/204306",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "a06cf74772938ff59cd49fae709184b34de8ce971a67ef21b8041822251cc224",
+      "company": "업스테이지",
+      "title": "Infra Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "AI반도체"
+      ],
+      "skills": [
+        "Python",
+        "AWS",
+        "GCP",
+        "Azure",
+        "Docker",
+        "Kubernetes",
+        "LLM",
+        "Computer Vision",
+        "GPU",
+        "GitHub"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://careers.upstage.ai/ko/o/204304",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "af1a89895f143e7d2ee69df50e6e8f7f9a027c5af7aabb49e2770dec0a2e2c39",
+      "company": "업스테이지",
+      "title": "Software Engineer - Model Serving",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "LLM"
+      ],
+      "skills": [
+        "Python",
+        "AWS",
+        "Azure",
+        "LLM",
+        "Computer Vision"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://careers.upstage.ai/ko/o/194810",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "d64d7ff555694db1670ac577fe972e05dfd02a2400426aa89144d59152eae05b",
+      "company": "업스테이지",
+      "title": "[독파모] AI Model Production - LLM",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "LLM",
+        "검색"
+      ],
+      "skills": [
+        "PyTorch",
+        "LLM",
+        "RAG",
+        "광학문자인식",
+        "Computer Vision"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://careers.upstage.ai/ko/o/194890",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "e032085ccfa63ddf9d628d44c9d6aa258a3a740266aafa3e1436799b4dea1895",
+      "company": "업스테이지",
+      "title": "Software Engineer - Launching Platform",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "문서AI"
+      ],
+      "skills": [
+        "Python",
+        "AWS",
+        "Azure",
+        "Docker",
+        "Kubernetes",
+        "MLOps",
+        "LLM",
+        "Computer Vision"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://careers.upstage.ai/ko/o/194675",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "e53e077c6639f291fe9c11da2e7ebdab7a7b3b9c047e99bb347d0647805a3329",
+      "company": "업스테이지",
+      "title": "Applied AI Engineer - Agent GYM",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "LLM",
+        "인프라"
+      ],
+      "skills": [
+        "PyTorch",
+        "AWS",
+        "GCP",
+        "Azure",
+        "MLOps",
+        "LLM",
+        "광학문자인식",
+        "Computer Vision",
+        "깃",
+        "랭체인"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://careers.upstage.ai/ko/o/194880",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "2bbe77d9d82b1d99f78dee23dc210824f295a146f4865bc0ec6b312a72b7ec4c",
+      "company": "에너자이",
+      "title": "AI 최적화 Researcher",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "석사",
+        "박사"
+      ],
+      "focusLabels": [
+        "최적화"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "AWS",
+        "LLM",
+        "GPU",
+        "GitHub"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-01T09:42:30+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://enerzai.career.greetinghr.com/ko/o/111642",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "5480e39adb88c8ae598ed0001bba9651a0bdf499efafd8fef3f04a541366d063",
+      "company": "에너자이",
+      "title": "Runtime 소프트웨어 엔지니어",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "전문연구요원"
+      ],
+      "focusLabels": [
+        "최적화"
+      ],
+      "skills": [
+        "AWS",
+        "LLM",
+        "GPU",
+        "GitHub"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-05T17:11:36+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://enerzai.career.greetinghr.com/ko/o/91143",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "7a6ff0683f5b05ed36f85f4d571a2031229ae870cfbdcccec143a67352ad0e7d",
+      "company": "에너자이",
+      "title": "AI 컴파일러 엔지니어",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "석사",
+        "박사",
+        "전문연구요원"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "최적화"
+      ],
+      "skills": [
+        "PyTorch",
+        "TensorFlow",
+        "AWS",
+        "LLM",
+        "GPU",
+        "GitHub"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-01T22:58:06+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://enerzai.career.greetinghr.com/ko/o/69421",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "e749af38a2956b86e02f54b3785e06e3539369bdfbe72d321f33d7526da68c9a",
+      "company": "에너자이",
+      "title": "ML Engineer / Researcher",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "석사",
+        "박사",
+        "전문연구요원"
+      ],
+      "focusLabels": [
+        "문서AI",
+        "AI반도체"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "AWS",
+        "LLM",
+        "GPU",
+        "GitHub"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-01T09:42:30+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://enerzai.career.greetinghr.com/ko/o/69418",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "6161e6b5bfbd352f532707bb56b54cbd92c553f50854df63cc2f373d50301874",
+      "company": "에스아이에이",
+      "title": "Research Engineer (Multimodal AI)",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "학사",
+        "박사"
+      ],
+      "focusLabels": [
+        "비전",
+        "문서AI"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Computer Vision",
+        "Multimodal"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-07T03:33:00+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://sianalytics.career.greetinghr.com/ko/o/206037",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "d82ee9868386aa10a7bb90c5074d0dac10b8bc46d813dc005e8f9a20609ffc34",
+      "company": "에스아이에이",
+      "title": "Research Engineer (VLM Applications)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "석사"
+      ],
+      "focusLabels": [
+        "비전",
+        "LLM"
+      ],
+      "skills": [
+        "PyTorch",
+        "Computer Vision",
+        "Multimodal"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-12T05:23:47+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://sianalytics.career.greetinghr.com/ko/o/206024",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "07e11a8aedd101c1866abfd0b2e02148b3b2387f067b8c9e42df3e02fc228b3b",
+      "company": "엑셈",
+      "title": "Data Scientist 채용 (5년 이상)",
+      "roleLabel": "데이터 사이언티스트",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력 5년+",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "검색",
+        "LLM"
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "PyTorch",
+        "TensorFlow",
+        "Tableau",
+        "파워 비아이",
+        "LLM",
+        "RAG"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-01T00:27:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://ex-em.career.greetinghr.com/ko/o/159696",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "249b8846d2daa33f1da68a92a833aca541fb623ed6e939963f0f39ea60bbf848",
+      "company": "엑셈",
+      "title": "AI Engineer 채용 (2년 이상)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력 2년+",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "검색"
+      ],
+      "skills": [
+        "Python",
+        "Docker",
+        "Kubernetes",
+        "MLOps",
+        "엠엘플로",
+        "LLM",
+        "RAG",
+        "GPU",
+        "벡터 데이터베이스",
+        "엘라스틱서치",
+        "레디스"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://ex-em.career.greetinghr.com/ko/o/208109",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "630ba403dd988d6ce986c230a06048ae2bcbdfd16b4d980dc1ed3589451b4f87",
+      "company": "엑셈",
+      "title": "데이터 엔지니어(ETL) 채용 (3년 이상)",
+      "roleLabel": "데이터 분석가",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력 3년+",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "데이터플랫폼",
+        "ETL"
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "Spark",
+        "에어플로",
+        "Kafka",
+        "하둡",
+        "ETL",
+        "이엘티"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://ex-em.career.greetinghr.com/ko/o/159995",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "b6c642d755dfdc4e939fd13e2fe674f94ae30145f4c3f546fe776780e618b750",
+      "company": "엠아이큐브솔루션",
+      "title": "생산계획/스케줄링 연구원",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "석사",
+        "박사"
+      ],
+      "focusLabels": [
+        "최적화",
+        "제조"
+      ],
+      "skills": [
+        "스케줄링",
+        "제조최적화"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T15:58:38+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://micube.career.greetinghr.com/ko/o/209607",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "a97318abd9d6f3a4c644e1f2ba0e8d85c80dcdcbb58cd31ea723040ec0d490b9",
+      "company": "여기어때",
+      "title": "Data Scientist",
+      "roleLabel": "데이터 사이언티스트",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "석사"
+      ],
+      "focusLabels": [
+        "추천",
+        "시계열"
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "AWS",
+        "GCP",
+        "MLOps",
+        "인과 추론",
+        "Recommender Systems"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://gccompany.career.greetinghr.com/ko/o/177169",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "f3765941ec9a7d9959982b760a8d1aa1ae41c4f833def39918dadcf862d63179",
+      "company": "여기어때",
+      "title": "Server Engineer [숙박플랫폼개발]",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라"
+      ],
+      "skills": [
+        "AWS"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://gccompany.career.greetinghr.com/ko/o/204535",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "2a04a1ac006b4a449dd6456402f07774a5a25ae1c62723ca61f6176875a8ce2c",
+      "company": "인터엑스",
+      "title": "[강남오피스] AI Agent Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "LLM",
+        "인프라"
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "PyTorch",
+        "Kafka",
+        "AWS",
+        "GCP",
+        "Azure",
+        "Docker",
+        "MLOps",
+        "LLM",
+        "RAG",
+        "깃",
+        "랭체인",
+        "레디스"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-31T02:18:52+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://interxlab.career.greetinghr.com/ko/o/202648",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "47e4d045a62863c95267ea5ddbc5d0ca444da3c38620b8310a82166d7fcbff94",
+      "company": "인터엑스",
+      "title": "[대구] C#, .NET 개발자 (C#/.NET, 실시간 데이터)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "제조",
+        "최적화"
+      ],
+      "skills": [
+        "Python",
+        "Docker"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T03:19:07+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://interxlab.career.greetinghr.com/ko/o/201635",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "62cceb68f69153b5e6b2b41001dc0c344e58fbb9e1f7f6b5a0b71a947f547e14",
+      "company": "인터엑스",
+      "title": "[강남오피스] CAD 데이터 분석 및 자동화 Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "제조",
+        "문서AI"
+      ],
+      "skills": [
+        "Python",
+        "AWS",
+        "LLM",
+        "RAG",
+        "광학문자인식"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T03:19:07+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://interxlab.career.greetinghr.com/ko/o/202637",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "937cb03faad4a5d12cd5d56a799050f570a5c2466923121fc3e6d91fc1565bac",
+      "company": "인터엑스",
+      "title": "[서울] ﻿AI 비전·데이터 분석 엔지니어 (AI Vision & Data Analysis Engineer)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "비전",
+        "시계열"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "Docker",
+        "Kubernetes",
+        "MLOps",
+        "Computer Vision"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-01T23:45:41+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://interxlab.career.greetinghr.com/ko/o/181589",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "d7f790d12b27f5614ef15d78a1a61d1e512ad8e4e7e7620642012094b89951d9",
+      "company": "카카오모빌리티",
+      "title": "[Contract] 데이터분석가 (Data Analyst)",
+      "roleLabel": "데이터 분석가",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "인턴",
+        "계약직"
+      ],
+      "focusLabels": [
+        "최적화",
+        "제품분석"
+      ],
+      "skills": [
+        "SQL",
+        "Tableau",
+        "루커"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://kakaomobility.career.greetinghr.com/ko/o/205879",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "2995885abbad62dda7aa2c7bcbc37cf1bc5751c0b3bb0ce0c244e4f3611720b9",
+      "company": "카카오모빌리티",
+      "title": "데이터 사이언티스트",
+      "roleLabel": "데이터 사이언티스트",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "최적화",
+        "모빌리티"
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "PyTorch",
+        "TensorFlow",
+        "강화학습"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://kakaomobility.career.greetinghr.com/ko/o/197728",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "88bfb39de21a7032c1d9a50ad339b426487ae5d70bc571a96582306455671b31",
+      "company": "카카오모빌리티",
+      "title": "SLAM research scientist (R&D)",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "박사"
+      ],
+      "focusLabels": [
+        "로보틱스",
+        "모빌리티"
+      ],
+      "skills": [
+        "Python",
+        "Computer Vision"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://kakaomobility.career.greetinghr.com/ko/o/199461",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "e43ee461668570f4960362c2ab6148c9fb00169c11c24f6ca24f78e0405012fb",
+      "company": "카카오모빌리티",
+      "title": "머신러닝 research scientist (R&D)",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "박사"
+      ],
+      "focusLabels": [
+        "모빌리티",
+        "LLM"
+      ],
+      "skills": [
+        "Python",
+        "LLM",
+        "Multimodal"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://kakaomobility.career.greetinghr.com/ko/o/148119",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "ea930cef9a46307b12d24b12d296707644c8bef17d59d59ded91b0d5405524d2",
+      "company": "카카오모빌리티",
+      "title": "측위(Localization/Positioning) research scientist (R&D)",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "석사",
+        "박사"
+      ],
+      "focusLabels": [
+        "자율주행"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://kakaomobility.career.greetinghr.com/ko/o/188606",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "7c9fdd47aed8bc388b254a61d42aec6247724d9fd0a8223448047f05e84a68ca",
+      "company": "카카오모빌리티",
+      "title": "자율주행 AI 엔지니어 (R&D)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "박사"
+      ],
+      "focusLabels": [
+        "자율주행",
+        "인프라"
+      ],
+      "skills": [
+        "Python",
+        "MLOps"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://kakaomobility.career.greetinghr.com/ko/o/205613",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "82e50434f58b1dc89b05bcbb6e1a752aba1172aae070795508b9d0f960ba0b3d",
+      "company": "카카오모빌리티",
+      "title": "AI 엔지니어",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "데이터플랫폼"
+      ],
+      "skills": [
+        "Python",
+        "GCP",
+        "Kubernetes",
+        "MLOps",
+        "LLM"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://kakaomobility.career.greetinghr.com/ko/o/167192",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "d9246561a436bed10bfa5ccaf762ac56ce60891a977c272fba794d69ecfca3f5",
+      "company": "카카오모빌리티",
+      "title": "데이터 엔지니어",
+      "roleLabel": "데이터 분석가",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "데이터플랫폼",
+        "ETL"
+      ],
+      "skills": [
+        "Spark",
+        "에어플로",
+        "Kafka",
+        "Kubernetes",
+        "ETL"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-12T05:23:47+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://kakaomobility.career.greetinghr.com/ko/o/195341",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "c513c75934264438b7326d46f7d4df465ae58860fe40d7eaf3354cefda5890b7",
+      "company": "쿠팡",
+      "title": "Manager, QA Engineering (Eats Customer)",
+      "roleLabel": "데이터 분석가",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력 8년+",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "BI",
+        "지표분석"
+      ],
+      "skills": [
+        "QA"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://www.coupang.jobs/en/jobs/?gh_jid=7463865",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "f185db8f96ffc5ff14872c72ae96fdf99bdd67b6727a95f8c1818631921e43c5",
+      "company": "쿠팡",
+      "title": "Staff Data Analyst (Fraud & Risk)",
+      "roleLabel": "데이터 분석가",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "스태프",
+      "trackLabels": [
+        "학사",
+        "석사"
+      ],
+      "focusLabels": [
+        "리스크",
+        "인프라"
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "Tableau",
+        "파워 비아이",
+        "Azure",
+        "ETL",
+        "GPU"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://www.coupang.jobs/en/jobs/?gh_jid=7064205",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "57faeba617a9a504cfa3f699efbec3098e6f443aaa0c72f8d4c26683a0d705f9",
+      "company": "쿠팡",
+      "title": "Cloud Support Engineer - Coupang Intelligent Cloud",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "문서AI",
+        "인프라"
+      ],
+      "skills": [
+        "Python",
+        "GPU"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T03:19:07+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://www.coupang.jobs/en/jobs/?gh_jid=7339984",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "2a5db1e041cdf760b5c9714e2e4b43788df180c01d3b75c11889362f475ab82b",
+      "company": "크래프톤",
+      "title": "[AI Research Div.] [전문연구요원] Research Scientist - Foundation Model (2년 이상)",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력 2년+",
+      "trackLabels": [
+        "석사",
+        "박사",
+        "전문연구요원"
+      ],
+      "focusLabels": [
+        "LLM"
+      ],
+      "skills": [
+        "LLM",
+        "Computer Vision"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://job-boards.greenhouse.io/krafton/jobs/8460103002",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "41dc0825b91a32253f38da6d96d971e0b26f632a4e813b8c72b2d3aa4edbf1de",
+      "company": "크래프톤",
+      "title": "[AI Research Div.] Research Scientist Intern - 독자 AI 파운데이션 모델 (2년 이상 / 인턴)",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "인턴",
+      "trackLabels": [
+        "박사",
+        "인턴"
+      ],
+      "focusLabels": [
+        "LLM"
+      ],
+      "skills": [
+        "LLM",
+        "Computer Vision"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://job-boards.greenhouse.io/krafton/jobs/8401231002",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "ab9e81081949c824334f4746d47fa2a7571f9cf9bb800c8df76e31f75164bf40",
+      "company": "크래프톤",
+      "title": "[AI Research Div.] Postdoctoral Researcher - LLMs (계약직)",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "포닥",
+      "trackLabels": [
+        "박사",
+        "계약직"
+      ],
+      "focusLabels": [
+        "문서AI",
+        "LLM"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "LLM",
+        "Computer Vision"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://job-boards.greenhouse.io/krafton/jobs/8339620002",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "c2eacd122a2291912d8ab2ff5451b05703800e4720a4573adc07116fc8256c11",
+      "company": "크래프톤",
+      "title": "[AI Research Div.] AI Companion Team Internship (2년 이상 / 인턴)",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "인턴",
+      "trackLabels": [
+        "석사",
+        "박사",
+        "인턴"
+      ],
+      "focusLabels": [
+        "비전",
+        "최적화"
+      ],
+      "skills": [
+        "PyTorch",
+        "LLM",
+        "Computer Vision",
+        "Multimodal"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T02:17:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://job-boards.greenhouse.io/krafton/jobs/8125444002",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "feaf358e742c4ba454500b6a89d233ba7f80235c86063b76c68ac2da411c144b",
+      "company": "크래프톤",
+      "title": "[AI Research Div.] Research Scientist Intern - Theory (2년 이상 / 인턴)",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "인턴",
+      "trackLabels": [
+        "석사",
+        "인턴"
+      ],
+      "focusLabels": [
+        "연구"
+      ],
+      "skills": [
+        "PyTorch",
+        "LLM",
+        "Computer Vision"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://job-boards.greenhouse.io/krafton/jobs/8401226002",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "35ba5f1c61535af1fb74045b8011c7c7a83647bea2549e861b718b342c0e0b62",
+      "company": "크래프톤",
+      "title": "[AI Transformation Dept.] AI FDE(Forward Deployed Engineer) 집중채용",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "미기재",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "LLM",
+        "검색"
+      ],
+      "skills": [
+        "AWS",
+        "GCP",
+        "Azure",
+        "LLM",
+        "RAG"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "경력수준 불명확"
+      ],
+      "firstSeenAt": "2026-04-01T00:27:25+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://job-boards.greenhouse.io/krafton/jobs/8464196002",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "3c52a7adbbfc4acd4f1488299ff2eb3a9138d639a196967733e2d00934c007ee",
+      "company": "크래프톤",
+      "title": "[AI Research Div.] [전문연구요원] Research Scientist/Engineer - Vision-Language-Action (VLA) for Robotics (2년 이상)",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력 2년+",
+      "trackLabels": [
+        "석사",
+        "박사",
+        "전문연구요원"
+      ],
+      "focusLabels": [
+        "비전",
+        "로보틱스"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "LLM",
+        "Computer Vision",
+        "강화학습"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://job-boards.greenhouse.io/krafton/jobs/8450354002",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "8d140a43ee067ad6d9a2700bdec34ceb6598618c55510e89d23d7fedbe802318",
+      "company": "크래프톤",
+      "title": "[AI Research Div.] Research Engineer - Foundation Models (2년 이상 / 계약직)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력 2년+",
+      "trackLabels": [
+        "학사",
+        "계약직"
+      ],
+      "focusLabels": [
+        "문서AI",
+        "인프라"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "LLM",
+        "Computer Vision"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://job-boards.greenhouse.io/krafton/jobs/8360146002",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "e6ea40767beafd0d6efe2310ff8612032bfe1febe217f742cb78ee512ff76b4b",
+      "company": "크래프톤",
+      "title": "[AI Research Div.] Research Engineer - Vision Language Action Game Agent (2년 이상 / 인턴)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "대기업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "인턴",
+      "trackLabels": [
+        "석사",
+        "박사",
+        "인턴"
+      ],
+      "focusLabels": [
+        "LLM",
+        "비전"
+      ],
+      "skills": [
+        "LLM",
+        "Computer Vision",
+        "Multimodal"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://job-boards.greenhouse.io/krafton/jobs/8417764002",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "3b411de52bc9db8f21c41605f9889b846c7e994dd43cce76742741871c0847cd",
+      "company": "퓨리오사",
+      "title": "Algorithm - AI Research Engineer",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력 2년+",
+      "trackLabels": [
+        "석사",
+        "박사"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "LLM"
+      ],
+      "skills": [
+        "PyTorch",
+        "LLM",
+        "NLP",
+        "Computer Vision"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://furiosa.ai/careers/algorithm-ai-research-engineer-2",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "4734d837e7a4f07a8189d9f6013b0037d4ed2267c028048a4e7e987ce3ea575a",
+      "company": "하이퍼엑셀",
+      "title": "Runtime Engineer 신입/경력 채용",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "신입",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "인프라"
+      ],
+      "skills": [
+        "GPU",
+        "깃"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-12T05:23:47+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://hyperaccel.career.greetinghr.com/ko/o/210112",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "53e58a53691a5cc2403347332cbfa09a3717a46b5f770c6a626ae0e6dfd545bc",
+      "company": "하이퍼엑셀",
+      "title": "PCB Engineer 경력 채용",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "하드웨어"
+      ],
+      "skills": [
+        "AI반도체"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-09T03:39:10+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://hyperaccel.career.greetinghr.com/ko/o/190073",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "6b05164bb2c48c397a3ed7be1f0e01ae1359ecfbfa2260c1360341ebfa5a93f7",
+      "company": "하이퍼엑셀",
+      "title": "System Software Engineer 신입/경력 채용",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "신입",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "하드웨어"
+      ],
+      "skills": [
+        "AI반도체"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-09T03:39:10+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://hyperaccel.career.greetinghr.com/ko/o/210116",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "f950f5536d005afc1b7fb432a7cf5bff0bdc29fb81f1e427b43542de54b89912",
+      "company": "하이퍼엑셀",
+      "title": "Infra Engineer 경력 채용(Senior)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "시니어",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "AI반도체"
+      ],
+      "skills": [
+        "LLM",
+        "GPU"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T03:39:10+09:00",
+      "lastSeenAt": "2026-04-12T16:44:01+09:00",
+      "jobUrl": "https://hyperaccel.career.greetinghr.com/ko/o/208825",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "4a26e5c6c222d225a31d84c8e3d166a404320d2603839a765303bc282dc50c60",
+      "company": "데브시스터즈",
+      "title": "Data Analyst",
+      "roleLabel": "데이터 분석가",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "성장분석"
+      ],
+      "skills": [
+        "SQL",
+        "Tableau"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-02T20:18:14+09:00",
+      "lastSeenAt": "2026-04-12T15:04:01+09:00",
+      "jobUrl": "https://careers.devsisters.com/ko/o/158824",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "3453f05348740f808e0fbab79dbc6c403c626744aa45ffb3762483526af76d37",
+      "company": "데브시스터즈",
+      "title": "[기술본부] Software Engineer, Data Platform",
+      "roleLabel": "데이터 분석가",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "데이터플랫폼",
+        "ETL"
+      ],
+      "skills": [
+        "Spark",
+        "Kafka",
+        "AWS",
+        "GCP",
+        "Kubernetes"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-09T23:13:45+09:00",
+      "lastSeenAt": "2026-04-12T15:04:01+09:00",
+      "jobUrl": "https://careers.devsisters.com/ko/o/202150",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "7e1b1ba3b6f379d9031874523f5826a2305ea3060af34b40938de8b89c2c0ac1",
+      "company": "데브시스터즈",
+      "title": "[기술본부] Data Engineer (BI/DW)",
+      "roleLabel": "데이터 분석가",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "BI",
+        "지표분석"
+      ],
+      "skills": [
+        "SQL",
+        "Spark",
+        "에어플로",
+        "Tableau",
+        "AWS",
+        "데이터브릭스"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-12T05:23:47+09:00",
+      "lastSeenAt": "2026-04-12T15:04:01+09:00",
+      "jobUrl": "https://careers.devsisters.com/ko/o/135719",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "e6dbf84cf0f23910bc499fa5a6629097e0de61b10278189ca6ad8fe6eda5e555",
+      "company": "데브시스터즈",
+      "title": "[기술본부] SRE/DevOps Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라"
+      ],
+      "skills": [
+        "Python",
+        "AWS",
+        "Kubernetes",
+        "LLM",
+        "GitHub"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T23:13:45+09:00",
+      "lastSeenAt": "2026-04-12T15:04:01+09:00",
+      "jobUrl": "https://careers.devsisters.com/ko/o/189500",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "f5ac2b445c44e7c7636bb8ccf9870bd96b218388b32e086b8a66fa1535bea8d8",
+      "company": "데브시스터즈",
+      "title": "[기술본부] Machine Learning Engineer (경력)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "LLM",
+        "검증"
+      ],
+      "skills": [
+        "Python",
+        "Kubernetes",
+        "LLM",
+        "강화학습"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-02T20:18:14+09:00",
+      "lastSeenAt": "2026-04-12T15:04:01+09:00",
+      "jobUrl": "https://careers.devsisters.com/ko/o/200580",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "b7fc4f3645448dd74cc7332c1fdaa30ee8f55d7adb3cdf35aa8b9d7e6b03a822",
+      "company": "티오리한국",
+      "title": "Security Software Engineer - αprism",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "미기재",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "LLM",
+        "RAG"
+      ],
+      "skills": [
+        "LLM",
+        "보안"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "경력수준 불명확"
+      ],
+      "firstSeenAt": "2026-04-09T23:13:45+09:00",
+      "lastSeenAt": "2026-04-12T15:04:01+09:00",
+      "jobUrl": "https://careers.theori.io/ko/o/191654",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "8c1efb2c9ed1b99a4f9bf527e888f422717487b587c53a3f059db97d6f1de7d3",
+      "company": "파두",
+      "title": "PCIe Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "하드웨어"
+      ],
+      "skills": [
+        "AI반도체"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-09T23:13:45+09:00",
+      "lastSeenAt": "2026-04-12T15:04:01+09:00",
+      "jobUrl": "https://careers.fadu.io/ko/o/133380",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "377016ae3732e0e4542ac512e72f575c2eccac5d0dad84690d424f82937896e8",
+      "company": "스켈터랩스",
+      "title": "Technical Solutions Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "미기재",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "최적화",
+        "인프라"
+      ],
+      "skills": [
+        "Kubernetes",
+        "LLM",
+        "RAG"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "경력수준 불명확"
+      ],
+      "firstSeenAt": "2026-04-02T19:39:40+09:00",
+      "lastSeenAt": "2026-04-12T13:57:53+09:00",
+      "jobUrl": "https://www.skelterlabs.com/creer/technical-solutions-engineer",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "b8d4fc1212ba33ae4f5122bd92d275214820bac517a4503e4e8cd649baa35e60",
+      "company": "알체라",
+      "title": "[알체라] AI 연구원 모집 (얼굴인식/위조판별)",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력 3년+",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "최적화"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "GitHub"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T01:36:58+09:00",
+      "lastSeenAt": "2026-04-12T13:57:53+09:00",
+      "jobUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=list&rec_idx=53396371",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "ccb24a48c4416a64eec3d3b5c708c67471817498d221cc6667135730f6fe682c",
+      "company": "이지케어텍",
+      "title": "[경력] AI Engineer 경력직 채용 (석/박사)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "석사",
+        "박사"
+      ],
+      "focusLabels": [
+        "LLM",
+        "헬스케어"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "MLOps",
+        "LLM",
+        "Multimodal"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-31T02:08:34+09:00",
+      "lastSeenAt": "2026-04-12T13:57:53+09:00",
+      "jobUrl": "https://ezcaretech.career.greetinghr.com/ko/o/147583",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "ad7fc9c4a8db86b4b8233a9d791343da488d37ef2b54665a44af232e3731f2e2",
+      "company": "임팩티브",
+      "title": "[Deepflow] 데이터 사이언티스트 (Data Scientist) 채용 (정규직)",
+      "roleLabel": "데이터 사이언티스트",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "석사"
+      ],
+      "focusLabels": [
+        "시계열",
+        "최적화"
+      ],
+      "skills": [
+        "인과 추론"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-03-31T02:08:34+09:00",
+      "lastSeenAt": "2026-04-12T13:57:53+09:00",
+      "jobUrl": "https://impactive-ai.career.greetinghr.com/ko/o/173362",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "bcde1d33b19a041ccb62d453edc5e050369c50444e69b71282761b473b70b3ae",
+      "company": "임팩티브",
+      "title": "[Deepflow] 데이터 엔지니어 (Data Engineer) 채용 (정규직)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "데이터플랫폼"
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "Spark",
+        "에어플로",
+        "BigQuery",
+        "ETL",
+        "이엘티",
+        "MLOps"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T04:17:25+09:00",
+      "lastSeenAt": "2026-04-12T13:57:53+09:00",
+      "jobUrl": "https://impactive-ai.career.greetinghr.com/ko/o/209631",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "b76f5113e1aeac811a6cd5451b2063a77cdefb46b2884b817951a7c2abf6cf0b",
+      "company": "퀀텀씨엔에스",
+      "title": "[(주)퀀텀씨엔에스] [퀀텀씨엔에스] 쿠버네티스 기반 AI 인프라 운영 엔지니어 채용",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "문서AI"
+      ],
+      "skills": [
+        "Docker",
+        "Kubernetes",
+        "MLOps",
+        "GPU",
+        "GitHub"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T01:36:58+09:00",
+      "lastSeenAt": "2026-04-12T13:57:53+09:00",
+      "jobUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?isMypage=no&rec_idx=52753794&recommend_ids=eJxVjkEOAkAIA1%2FjvbC0hbMP8f%2B%2FMNFk0eOkmQGmJtB6dcTDT6YlRr0G%2BUVoxnct4yQvUmyfxXOCfV25Gn1XOeg9pEDOpowK6C9lbqowrHULRKwbk%2BqfFGs%2BX70B1iov0g%3D%3D&view_type=search&searchword=%ED%80%80%ED%85%80%EC%94%A8%EC%97%94%EC%97%90%EC%8A%A4&searchType=search&gz=1&t_ref_content=generic&t_ref=search&relayNonce=00528af160e281c88ec1&paid_fl=n&search_uuid=ed2fcc07-45d3-406e-b00f-268b5f794df9&immediately_apply_layer_open=n#seq=0",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "46e1b0537157b0b053db4b6519b3432261c9e0a1c13ca89dd537bb1d59fe7ae1",
+      "company": "키다리스튜디오",
+      "title": "AI콘텐츠 솔루션 개발 (노코드·ComfyUI)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "LLM",
+        "비전"
+      ],
+      "skills": [
+        "Python",
+        "LLM",
+        "깃"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-08T23:59:35+09:00",
+      "lastSeenAt": "2026-04-12T13:57:53+09:00",
+      "jobUrl": "https://kstd-lezhin.career.greetinghr.com/ko/o/196773",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "bfa16c8e7b677d3b51e73d62c3ac4331b2470ce69eecbcd9c8e118004a8f4ecc",
+      "company": "키다리스튜디오",
+      "title": "데이터 엔지니어 (경력)",
+      "roleLabel": "데이터 분석가",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "데이터플랫폼",
+        "ETL"
+      ],
+      "skills": [
+        "Spark",
+        "Kafka",
+        "AWS",
+        "GCP",
+        "Azure",
+        "스노우플레이크",
+        "데이터브릭스",
+        "ETL",
+        "이엘티"
+      ],
+      "qualityScore": 92,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "주요업무 부족"
+      ],
+      "firstSeenAt": "2026-04-09T20:27:16+09:00",
+      "lastSeenAt": "2026-04-12T13:57:53+09:00",
+      "jobUrl": "https://kstd-lezhin.career.greetinghr.com/ko/o/196942",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "4986f3c9f3d430b6679afccbc9b1df91c86b8df0e0af26a2b26e02cb12c469a4",
+      "company": "폴라리스오피스",
+      "title": "AI 엔지니어",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "검색",
+        "LLM"
+      ],
+      "skills": [
+        "Python",
+        "RAG",
+        "GitHub",
+        "벡터 데이터베이스"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-02T21:11:19+09:00",
+      "lastSeenAt": "2026-04-12T13:57:53+09:00",
+      "jobUrl": "https://polarisofficerecruit.career.greetinghr.com/ko/o/201362",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "55ad1773beb2ce3458585684200261d097016ee337dedb8b9d7f21d395a4a5b6",
+      "company": "비상교육",
+      "title": "DevOps/AI Platform Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "AI반도체"
+      ],
+      "skills": [
+        "씨아이씨디 파이프라인 구축",
+        "운영 경험자",
+        "모니터링 구축",
+        "운영 경험",
+        "로그 수집",
+        "분석 경험",
+        "장애 대응 및 트러블슈팅 경험"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-07T03:33:00+09:00",
+      "lastSeenAt": "2026-04-12T07:51:42+09:00",
+      "jobUrl": "https://career.visang.com/job_posting/vehUkNPd",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "d76ec340dfc5c7073f4ee0a6cd574ead5ec30c68f06827f2392331a9180f7adf",
+      "company": "비상교육",
+      "title": "GPU 최적화 엔지니어 (DevOps)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "최적화"
+      ],
+      "skills": [
+        "AWS",
+        "GCP",
+        "Kubernetes",
+        "LLM",
+        "GPU"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T23:13:45+09:00",
+      "lastSeenAt": "2026-04-12T07:51:42+09:00",
+      "jobUrl": "https://career.visang.com/job_posting/d42Sx8aS",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "2a805a7ba0ec84b09ef7fb1a16fa7be61dad3cbfbc70b24d187c13e53c621798",
+      "company": "워트인텔리전스",
+      "title": "Senior AI Engineer (LLM / NLP / MLOps)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "시니어",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "LLM",
+        "인프라"
+      ],
+      "skills": [
+        "PyTorch",
+        "TensorFlow",
+        "Spark",
+        "MLOps",
+        "LLM",
+        "RAG",
+        "NLP",
+        "벡터 데이터베이스",
+        "엘라스틱서치"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-08T23:59:35+09:00",
+      "lastSeenAt": "2026-04-12T07:51:42+09:00",
+      "jobUrl": "http://careers.wertcorp.com/job_posting/zSZCVEbG",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "601adc68624c3064436af5449aa8ba7296aff636b5e74017a764f00b381247da",
+      "company": "워트인텔리전스",
+      "title": "Senior Data Engineer (7년 이상)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "시니어",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "데이터플랫폼"
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "Spark",
+        "Kafka",
+        "AWS",
+        "스노우플레이크",
+        "데이터브릭스",
+        "ETL",
+        "MLOps",
+        "벡터 데이터베이스"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-12T05:23:47+09:00",
+      "lastSeenAt": "2026-04-12T07:51:42+09:00",
+      "jobUrl": "http://careers.wertcorp.com/job_posting/Eyvr0rxn",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "ee5a2e075cc8d949b8b5171db7ec8777b38d2b2778deaa685c997bd60a5dbec3",
+      "company": "워트인텔리전스",
+      "title": "검색엔진 설계/운영 개발자 (3년 이상)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": true,
+      "recordState": "유지",
+      "experienceLabel": "경력 3년+",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "검색",
+        "인프라"
+      ],
+      "skills": [
+        "Python",
+        "RAG",
+        "엘라스틱서치"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T23:13:45+09:00",
+      "lastSeenAt": "2026-04-12T07:51:42+09:00",
+      "jobUrl": "http://careers.wertcorp.com/job_posting/Y6WMX0ab",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "6cc457dbc0ba62de75b2c9f89a7b2fc250ae3e2cacdf8cd653778b90deee5999",
+      "company": "에이아이리더",
+      "title": "인공지능 모델 개발자",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": false,
+      "recordState": "미발견",
+      "experienceLabel": "경력 1년+",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "비전"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "qualityScore": 88,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "핵심기술 부족"
+      ],
+      "firstSeenAt": "2026-04-09T01:36:58+09:00",
+      "lastSeenAt": "2026-04-12T03:55:13+09:00",
+      "jobUrl": "https://www.ai-leader.co.kr/df783eab-d10c-4807-aca0-5d1cfc0d6ab2",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "98c630f66025e119ef57d8a632eabd1828e26c4e2c5be6d7651daa306fd8c081",
+      "company": "에이아이리더",
+      "title": "서버/응용 소프트웨어 개발자",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": false,
+      "recordState": "미발견",
+      "experienceLabel": "경력 1년+",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "비전"
+      ],
+      "skills": [
+        "Python",
+        "Computer Vision"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-10T02:21:55+09:00",
+      "lastSeenAt": "2026-04-12T03:55:13+09:00",
+      "jobUrl": "https://www.ai-leader.co.kr/2ed577f8-b857-4b52-b029-1aa5d77869da",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "b7cd343f31600421ea16fd66c441b20aafe3e71023438405a0df6f45ddd7fac3",
+      "company": "코넥티브 주식회사",
+      "title": "Medical AI Solution Deployment Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": false,
+      "recordState": "미발견",
+      "experienceLabel": "신입",
+      "trackLabels": [
+        "학사"
+      ],
+      "focusLabels": [
+        "인프라",
+        "헬스케어"
+      ],
+      "skills": [
+        "Python",
+        "Docker",
+        "Kubernetes"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-09T01:36:58+09:00",
+      "lastSeenAt": "2026-04-12T03:55:13+09:00",
+      "jobUrl": "https://connecteve.com/sub/recruit/view.php?recruitSeq=38",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "bc37e2981eb8f66a4e50ce5ec37b8e3716c0b60770554f448d4213271dc92ad2",
+      "company": "코넥티브 주식회사",
+      "title": "Computer Vision Engineer(3D Registration / Medical)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": false,
+      "recordState": "미발견",
+      "experienceLabel": "미기재",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "비전",
+        "헬스케어"
+      ],
+      "skills": [
+        "Python",
+        "Computer Vision"
+      ],
+      "qualityScore": 88,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "경력수준 불명확"
+      ],
+      "firstSeenAt": "2026-04-09T01:36:58+09:00",
+      "lastSeenAt": "2026-04-12T03:55:13+09:00",
+      "jobUrl": "https://connecteve.com/sub/recruit/view.php?recruitSeq=36",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "bc8e4891fa890b1a92f4e7ca218ce9356bdc9d199df5866f040fb6729670a147",
+      "company": "바이트사이즈",
+      "title": "LLM RAG 및 AI Agent 개발 (신입 가능)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": false,
+      "recordState": "미발견",
+      "experienceLabel": "신입",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "LLM",
+        "검색"
+      ],
+      "skills": [
+        "Python",
+        "LLM",
+        "RAG",
+        "랭체인"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-02T21:01:49+09:00",
+      "lastSeenAt": "2026-04-09T04:17:25+09:00",
+      "jobUrl": "https://career.thebytesize.ai/jobs/application?id=27",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "db2d1564b340b5b31a0113c4df702f709861e1a8e4b58745b1a11fb031bf8651",
+      "company": "한국뇌연구원 실증지원사업단",
+      "title": "[AI실증지원사업단] [A-21](연구직) 2025년 제4차 사업단 직원(계약직) 채용",
+      "roleLabel": "인공지능 리서처",
+      "companyTier": "공공·연구기관",
+      "active": false,
+      "recordState": "미발견",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "학사",
+        "계약직"
+      ],
+      "focusLabels": [
+        "헬스케어"
+      ],
+      "skills": [
+        "Analytics",
+        "알고리즘 개발",
+        "모델링"
+      ],
+      "qualityScore": 88,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "자격요건 부족"
+      ],
+      "firstSeenAt": "2026-04-01T06:42:29+09:00",
+      "lastSeenAt": "2026-04-09T01:44:11+09:00",
+      "jobUrl": "https://kbri-ai.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=229578",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "9f7ed7cf9fb2921b147fe5b51210153e2964095ef96144e63294140a6923e8dd",
+      "company": "몰로코",
+      "title": "Data Scientist Intern, Growth Analytics (6-month internship)",
+      "roleLabel": "데이터 사이언티스트",
+      "companyTier": "외국계 한국법인",
+      "active": false,
+      "recordState": "미발견",
+      "experienceLabel": "인턴",
+      "trackLabels": [
+        "학사",
+        "석사",
+        "인턴"
+      ],
+      "focusLabels": [
+        "성장분석",
+        "제품분석"
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "통계 분석",
+        "Analytics"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-07T03:33:00+09:00",
+      "jobUrl": "https://job-boards.greenhouse.io/moloco/jobs/7632713003",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "f35dcba448565a83607904f5ee253bae8e5ede3f1581f364a5da1bff9adfab86",
+      "company": "퓨리오사",
+      "title": "Algorithm - Software Engineer (Quantization Engineer)",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "스타트업",
+      "active": false,
+      "recordState": "미발견",
+      "experienceLabel": "경력 1년+",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "LLM",
+        "AI반도체"
+      ],
+      "skills": [
+        "PyTorch",
+        "LLM"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-03T04:58:43+09:00",
+      "lastSeenAt": "2026-04-07T03:33:00+09:00",
+      "jobUrl": "https://furiosa.ai/careers/algorithm-quantization-engineer",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "47db21272effb1223fb2158797478801d4cff285db9581c9e4a1f86847f845bc",
+      "company": "당근",
+      "title": "Data Analytics Engineer (인턴) | 로컬 비즈니스",
+      "roleLabel": "데이터 분석가",
+      "companyTier": "스타트업",
+      "active": false,
+      "recordState": "미발견",
+      "experienceLabel": "인턴",
+      "trackLabels": [
+        "인턴"
+      ],
+      "focusLabels": [
+        "BI",
+        "지표분석"
+      ],
+      "skills": [
+        "Tableau",
+        "슈퍼셋",
+        "에어플로우",
+        "디비티",
+        "GCP",
+        "AWS"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-02T21:30:31+09:00",
+      "lastSeenAt": "2026-04-05T17:11:36+09:00",
+      "jobUrl": "https://about.daangn.com?gh_jid=7580570003",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "c8f8f557548bf73afc3514fe98c8543eb9efa7530b9f4cc25c21a7f811e8b822",
+      "company": "셀바스",
+      "title": "음성인식 엔진/모델 개발자",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": false,
+      "recordState": "미발견",
+      "experienceLabel": "미기재",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "음성",
+        "헬스케어"
+      ],
+      "skills": [
+        "PyTorch",
+        "TensorFlow",
+        "Python",
+        "음성인식 툴킷 프레임워크",
+        "계열 리눅스",
+        "프레임워크"
+      ],
+      "qualityScore": 88,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [
+        "경력수준 불명확"
+      ],
+      "firstSeenAt": "2026-04-01T22:48:57+09:00",
+      "lastSeenAt": "2026-04-03T03:19:07+09:00",
+      "jobUrl": "https://selvasai.career.greetinghr.com/ko/o/203856",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "15e489b1ea72df2c08f08e6c273779bc96432bcfda7950a3f1c03df2dc5223d3",
+      "company": "이지케어텍",
+      "title": "[경력] 연구소 MLOps Engineer 채용",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": false,
+      "recordState": "미발견",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "인프라",
+        "AI반도체"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "Docker",
+        "Kubernetes",
+        "MLOps",
+        "테라폼",
+        "앤서블",
+        "큐브플로",
+        "엠엘플로",
+        "에어플로",
+        "GPU",
+        "LLM"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-31T02:08:34+09:00",
+      "lastSeenAt": "2026-04-02T21:41:52+09:00",
+      "jobUrl": "https://ezcaretech.career.greetinghr.com/ko/o/200806",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "3bbd4030db95fc7517d3a364e840a168aab2329a250a93257f825e53fbb4581d",
+      "company": "오픈엣지테크놀로지",
+      "title": "[NPU] Neural Network Optimization Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "중견/중소",
+      "active": false,
+      "recordState": "미발견",
+      "experienceLabel": "경력 10년+",
+      "trackLabels": [
+        "박사"
+      ],
+      "focusLabels": [
+        "AI반도체",
+        "최적화"
+      ],
+      "skills": [
+        "신경망 경량화",
+        "신경망 최적화",
+        "엔피유 시뮬레이터 개발"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-02T20:02:34+09:00",
+      "lastSeenAt": "2026-04-02T20:02:34+09:00",
+      "jobUrl": "https://openedges.careers.team/job-descriptions/7907LQPzgJ",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "f2c4092751c810f49d2c315a4beb115280c7b061bb5d7bea29f7b9fdd782f218",
+      "company": "네이버",
+      "title": "[네이버랩스] Generative AI Research Engineer",
+      "roleLabel": "인공지능 엔지니어",
+      "companyTier": "대기업",
+      "active": false,
+      "recordState": "미발견",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "석사",
+        "박사"
+      ],
+      "focusLabels": [
+        "비전",
+        "인프라"
+      ],
+      "skills": [
+        "컴퓨터 비전",
+        "3 비전"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-04-02T02:50:03+09:00",
+      "lastSeenAt": "2026-04-02T02:50:03+09:00",
+      "jobUrl": "https://recruit.navercorp.com/rcrt/view.do?annoId=30004759",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    },
+    {
+      "id": "e99e437ef225a71cf168a39d05444636d417106923146556dacb6eb15204d779",
+      "company": "여기어때",
+      "title": "Data Analyst [Business Insight]",
+      "roleLabel": "데이터 분석가",
+      "companyTier": "중견/중소",
+      "active": false,
+      "recordState": "미발견",
+      "experienceLabel": "경력(연차 미기재)",
+      "trackLabels": [
+        "일반채용"
+      ],
+      "focusLabels": [
+        "제품분석"
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "Tableau",
+        "AWS",
+        "GCP"
+      ],
+      "qualityScore": 100,
+      "reviewPriority": "low",
+      "needsAiReview": false,
+      "reviewIssues": [],
+      "firstSeenAt": "2026-03-30T22:42:44+09:00",
+      "lastSeenAt": "2026-04-01T08:25:34+09:00",
+      "jobUrl": "https://gccompany.career.greetinghr.com/ko/o/196471",
+      "aiEnriched": false,
+      "aiAppliedAt": null,
+      "aiReviewerNote": ""
+    }
+  ]
+}

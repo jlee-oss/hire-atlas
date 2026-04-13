@@ -1,0 +1,63 @@
+# Structured Signal 검증 웨이브 001
+
+- 총 검증 대상: `20건`
+- 목적: `summary/focusLabel` 아래의 structuredSignals(domain/problem/system 중심)를 최소 샘플로 검증
+- 확인 우선: `problemSignals -> domainSignals -> systemSignals`
+- decision:
+  - `approve_suggested`: suggested 신호를 채택
+  - `approve_low`: low 유지
+  - `approve_current`: 현재 structuredSignals 유지
+  - `needs_edit`: 직접 수정
+
+## 샘플
+
+- `당근 | Data Analytics Engineer | 테크코어 (데이터 가치화)`
+  - reason: `broad_focus`
+  - expected focus: `데이터 마트`
+  - current problem/domain/system: `` / `` / `클라우드 | 인프라`
+  - suggested problem/domain/system: `` / `` / `클라우드 | 인프라`
+- `여기어때 | Data Analyst [Business Insight]`
+  - reason: `broad_focus`
+  - expected focus: `대시보드`
+  - current problem/domain/system: `제품 성장 분석 | 그로스 마케팅` / `` / `클라우드`
+  - suggested problem/domain/system: `제품 성장 분석 | 그로스 마케팅` / `` / `클라우드`
+- `여기어때 | Performance Marketer`
+  - reason: `broad_focus`
+  - expected focus: `트래킹`
+  - current problem/domain/system: `그로스 마케팅` / `광고` / ``
+  - suggested problem/domain/system: `그로스 마케팅` / `광고` / ``
+- `채널코퍼레이션 | Business Analyst`
+  - reason: `broad_focus`
+  - expected focus: `대시보드`
+  - current problem/domain/system: `그로스 마케팅` / `` / ``
+  - suggested problem/domain/system: `그로스 마케팅` / `` / ``
+- `쿠팡 | Growth Marketing - Coupang Pay`
+  - reason: `broad_focus`
+  - expected focus: `고객 관계 관리`
+  - current problem/domain/system: `제품 성장 분석 | 그로스 마케팅` / `광고` / ``
+  - suggested problem/domain/system: `제품 성장 분석 | 그로스 마케팅` / `광고` / ``
+- `메디컬에이아이 | 메디컬그룹 DS(Data Science)팀 연구원`
+  - reason: `broad_focus`
+  - expected focus: `의료 데이터`
+  - current problem/domain/system: `심전도 | 제품 성장 분석` / `의료` / ``
+  - suggested problem/domain/system: `심전도 | 제품 성장 분석` / `의료` / ``
+- `신세계 | [신세계아이앤씨] 데이터분석(데이터사이언스) 인재모집(채용 시 마감)`
+  - reason: `broad_focus`
+  - expected focus: `의료 데이터`
+  - current problem/domain/system: `` / `의료 | 커머스` / `클라우드 | 인프라`
+  - suggested problem/domain/system: `` / `의료 | 커머스` / `클라우드 | 인프라`
+- `엑셈 | Data Scientist 채용 (5년 이상)`
+  - reason: `broad_focus`
+  - expected focus: `RAG`
+  - current problem/domain/system: `RAG` / `의료` / ``
+  - suggested problem/domain/system: `RAG` / `의료` / ``
+- `여기어때 | CRM Team Leader`
+  - reason: `domain_specific`
+  - expected focus: `고객 관계 관리`
+  - current problem/domain/system: `제품 성장 분석 | 그로스 마케팅` / `커머스` / ``
+  - suggested problem/domain/system: `제품 성장 분석 | 그로스 마케팅` / `커머스` / ``
+- `크로프트 | Digital Agriculture Consultant`
+  - reason: `domain_specific`
+  - expected focus: `데이터 분석`
+  - current problem/domain/system: `` / `교육 | 디지털 농업` / ``
+  - suggested problem/domain/system: `` / `교육 | 디지털 농업` / ``

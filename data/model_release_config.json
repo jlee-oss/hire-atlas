@@ -1,0 +1,392 @@
+{
+  "updatedAt": "2026-04-10T12:43:58.413140+00:00",
+  "summaryChampion": {
+    "promptProfile": "field_aware_v3",
+    "model": "gemma-4-31b",
+    "baseUrl": "https://api.vibemakers.kr/v1",
+    "score": 9.5842,
+    "gatePassed": false,
+    "usedFallbackBaseline": true,
+    "reportPath": "/Users/junheelee/Desktop/career_dashboard/data/release_gates/release_gate_field_aware_v13_full_20260410.json",
+    "coreMetrics": {
+      "requestedItems": 14,
+      "summaryExactRate": 0.2857,
+      "focusExactRate": 0.9286,
+      "qualityExactRate": 0.6429,
+      "lowMatchRate": 1.0,
+      "avgKeywordF1": 0.8079,
+      "strictPassRate": 0.2857,
+      "summaryEmptyMismatchRate": 0.0714,
+      "focusEmptyMismatchRate": 0.0714,
+      "qualityCounts": {
+        "high": 9,
+        "low": 5
+      },
+      "failureExamples": [
+        {
+          "id": "b927c1f19c992ed2335dc4419f2aa5d412a08762e2d8a24669c296ccfb7fed20",
+          "company": "다온에이치앤에스",
+          "title": "[개발] Node.js 프로젝트 개발자 채용 (모집중)",
+          "target": {
+            "summary": "클라우드 환경 서비스 개발과 운영",
+            "focusLabel": "클라우드",
+            "keywords": [
+              "클라우드",
+              "AWS",
+              "리눅스"
+            ],
+            "quality": "medium"
+          },
+          "result": {
+            "summary": "",
+            "focusLabel": "",
+            "keywords": [],
+            "quality": "low"
+          },
+          "keywordF1": 0.0,
+          "summaryMatch": false,
+          "focusMatch": false,
+          "qualityMatch": false
+        },
+        {
+          "id": "c7566b4fd5f33aae584d6b7fce0d7528831ea047e4aaeae349880e3638767c30",
+          "company": "메디컬에이아이",
+          "title": "메디컬그룹 DS(Data Science)팀 연구원",
+          "target": {
+            "summary": "심전도·임상 데이터 분석과 코호트 구축",
+            "focusLabel": "심전도",
+            "keywords": [
+              "심전도",
+              "의료 데이터",
+              "임상 데이터",
+              "코호트 구축"
+            ],
+            "quality": "medium"
+          },
+          "result": {
+            "summary": "의료 데이터 파이프라인 구축과 심전도 기반 모델 연구",
+            "focusLabel": "심전도",
+            "keywords": [
+              "심전도",
+              "의료 데이터",
+              "임상 데이터",
+              "코호트 구축",
+              "제품 성장 분석"
+            ],
+            "quality": "high"
+          },
+          "keywordF1": 0.889,
+          "summaryMatch": false,
+          "focusMatch": true,
+          "qualityMatch": false
+        },
+        {
+          "id": "8ec4b988febdc770d35d8484c429516096bdc5f2ba719c091ea2c05a132d2820",
+          "company": "뷰노",
+          "title": "(전문연지원가능) AI Research Engineer / Scientist",
+          "target": {
+            "summary": "생체신호 처리와 신뢰도 평가 알고리즘 개발",
+            "focusLabel": "생체신호",
+            "keywords": [
+              "생체신호",
+              "신호 처리",
+              "노이즈 제거",
+              "신뢰도 평가"
+            ],
+            "quality": "medium"
+          },
+          "result": {
+            "summary": "생체신호 처리 알고리즘 개발 및 데이터 파이프라인 구축",
+            "focusLabel": "생체신호",
+            "keywords": [
+              "생체신호",
+              "신호 처리",
+              "노이즈 제거",
+              "신뢰도 평가",
+              "의료"
+            ],
+            "quality": "high"
+          },
+          "keywordF1": 0.889,
+          "summaryMatch": false,
+          "focusMatch": true,
+          "qualityMatch": false
+        },
+        {
+          "id": "5b4f8e3e9780f545d6799eab3ca771b99b613c314e2523637a3cee0bce1fd135",
+          "company": "엔젤로보틱스",
+          "title": "개발 | 플래닛 서울/ 플래닛 대전 [신입/경력] 전문연구요원 상시 모집 - AI Researcher (Artificial Intelligence\n(인공지능))",
+          "target": {
+            "summary": "로봇 제어 강화학습과 동작 인식 연구",
+            "focusLabel": "로보틱스",
+            "keywords": [
+              "로보틱스",
+              "강화학습",
+              "동작 인식",
+              "시뮬레이션"
+            ],
+            "quality": "medium"
+          },
+          "result": {
+            "summary": "로봇 제어 강화 학습 및 질병 진단 동작 인식 연구",
+            "focusLabel": "로보틱스",
+            "keywords": [
+              "로보틱스",
+              "강화학습",
+              "동작 인식",
+              "시뮬레이션"
+            ],
+            "quality": "high"
+          },
+          "keywordF1": 1.0,
+          "summaryMatch": false,
+          "focusMatch": true,
+          "qualityMatch": false
+        },
+        {
+          "id": "2a805a7ba0ec84b09ef7fb1a16fa7be61dad3cbfbc70b24d187c13e53c621798",
+          "company": "워트인텔리전스",
+          "title": "Senior AI Engineer (LLM / NLP / MLOps)",
+          "target": {
+            "summary": "LLM 검색 시스템 설계와 성능 개선",
+            "focusLabel": "RAG",
+            "keywords": [
+              "LLM",
+              "NLP",
+              "RAG",
+              "MLOps",
+              "PyTorch"
+            ],
+            "quality": "medium"
+          },
+          "result": {
+            "summary": "LLM 및 RAG 기반 인공지능 시스템 설계와 성능 최적화",
+            "focusLabel": "RAG",
+            "keywords": [
+              "RAG",
+              "LLM",
+              "NLP",
+              "MLOps",
+              "PyTorch"
+            ],
+            "quality": "high"
+          },
+          "keywordF1": 1.0,
+          "summaryMatch": false,
+          "focusMatch": true,
+          "qualityMatch": false
+        },
+        {
+          "id": "f06099e4a2b7aca8f1173f4e0ae7f97251560bea0015fc6300122506c7c14bac",
+          "company": "노타",
+          "title": "[Solution] AI Software Engineer Intern (전환형)",
+          "target": {
+            "summary": "컴퓨터비전·VLM 기반 비전 솔루션 설계와 개발",
+            "focusLabel": "컴퓨터 비전",
+            "keywords": [
+              "컴퓨터 비전",
+              "VLM",
+              "PyTorch",
+              "엣지 배포",
+              "클라우드 운영"
+            ],
+            "quality": "high"
+          },
+          "result": {
+            "summary": "컴퓨터 비전 및 VLM 기반 비전 솔루션 설계와 개발",
+            "focusLabel": "컴퓨터 비전",
+            "keywords": [
+              "컴퓨터 비전",
+              "VLM",
+              "제조",
+              "모니터링",
+              "검증"
+            ],
+            "quality": "high"
+          },
+          "keywordF1": 0.4,
+          "summaryMatch": false,
+          "focusMatch": true,
+          "qualityMatch": true
+        },
+        {
+          "id": "f2c4092751c810f49d2c315a4beb115280c7b061bb5d7bea29f7b9fdd782f218",
+          "company": "네이버",
+          "title": "[네이버랩스] Generative AI Research Engineer",
+          "target": {
+            "summary": "실외 시공간 데이터 기반 생성형 AI 연구",
+            "focusLabel": "컴퓨터 비전",
+            "keywords": [
+              "컴퓨터 비전",
+              "생성형 AI",
+              "시공간 데이터",
+              "3D 비전"
+            ],
+            "quality": "high"
+          },
+          "result": {
+            "summary": "실외 시공간 데이터 기반 3D 공간 재현 및 생성 모델 연구",
+            "focusLabel": "컴퓨터 비전",
+            "keywords": [
+              "컴퓨터 비전",
+              "시공간 데이터",
+              "3D 비전",
+              "3D 공간 이해",
+              "모델 해석"
+            ],
+            "quality": "high"
+          },
+          "keywordF1": 0.667,
+          "summaryMatch": false,
+          "focusMatch": true,
+          "qualityMatch": true
+        },
+        {
+          "id": "56e4dc4b06be37fe1a42ce294749b37b8de9396522a6311fa5d83ea01ae94b5c",
+          "company": "크로프트",
+          "title": "Digital Agriculture Consultant",
+          "target": {
+            "summary": "디지털 농업 플랫폼 도입과 현장 컨설팅",
+            "focusLabel": "디지털 농업",
+            "keywords": [
+              "디지털 농업",
+              "농업 데이터 분석",
+              "현장 온보딩",
+              "기술 컨설팅"
+            ],
+            "quality": "high"
+          },
+          "result": {
+            "summary": "센서 및 위성 기반 농업 데이터 분석과 디지털 도구 구현",
+            "focusLabel": "디지털 농업",
+            "keywords": [
+              "디지털 농업",
+              "농업 데이터 분석",
+              "현장 온보딩",
+              "교육",
+              "농업 데이터"
+            ],
+            "quality": "high"
+          },
+          "keywordF1": 0.667,
+          "summaryMatch": false,
+          "focusMatch": true,
+          "qualityMatch": true
+        },
+        {
+          "id": "21c775134814c2093772c137d26538340832b3dc2a96317c7bf6e52c9b281a8e",
+          "company": "당근",
+          "title": "Data Analyst",
+          "target": {
+            "summary": "제품 성장 지표 설계와 실험 분석",
+            "focusLabel": "제품 성장 분석",
+            "keywords": [
+              "제품 분석",
+              "성장 분석",
+              "A/B 테스트",
+              "SQL",
+              "BigQuery"
+            ],
+            "quality": "high"
+          },
+          "result": {
+            "summary": "웹 앱 유저 행동 분석과 A/B 테스트 기반 지표 설계",
+            "focusLabel": "제품 성장 분석",
+            "keywords": [
+              "제품 성장 분석",
+              "A/B 테스트",
+              "SQL",
+              "BigQuery",
+              "제품 분석"
+            ],
+            "quality": "high"
+          },
+          "keywordF1": 0.8,
+          "summaryMatch": false,
+          "focusMatch": true,
+          "qualityMatch": true
+        },
+        {
+          "id": "8ef90326d034cd97dc791d2067ce761143933c5d3a14ac5ae6f8dd242e4e583f",
+          "company": "쿠팡",
+          "title": "Growth Marketing - Coupang Pay",
+          "target": {
+            "summary": "앱 성장 채널 운영과 리텐션 최적화",
+            "focusLabel": "그로스 마케팅",
+            "keywords": [
+              "그로스 마케팅",
+              "퍼포먼스 마케팅",
+              "CRM",
+              "리텐션",
+              "A/B 테스트"
+            ],
+            "quality": "high"
+          },
+          "result": {
+            "summary": "사용자 퍼널 및 코호트 분석을 통한 리텐션 캠페인 운영",
+            "focusLabel": "그로스 마케팅",
+            "keywords": [
+              "그로스 마케팅",
+              "CRM",
+              "리텐션",
+              "퍼포먼스 마케팅",
+              "A/B 테스트"
+            ],
+            "quality": "high"
+          },
+          "keywordF1": 1.0,
+          "summaryMatch": false,
+          "focusMatch": true,
+          "qualityMatch": true
+        }
+      ]
+    },
+    "incrementalMetrics": {
+      "requestedItems": 30,
+      "returnedItems": 30,
+      "coverageRate": 1.0,
+      "missingIds": [],
+      "qualityCounts": {
+        "high": 28,
+        "medium": 1,
+        "low": 1
+      },
+      "emptySummaryRate": 0.0333,
+      "emptyFocusLabelRate": 0.0333,
+      "lowRate": 0.0333,
+      "usableItemRate": 0.9667,
+      "avgKeywordsPerItem": 4.47,
+      "avgKeywordLength": 5.22,
+      "keywordBannedRate": 0.0,
+      "focusLabelBannedRate": 0.0,
+      "sentenceLikeKeywordRate": 0.0,
+      "longKeywordRate": 0.0,
+      "suspiciousTerms": [],
+      "failureExamples": [
+        {
+          "id": "9c932a0a27b486bb9d4f67f5c6912010dc03b233b28101e1dbad95e661bc6da5",
+          "company": "코그로보",
+          "title": "Recruitment",
+          "reasons": [
+            "quality=low",
+            "empty_summary",
+            "empty_focus_label"
+          ],
+          "result": {
+            "summary": "",
+            "focusLabel": "",
+            "keywords": [],
+            "quality": "low"
+          },
+          "current": {
+            "summary": "인공지능 기반 문제 해결 및 솔루션 개발",
+            "focusLabel": "수학",
+            "keywords": [
+              "수학"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

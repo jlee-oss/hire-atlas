@@ -1,0 +1,41 @@
+{
+  "updatedAt": "2026-04-07T03:47:29.754056+00:00",
+  "items": {
+    "tone-ai": {
+      "tone": "tone-ai",
+      "description": "딥러닝 모델 훈련 엔지니어링",
+      "generatedAt": "2026-04-07T03:47:29.753349+00:00",
+      "provider": {
+        "baseUrl": "http://127.0.0.1:11434/v1",
+        "model": "qwen2.5:3b"
+      }
+    },
+    "tone-data": {
+      "tone": "tone-data",
+      "description": "데이터 처리 및 분석 엔지니어",
+      "generatedAt": "2026-04-07T03:47:29.753995+00:00",
+      "provider": {
+        "baseUrl": "http://127.0.0.1:11434/v1",
+        "model": "qwen2.5:3b"
+      }
+    },
+    "tone-domain": {
+      "tone": "tone-domain",
+      "description": "자율주행 연구 엔지니어",
+      "generatedAt": "2026-04-07T03:47:29.753999+00:00",
+      "provider": {
+        "baseUrl": "http://127.0.0.1:11434/v1",
+        "model": "qwen2.5:3b"
+      }
+    },
+    "tone-analysis": {
+      "tone": "tone-analysis",
+      "description": "멀티모달 AI 모델 평가 엔지니어",
+      "generatedAt": "2026-04-07T03:47:29.754001+00:00",
+      "provider": {
+        "baseUrl": "http://127.0.0.1:11434/v1",
+        "model": "qwen2.5:3b"
+      }
+    }
+  }
+}

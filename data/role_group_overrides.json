@@ -1,0 +1,2805 @@
+{
+  "updatedAt": "2026-04-12T05:19:11.359358+00:00",
+  "items": {
+    "8279086f9af0ac44eca61f72714b435681e26840a64fca18b1a96c8cbc265785": {
+      "roleGroup": "데이터 사이언티스트",
+      "source": "role_group_model_pipeline",
+      "reason": "임상 데이터 과학 및 통계 모델링",
+      "confidence": "high",
+      "signature": "9483476d5a3e7afc3d4e1977f7141223191a4f01",
+      "updatedAt": "2026-04-10T16:33:13.544169+00:00"
+    },
+    "8ef90326d034cd97dc791d2067ce761143933c5d3a14ac5ae6f8dd242e4e583f": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "CRM 및 퍼널 분석 중심",
+      "confidence": "high",
+      "signature": "59f6c8d91e55b08bf35a111e4f015e0924206c3f",
+      "updatedAt": "2026-04-10T16:31:30.152179+00:00"
+    },
+    "acdeca3194f547cfa91dce4b0228dcf48979618d1eaf14564ec5bf4693cabec6": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "RAG 파이프라인 및 솔루션 개발",
+      "confidence": "high",
+      "signature": "b6b48ab1a92cf9ca9cef2e44e122c0193e1ac2b3",
+      "updatedAt": "2026-04-10T16:23:37.546545+00:00"
+    },
+    "54239f62f548257f4700c0d0ba9515e8f4838f7f021654f664282a7763b783bc": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 설계, 훈련 및 배포 중심",
+      "confidence": "high",
+      "signature": "192c5d8b7ec51e49339a1ef240802c29a7a2802a",
+      "updatedAt": "2026-04-10T16:23:37.546545+00:00"
+    },
+    "e8e8ab27dd23da088f9d9f77d16788cb21728e1865cb15209f69f6dc79714c0f": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 플랫폼 서비스 설계 및 개발",
+      "confidence": "high",
+      "signature": "68b53008a5c0f5551d5369ab2a20e0517cbd8852",
+      "updatedAt": "2026-04-10T16:23:37.546545+00:00"
+    },
+    "8c08ef4b136652711f3422ff39e2882374f32045ad131d850abf42c2ea4d77ba": {
+      "roleGroup": "데이터 사이언티스트",
+      "source": "role_group_model_pipeline",
+      "reason": "금융 시계열 예측 및 리스크 모델링",
+      "confidence": "high",
+      "signature": "e7720ef4f5fb3c81bfcd5dad4dfb2977e53e4d43",
+      "updatedAt": "2026-04-10T16:23:37.546545+00:00"
+    },
+    "f2c4092751c810f49d2c315a4beb115280c7b061bb5d7bea29f7b9fdd782f218": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "논문 및 학술활동 중심 연구",
+      "confidence": "high",
+      "signature": "b42c86a87ae6c86dc57116859a28099cb59b966e",
+      "updatedAt": "2026-04-10T16:33:04.979201+00:00"
+    },
+    "b7f2b0d9ac7559945914c97877ee3378751b435b34bc831f6ffc69bbb8a0b3cd": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "파이프라인 및 시스템 설계 중심",
+      "confidence": "high",
+      "signature": "40abebd2d9a381c50283e12e8b3c6c1d8a64b43a",
+      "updatedAt": "2026-04-09T16:11:02.752990+00:00"
+    },
+    "2be64e75450abf6761094f0fb6011719890a6a9cd5f09d5c464c83d92880444d": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "R&D 전문연구요원 역할",
+      "confidence": "medium",
+      "signature": "727a4da1408b1f98f5558c7fa4e87d52136932da",
+      "updatedAt": "2026-04-10T16:33:04.979201+00:00"
+    },
+    "99a6f16ca8f801da7870b76e1d2bc3410ee59879c2c2672cbaaecd5e90f8630f": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "R&D 팀 연구 인력 채용",
+      "confidence": "high",
+      "signature": "2eb95d4dae0f4c915b65c330d746ed060f912da8",
+      "updatedAt": "2026-04-09T15:49:40.246511+00:00"
+    },
+    "02f1b1ada477f4f66553531167cf8a5c125e306eef0322b2c2861ecdfdea0968": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "비즈니스 개발 및 니즈 분석 중심",
+      "confidence": "medium",
+      "signature": "c3ace4b6724033056c22ce78ad2679963fb94ef5",
+      "updatedAt": "2026-04-09T16:11:02.752990+00:00"
+    },
+    "363923bd0caa881df3cd11edbcf80b8171f3f9dfcaa5918c5e74a0acb70809f8": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 최적화 및 추론 파이프라인 구축",
+      "confidence": "high",
+      "signature": "06719f371361e315ff526e7dd2cb44c44bd929f0",
+      "updatedAt": "2026-04-09T15:30:14.232652+00:00"
+    },
+    "4ef20800f7901b2adc1ebdeb33c888f6c4569fbac7858a390fdcde0a397d04d1": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "MLOps 및 GPU 인프라 운영",
+      "confidence": "high",
+      "signature": "c678d769ab9993bc8e702bb1d6b95b0e1eaad95a",
+      "updatedAt": "2026-04-12T05:17:44.976344+00:00"
+    },
+    "70c40025f4e22a077dd1b921d0c297acc6b8ef4932e039799bf6eaeaed4b6f83": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "MLOps 및 AI 플랫폼 운영",
+      "confidence": "high",
+      "signature": "20d8b0de376a0adbf119262834d57e69e21e973e",
+      "updatedAt": "2026-04-10T16:23:37.546545+00:00"
+    },
+    "7aa542840a6fc01cf4ea4f6afe6afd8eabd499e394f8f93f5ad5e395517a9f24": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 컴파일러 및 NPU 최적화 개발",
+      "confidence": "high",
+      "signature": "52033079a9d69045bb608f38533c179fd4c51517",
+      "updatedAt": "2026-04-10T16:23:58.306874+00:00"
+    },
+    "8a25403f7a740f550ed6c7b152cbcf648ac6fd9b7e98682f59f414029ad73597": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 솔루션 및 MVP 구현",
+      "confidence": "high",
+      "signature": "23977ca0495725045e92c21c3f86d2e0ec724e77",
+      "updatedAt": "2026-04-12T05:16:13.565158+00:00"
+    },
+    "9e6edd7ef07ec62c037b892f1cdbcb57de077110be919d62a464c3240b6f4879": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 제품 검증 및 자동화",
+      "confidence": "high",
+      "signature": "83b3115aa27cf5473e4d704e751965c3f5ae5db6",
+      "updatedAt": "2026-04-09T15:49:48.554068+00:00"
+    },
+    "bf6b495600201b1372719ae7334fc4d18d7f8bb697802446467fdd5f6c7d8c6c": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 파이프라인 및 시스템 구현",
+      "confidence": "high",
+      "signature": "ec0d35e15a496f31a50bd36cf47582a473e63efd",
+      "updatedAt": "2026-04-10T10:05:23.771119+00:00"
+    },
+    "d4ebcf1914b69150717dc042ba1ffa7ce5955f4561bda4278525ec98451648b2": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "추론 파이프라인 및 배포",
+      "confidence": "high",
+      "signature": "cf1ca35d1d5778e1527e8e899afae86475e5e507",
+      "updatedAt": "2026-04-12T05:16:13.565158+00:00"
+    },
+    "eea0d014aecd6b17c6740052bd3d8a96f7c119795734da8893a886d596a368c4": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "VLM 파인튜닝 및 모델 서빙 개발",
+      "confidence": "high",
+      "signature": "034eeed5a869d8093279bfaeeeda8d03c0d5fa86",
+      "updatedAt": "2026-04-10T16:23:58.306874+00:00"
+    },
+    "49de8c0f74b6b6934fa130ad30ddaf91f974c4e4fa5bf61910834ace11039f01": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 솔루션 및 클라우드 개발",
+      "confidence": "medium",
+      "signature": "b9f805f181f92217403e735aa227878b9b0e4d4b",
+      "updatedAt": "2026-04-10T16:33:04.979201+00:00"
+    },
+    "973f8e9f8424d7b0726570fde87495734a903af3e0b690509dfa08ea8d01f7ca": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 솔루션 개발 및 운영",
+      "confidence": "high",
+      "signature": "d7df4327c7c35ef6b0fa14c77fb6130327b3b875",
+      "updatedAt": "2026-04-10T10:05:31.429481+00:00"
+    },
+    "b927c1f19c992ed2335dc4419f2aa5d412a08762e2d8a24669c296ccfb7fed20": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 솔루션 및 클라우드 개발",
+      "confidence": "medium",
+      "signature": "703f933753bcaa6c438c410840896dd8a55cc5b7",
+      "updatedAt": "2026-04-10T16:33:04.979201+00:00"
+    },
+    "11b23bc82c82016d398c08c96725175cbb667ea9d68fef482955d6bb5720f7af": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "제품 성장 분석 및 AB테스트",
+      "confidence": "high",
+      "signature": "39f44b4f0c1ab2d38e960321a4c150c65207e731",
+      "updatedAt": "2026-04-09T15:30:41.244188+00:00"
+    },
+    "21c775134814c2093772c137d26538340832b3dc2a96317c7bf6e52c9b281a8e": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "제품 성장 및 유저 행동 분석",
+      "confidence": "high",
+      "signature": "356015ddffa21e15af116f858823a86cfcc5703e",
+      "updatedAt": "2026-04-12T05:17:44.976344+00:00"
+    },
+    "47db21272effb1223fb2158797478801d4cff285db9581c9e4a1f86847f845bc": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "BI툴 및 데이터마트 구축 중심",
+      "confidence": "high",
+      "signature": "a9e29d3ece5e749e66c906f344636cd9ecb87622",
+      "updatedAt": "2026-04-10T16:33:13.544169+00:00"
+    },
+    "54bfc7d795884b10a600588796602caf82dec56f91c9631667f1fca7a87a3da0": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "그로스 마케팅 및 실험 설계 중심",
+      "confidence": "high",
+      "signature": "3ef81d46abfe9a590a1ea5c42b59719c77309375",
+      "updatedAt": "2026-04-09T15:30:51.058094+00:00"
+    },
+    "69414ac31a6b20b577c4ca211e09aab2fb032bda72d094e86ee0c9a60ae21654": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "CRM 및 퍼널 분석 중심",
+      "confidence": "high",
+      "signature": "b5f5545b17214d91d0043842d01df1dea1614f27",
+      "updatedAt": "2026-04-09T15:30:51.058094+00:00"
+    },
+    "8786444f3f104784fd27ec8f3d6175597c74b69a776b0f608f86a0e22e1feb85": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "지표 정의 및 마트 설계 중심",
+      "confidence": "high",
+      "signature": "c4df32dd622bdf5215e663346a7aaf4fa9176abd",
+      "updatedAt": "2026-04-12T05:19:11.359358+00:00"
+    },
+    "52903b04349f55dbada212bd487408f6237bceaf1730116d3eafad6177ffbc71": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 시스템 운영 및 보안 인프라 중심",
+      "confidence": "high",
+      "signature": "9d075e6b7f8c2f1005846b56e62053254efca487",
+      "updatedAt": "2026-04-09T15:30:51.058094+00:00"
+    },
+    "60002fbf168b5061bb694a940c9218a97e2f89c49a4b5040f4e2276eae106194": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "백엔드 중심이나 AI 활용",
+      "confidence": "medium",
+      "signature": "386c08af45ea93b16c07a89c35b9c3e6b7905095",
+      "updatedAt": "2026-04-09T15:52:57.811510+00:00"
+    },
+    "72508017b4bb2be995037381fab59fd808ca9dfd55e846d1853e2b9c91bd80e6": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "운영 지표 및 리스크 분석 중심",
+      "confidence": "high",
+      "signature": "f1f5727c01b3f967bdbf9b627acd959c5f7358df",
+      "updatedAt": "2026-04-09T16:11:02.752990+00:00"
+    },
+    "9037a48ac4f6c7539cccb53a7c488a8309a66a17406403d58febc94f1cb2eb40": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "추천 모델 개발 및 서빙",
+      "confidence": "high",
+      "signature": "83bac7bc46243066a14ddfb92183b9b953c028f9",
+      "updatedAt": "2026-04-12T05:17:44.976344+00:00"
+    },
+    "ba72262555ef1de41bb2a20da0db87ce4b9805aed43d793cb3757eac84bd234b": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "ML 파이프라인 및 서빙 중심",
+      "confidence": "high",
+      "signature": "91d9682ab130be9975ceb969df2a5df625f44b24",
+      "updatedAt": "2026-04-09T15:31:00.323805+00:00"
+    },
+    "ea06e254b3613a3ea4c239b5368094c4b99ccd4e28d38b49692aecb0f4adfa13": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "MLOps 및 모델 서빙 인프라 개발",
+      "confidence": "high",
+      "signature": "afa8a3ab93fe8f62f3ed8fa339c9ff56bde11252",
+      "updatedAt": "2026-04-12T05:17:54.428783+00:00"
+    },
+    "ff7da7a26113a65fefb3c39d5c29d6b1de3c2923fcee9230db50ce0ddaef5692": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "랭킹 모델 설계 및 실시간 서빙",
+      "confidence": "high",
+      "signature": "f2b2795dfdfe11ad3a78591bbcf4288fba9ca42d",
+      "updatedAt": "2026-04-10T16:24:20.240389+00:00"
+    },
+    "4a26e5c6c222d225a31d84c8e3d166a404320d2603839a765303bc282dc50c60": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "SQL 기반 지표 분석 및 대시보드",
+      "confidence": "high",
+      "signature": "0ff4f4db47f42c0777600f0036121e62ea079b4c",
+      "updatedAt": "2026-04-10T16:24:20.240389+00:00"
+    },
+    "f5ac2b445c44e7c7636bb8ccf9870bd96b218388b32e086b8a66fa1535bea8d8": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 서비스 구현 및 배포 운영",
+      "confidence": "high",
+      "signature": "711a63e5c0f7a5fddeefb15baa29d10ea2a876ae",
+      "updatedAt": "2026-04-10T16:24:20.240389+00:00"
+    },
+    "db490d1a9694db6ebabc986c765f58e137893bbbe371853cf3fcaccc94fae437": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 서비스 프론트엔드 구현",
+      "confidence": "high",
+      "signature": "f135f2de883e93fb90313de1b54557c8944f7e23",
+      "updatedAt": "2026-04-10T10:07:57.987643+00:00"
+    },
+    "e5f1e4d387aa3e41c6c6d1c62efd6ac353bc3e05c534f1171bb57d20141bd424": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "ML 모델 및 가상화 플랫폼 개발",
+      "confidence": "high",
+      "signature": "8107dd432399daa751f8d35d405c19043587a847",
+      "updatedAt": "2026-04-10T16:24:20.240389+00:00"
+    },
+    "e80b6466dfff5cef981757f709439b8dbe69ac59267d0202f58bf993aa6290ef": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI API 서비스 및 인프라 구축",
+      "confidence": "high",
+      "signature": "2e2f5d2124605b2358e380b02a4ba48a21a51428",
+      "updatedAt": "2026-04-10T10:05:56.898904+00:00"
+    },
+    "6203c9193fc596f5701d57f07db1819014f19492ef750bde09f911083a7e1003": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "의료 AI 알고리즘 연구 및 논문",
+      "confidence": "high",
+      "signature": "ff0e8225e24f84a429098941f5e120b2b8cdd0d6",
+      "updatedAt": "2026-04-09T15:31:22.554593+00:00"
+    },
+    "fbfc4e3d7130206355f02affb8d6a2fc6e8c84a5fa2d6c4cf1a14c17a3cdaf8e": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "데이터 시각화 및 UX 설계 중심",
+      "confidence": "medium",
+      "signature": "f887e5bfa10858d1af6cf5a0dd74477c20bcf58a",
+      "updatedAt": "2026-04-09T16:11:02.752990+00:00"
+    },
+    "0bbd5a1107ce876a35b628b35024f5e2de7cbc571b03c0f2644effc508b81d38": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "멀티모달 연구 및 논문 작성",
+      "confidence": "high",
+      "signature": "c12cb624a237e50ab2fd2f4b2f8634043b5fd380",
+      "updatedAt": "2026-04-10T16:24:20.240389+00:00"
+    },
+    "5d5e2ba2737958d1cb7ba49862740d9ea95a402732d1e80709c3dbb69355c0c8": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 솔루션 설치 및 운영",
+      "confidence": "high",
+      "signature": "8af6f705907586f6f3ed0cfe54110a705dfeafd8",
+      "updatedAt": "2026-04-10T16:24:40.885081+00:00"
+    },
+    "e417df7dd3d3cc20532377aaed67126c1c818356c0b87bc5413fd02fffbcaee8": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "추론 파이프라인 및 서빙 개발 중심",
+      "confidence": "high",
+      "signature": "ba58c55ee53e1a1d6c224517e0371414486ee6dd",
+      "updatedAt": "2026-04-09T15:31:33.142869+00:00"
+    },
+    "3a43422a9911cb573cda32706d79aeb4de650535628e74df14292ab683e69754": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "SoC 검증 및 환경 개발",
+      "confidence": "high",
+      "signature": "c7a6f8f8cc22bdb11a9a85d1b5d02b7ae0d025ce",
+      "updatedAt": "2026-04-10T16:24:40.885081+00:00"
+    },
+    "5b3a3658c21f565a1b2fe78dd3923fb93c1474123539a12171f827817991b625": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 구동 IP 검증 및 개발",
+      "confidence": "high",
+      "signature": "b14206915452f61d255b2110ea3a1250d6537d36",
+      "updatedAt": "2026-04-10T16:24:40.885081+00:00"
+    },
+    "b3e29f75eb8ebfd79db6753b9ab936407ea18a4c0b1d2be32c257b758acd034b": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "NPU IP 단위 검증 및 개발",
+      "confidence": "high",
+      "signature": "9d1d2be70e333e35da4e36f133455268d8b97caa",
+      "updatedAt": "2026-04-10T16:24:40.885081+00:00"
+    },
+    "612cf32e38ba66f7ac225ee055f8b7aaa22d3579c39cbaf64e437e8a4eeb022f": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "직무명 및 시그널 일치",
+      "confidence": "medium",
+      "signature": "e38d7d8e7e0a4af3edb5f7afa124c348ca086496",
+      "updatedAt": "2026-04-12T05:17:07.149407+00:00"
+    },
+    "4158c16a5ec214f1b852ddf395f5192800b4af9019a91d07e3fa2999270d6238": {
+      "roleGroup": "데이터 사이언티스트",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 구현 및 최적화 중심",
+      "confidence": "high",
+      "signature": "015a59de475cde7e66d0316a643bd5ccccf9b0f0",
+      "updatedAt": "2026-04-09T16:11:12.418561+00:00"
+    },
+    "2bf2217022d30e9f6b81315d8da93935980546867e65e23031b384a4daf2d027": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "프로토타입 구현 및 검증 중심",
+      "confidence": "high",
+      "signature": "07d717ebc1bb76ed454de94717f05151dc810e8a",
+      "updatedAt": "2026-04-10T16:25:04.682290+00:00"
+    },
+    "049c8ebbb367b237b1027e4c9f1f24a3026576fcd73d7dd4de9243015c31ec4d": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "PM 역할은 분석가로 분류",
+      "confidence": "high",
+      "signature": "dc007011e36a7cedbf426692444d9ff35fea87fc",
+      "updatedAt": "2026-04-09T16:11:12.418561+00:00"
+    },
+    "05541b533318e70a66223d3a797723aa46bc9303e9a2fb3f452b327e5603d57b": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "ML 인프라 구축 및 MLOps",
+      "confidence": "high",
+      "signature": "27ddfbd7123cedc84a3c6d55e5d77cf95a73b72d",
+      "updatedAt": "2026-04-10T16:24:40.885081+00:00"
+    },
+    "454212a2e45b14a8dc263053bd45fa66ad3f769fe7e7d7d4262c67063ad1752d": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 플랫폼 및 MLOps 개발 중심",
+      "confidence": "high",
+      "signature": "a2b330c31253dc8c5c28291cbfc531b99f1b9cdc",
+      "updatedAt": "2026-04-09T15:32:01.406597+00:00"
+    },
+    "5d82b86e2b0284097897d2de62b81e5de193c41a8ce51e2e65392b3f0db5021c": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 서비스 적용 및 MLOps 중심",
+      "confidence": "high",
+      "signature": "096461e391ca4ab4751f7cc0200d2dbe3d3906ab",
+      "updatedAt": "2026-04-10T16:25:04.682290+00:00"
+    },
+    "736e0a1c6554eedc036eb7fc97ea6198336baa16ee35a0b6386707de4998e779": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 앱 구현 및 MLOps",
+      "confidence": "high",
+      "signature": "0513465d803c0b3351d4dc469a5ff33fe0d5d1e5",
+      "updatedAt": "2026-04-12T05:16:21.761288+00:00"
+    },
+    "75af8dbfd64a35e699afdb585f0857f952606e63328a91ab2f0bf9dfa74457d5": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "전략 수립 및 지표 분석 중심",
+      "confidence": "high",
+      "signature": "3b22ca7949123675b89cbf07165c5a5377db4aae",
+      "updatedAt": "2026-04-09T16:11:12.418561+00:00"
+    },
+    "b3e681af84db0b96754ffcfced1aef48aa5baabc9091aa71e4378a0d34627af7": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 플랫폼 및 환경 기획",
+      "confidence": "high",
+      "signature": "c29d107774251287e4ae66c286e0bac68d9b40ca",
+      "updatedAt": "2026-04-09T15:32:11.303383+00:00"
+    },
+    "b68935592e75dd70b0ecac9a9b0c303480e0f0554657940c66137ade4dd7013d": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 배포 및 MLOps 운영 중심",
+      "confidence": "high",
+      "signature": "a245981a115b2bd47d28fe203ba90752d4130c99",
+      "updatedAt": "2026-04-12T05:17:54.428783+00:00"
+    },
+    "cca8f744faac52e4b712b665ce07bc8ae7dc68c42c513597fc42435841e8dd46": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 양자화 및 NPU 탑재 최적화",
+      "confidence": "high",
+      "signature": "1ab99773f3f57b23d4652f4f3a01288955aafbc8",
+      "updatedAt": "2026-04-10T16:25:04.682290+00:00"
+    },
+    "d5527fef542a659d966f8a3b672f7831681564b25a9701ae58e5c3f645876575": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "MLOps 파이프라인 구축 및 운영",
+      "confidence": "high",
+      "signature": "34041e0c93dbb0feee33f1a56d58498086acdf0d",
+      "updatedAt": "2026-04-10T16:25:04.682290+00:00"
+    },
+    "c7566b4fd5f33aae584d6b7fce0d7528831ea047e4aaeae349880e3638767c30": {
+      "roleGroup": "데이터 사이언티스트",
+      "source": "role_group_model_pipeline",
+      "reason": "임상 데이터 분석 및 통계 검증",
+      "confidence": "high",
+      "signature": "58f5b68dd407dbd61cf03627cee55c9e40266741",
+      "updatedAt": "2026-04-12T05:17:54.428783+00:00"
+    },
+    "99ce730149a58e5b03cc95e73a7675124297620937db8e54447687371d07b5b5": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "논문 투고 및 학회 발표 핵심",
+      "confidence": "high",
+      "signature": "2507f7a34ea037f6f82aabf9efc925de02a22b26",
+      "updatedAt": "2026-04-10T16:33:22.262903+00:00"
+    },
+    "4a57738976690e78c9c809d4eca377ad67d9279d27c8e07acaf71d124a07972e": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "그로스, 퍼널 및 CRM 분석 중심",
+      "confidence": "high",
+      "signature": "6874497f11185c9db491a3027786153b55b7fd95",
+      "updatedAt": "2026-04-09T15:32:21.015243+00:00"
+    },
+    "4a3ed9bd1250863f7b090cdadbea3067d3d3a355bc038b02e5ddebcd28a5faf4": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "GPU 클러스터 및 인프라 운영",
+      "confidence": "high",
+      "signature": "badc38e9a1eaf6d57b7ff9e4e050948618af11db",
+      "updatedAt": "2026-04-10T16:25:04.682290+00:00"
+    },
+    "7b1509e2da2f3974e53bc722eb07d60af2753c80457cd851bae733efec9d153a": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "NPU 커널 및 프레임워크 개발",
+      "confidence": "high",
+      "signature": "f1617d3ddcfb189e9a74e4a918cc109677d75201",
+      "updatedAt": "2026-04-10T16:25:27.112455+00:00"
+    },
+    "899550215c9294678b168c11a572c0c555bcb42a4f79102ead046ab2f85e6267": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 서빙 및 추론 최적화",
+      "confidence": "high",
+      "signature": "5eb91d831d6c994a628c3c6c483d0a8a253cc8c4",
+      "updatedAt": "2026-04-09T15:32:31.415775+00:00"
+    },
+    "9a529966d11df7ac681e16f45c9ef7673631d305b0733bf2587c414ca2dcedc6": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "GPU 커널 최적화 및 LLM 구현",
+      "confidence": "high",
+      "signature": "4638cdaf92ab1698b7a2b6ed21ef1ced6d11bd1a",
+      "updatedAt": "2026-04-10T16:25:27.112455+00:00"
+    },
+    "a402fbce83efcc397c7de7fcb80efad18c4094cc168eae46fb44ed72c6b27ab1": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 병렬화 및 시스템 최적화",
+      "confidence": "high",
+      "signature": "10243e37edf8beb18f44c3244bb32122abee5744",
+      "updatedAt": "2026-04-12T05:16:26.053316+00:00"
+    },
+    "a9232177d8376ed7b7c4b1c90cd9771486b3c30870df164f30e628683e23bd03": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "사업 개발 및 세일즈 중심",
+      "confidence": "high",
+      "signature": "f360f75807c2697af6a980a22d013fd884fe15df",
+      "updatedAt": "2026-04-09T16:11:22.981717+00:00"
+    },
+    "c020b10462a235dbb9c0b5e5c677397117286eb51c7ef64f7bf5ab68f2a3d94f": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 분산 추론 프레임워크 개발",
+      "confidence": "high",
+      "signature": "01c2341bd03ee1233566aeeedda1ffd2eba176e7",
+      "updatedAt": "2026-04-10T16:25:27.112455+00:00"
+    },
+    "323683418b12a931a122e02e0a3742fd94bb38e208f31fc0d75ba9a31a35cfc1": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "NPU 최적화 및 경량화 구현",
+      "confidence": "high",
+      "signature": "11be26327bbe3540430f929003423b6bb63ce2df",
+      "updatedAt": "2026-04-12T05:19:11.359358+00:00"
+    },
+    "14f5df29aff3b2c02640a37aab45cf30f888b15f0a55ef35f8c9606b854b2fb8": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 가속기 HW 통합 및 최적화",
+      "confidence": "high",
+      "signature": "45ae86963c2988c209713f7aaafbce1aecdc5ad8",
+      "updatedAt": "2026-04-10T16:25:27.112455+00:00"
+    },
+    "2233d3266907c2588e0b015d76182f5d801ff66a8199e14b716d7e5a42ea09d8": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI SDK 및 툴체인 구축",
+      "confidence": "high",
+      "signature": "e385cd23cde612fd3556d19989041a53c5e35cfc",
+      "updatedAt": "2026-04-12T05:18:02.760279+00:00"
+    },
+    "2e6ff10615c27cf989145df1a678ad8dc60c90bcce1188dbc4a988ea7da6025e": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "NPU 하드웨어 가속 구현",
+      "confidence": "high",
+      "signature": "3e89755532f87a0d1b4fd999653341a29d834c03",
+      "updatedAt": "2026-04-12T05:18:02.760279+00:00"
+    },
+    "600c4889c58c3c58a29c77c78556df508a32f5d5cb32ab5167fafb63a818617a": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "NPU SDK 및 시스템 개발",
+      "confidence": "high",
+      "signature": "253c5c072efd37043ea2fab14119eb193463a8b5",
+      "updatedAt": "2026-04-12T05:18:02.760279+00:00"
+    },
+    "755aa2b91bb02e73fbe5f050f505a4a3b2d385feda15dd0e05ac9fc8e515b99a": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "시스템 아키텍처 및 최적화",
+      "confidence": "high",
+      "signature": "f3ff5335a238b4160d72540803e1d63c6d8b7c5e",
+      "updatedAt": "2026-04-10T16:25:48.373592+00:00"
+    },
+    "8585662928f5ad392209af6fde575ef19ca74ea260c03c33203ef4bb7318ebe3": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "NPU 하드웨어 검증 및 구현",
+      "confidence": "high",
+      "signature": "bf20e068dbf65ffbabd3e9caeec1f56426d36e28",
+      "updatedAt": "2026-04-10T16:25:48.373592+00:00"
+    },
+    "9597b85b3aca7e49d58ebedfe7d85f07a8ff2b377354ca0f60a3f55c56556278": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 가속기 임베디드 SW 개발",
+      "confidence": "high",
+      "signature": "8ab1a88c90feeba91fdcbb5cea318b0cfd1834b7",
+      "updatedAt": "2026-04-12T05:16:26.053316+00:00"
+    },
+    "95f3e5eabacbfa10024881abe08f9144bed0c1fb707d4005c49c21127afc4fe1": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 가속기 드라이버 개발",
+      "confidence": "high",
+      "signature": "a0822305327a4bad63bdd481b964c14950820040",
+      "updatedAt": "2026-04-12T05:18:02.760279+00:00"
+    },
+    "9bdd68cd61396a760d9b31339ba97d66992f8d3d6ac5736b0ae668f524f7a1e1": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "컴파일러 및 IR 변환 개발",
+      "confidence": "high",
+      "signature": "0344967a484857708f898d3ae82e5bbc11b88319",
+      "updatedAt": "2026-04-12T05:18:11.678248+00:00"
+    },
+    "ae35562a8cc59fd90838e8adf787ef7236052ece4f974aa12fafcfdae27a84ff": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 반도체 RTL 설계 및 검증",
+      "confidence": "high",
+      "signature": "c94dc4ff4377339765397f20132ccd58b9ba0c75",
+      "updatedAt": "2026-04-10T16:25:48.373592+00:00"
+    },
+    "be95d22fcce81bc56774e950750d73e14fdb00fd79c825648c8b4e544f53a21d": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "NPU 컴파일러 및 최적화",
+      "confidence": "high",
+      "signature": "633a5497bcada92cd59c535b57628deebca3ff1f",
+      "updatedAt": "2026-04-12T05:18:11.678248+00:00"
+    },
+    "c2d2b6199e099e11606bb0f5a72b35401054885cec0f0edd1de2c24fe7ac2bc0": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 경량화 및 HW 최적화",
+      "confidence": "high",
+      "signature": "f498bb933ad20dd7b6be422d545c16b4fd1937f9",
+      "updatedAt": "2026-04-12T05:18:11.678248+00:00"
+    },
+    "e7fa2af5786a826cf23ba90abe2893e43423bbbe50812e892c8d563acd36b9ba": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "추론 엔진 및 CI/CD 구축",
+      "confidence": "high",
+      "signature": "0f029b25a9db38d5b623fc07cb3ef7be52785bec",
+      "updatedAt": "2026-04-12T05:18:11.678248+00:00"
+    },
+    "9f7ed7cf9fb2921b147fe5b51210153e2964095ef96144e63294140a6923e8dd": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "통계 분석 및 실험 설계 중심",
+      "confidence": "high",
+      "signature": "2260332f987d1b3670f5aef7841674f7fb96e6a0",
+      "updatedAt": "2026-04-10T16:33:22.262903+00:00"
+    },
+    "c9687998a10b830d6c9631daec2dbc5af39cdad69ad26b7fc99b44d00839bc27": {
+      "roleGroup": "데이터 사이언티스트",
+      "source": "role_group_model_pipeline",
+      "reason": "알고리즘 설계 및 통계 모델링",
+      "confidence": "high",
+      "signature": "c7f86d2cc232892b65320ac221495ca4f7c7d270",
+      "updatedAt": "2026-04-09T15:33:16.118218+00:00"
+    },
+    "90915dda281cb2a4fb57dee79e4327dac989e9f729fcd27e25d27b2b862e2984": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "ML 파이프라인 및 모델 서빙 구축",
+      "confidence": "high",
+      "signature": "f92660bbf4dc529688bce4b7001ec87238f5e583",
+      "updatedAt": "2026-04-09T15:33:16.118218+00:00"
+    },
+    "bc8e4891fa890b1a92f4e7ca218ce9356bdc9d199df5866f040fb6729670a147": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "RAG 시스템 설계 및 AI 앱 개발",
+      "confidence": "high",
+      "signature": "f373e06a963d57c581d2e7c1e269daff7ab0434b",
+      "updatedAt": "2026-04-10T16:26:07.460649+00:00"
+    },
+    "1b90c480b550b6c42a011d111eb317d9825d39419f1dab95d16fa6f4906b0c9a": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 서비스 운영 및 인프라 구축",
+      "confidence": "high",
+      "signature": "2c01e011dd9554a750d580deaf619a840e551a6e",
+      "updatedAt": "2026-04-10T16:26:07.460649+00:00"
+    },
+    "2cf747e9520aadbd6d23b7705611830289864d01d2b6b6f358d497e6ef823067": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 플랫폼 및 데이터 파이프라인 구축",
+      "confidence": "high",
+      "signature": "773d9ac26171032aeb71cbb568ece12efd19ad68",
+      "updatedAt": "2026-04-10T10:07:25.119727+00:00"
+    },
+    "c83dc1939889713ac761bb7c188eab8eaedc539550ae7a7c0e133d21cdd9a9a7": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI Agent 및 RAG 챗봇 개발",
+      "confidence": "high",
+      "signature": "050fd276e309d137a4aff57104eb806b870c3949",
+      "updatedAt": "2026-04-10T16:26:07.460649+00:00"
+    },
+    "8ec4b988febdc770d35d8484c429516096bdc5f2ba719c091ea2c05a132d2820": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "알고리즘 연구 및 논문 작성",
+      "confidence": "high",
+      "signature": "dfdd9d2add2e3691d299d80eddea0429854a03a1",
+      "updatedAt": "2026-04-12T05:18:20.257004+00:00"
+    },
+    "aaaef3795309f37ad82e68447adb62c019e14d9e929b0d9aa34c81c4e4734492": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 기반 SW 제품 구현",
+      "confidence": "medium",
+      "signature": "d034147e962c26ce6da743feb54b2514f1c7dd94",
+      "updatedAt": "2026-04-10T16:33:29.993610+00:00"
+    },
+    "55ad1773beb2ce3458585684200261d097016ee337dedb8b9d7f21d395a4a5b6": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "MLOps 및 AI 플랫폼 운영 중심",
+      "confidence": "high",
+      "signature": "37b5cfc61e18d61be7018a760a89f34695805a60",
+      "updatedAt": "2026-04-10T16:26:27.924748+00:00"
+    },
+    "a2b46ce4f4f73c43d4ac50b99a99a0dd6bb232ce306584078e891d5599df9d6a": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 모델 개발 및 컴퓨터 비전",
+      "confidence": "high",
+      "signature": "3978d175e66987cc95366d1658976ff684ca7686",
+      "updatedAt": "2026-04-10T16:26:27.924748+00:00"
+    },
+    "1d96f77a4041bf5f7713462f400ada313717733c2e42cb42bdc3a5ec01ea0d09": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "컴퓨터비전 구현 중심",
+      "confidence": "medium",
+      "signature": "dd13a29ba486c0d7a452afb7e94bfc51be0a8caa",
+      "updatedAt": "2026-04-10T16:33:29.993610+00:00"
+    },
+    "8166db52cdbe91cb2c8441bc3c0044f500b562e1e4b322b62eb73b076fd301f8": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "인지 파이프라인 설계 및 구현",
+      "confidence": "high",
+      "signature": "094a5626702a537995a77c8637b27cc814688ee0",
+      "updatedAt": "2026-04-10T16:26:27.924748+00:00"
+    },
+    "ae67c99599a5a10178c72efe20eb5b822ca5b07e9d19628e94df2f949a1d1b02": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "비전 제품 SW 아키텍처",
+      "confidence": "high",
+      "signature": "7740e6b9b7af25916c7e8099c9e9e777dfec6ac9",
+      "updatedAt": "2026-04-09T15:50:24.987818+00:00"
+    },
+    "bedd913f43f7a277f6bb5567cce3c5b533944ca6a22a043b72549c549d06ec37": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "시스템 소프트웨어 개발 중심",
+      "confidence": "high",
+      "signature": "bcc1c24704f60c182506d0b6ef2cb2399c20f78a",
+      "updatedAt": "2026-04-12T05:19:11.359358+00:00"
+    },
+    "2e4edb46205e7d47fc641089633c1f7f5bf18f7d6331a49de4092e4adcce3403": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "하드웨어 가속기 SW 개발",
+      "confidence": "low",
+      "signature": "608f242d520bb67ccb0b8c2a06d83f44b8f2a02b",
+      "updatedAt": "2026-04-10T16:33:29.993610+00:00"
+    },
+    "510aa910c2b67393fc0050b7f321d90f2d3aecac8103fdc95e1b7fdd8bd86074": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "임베디드 펌웨어 개발 중심",
+      "confidence": "low",
+      "signature": "63693af138300cbf8bb21805437903734ce83d13",
+      "updatedAt": "2026-04-10T16:33:38.312139+00:00"
+    },
+    "6a1c8f4a7483d29cba147089f3f0b93b1dd760c4476ca94423b9306758d8152d": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "하드웨어 설계직이나 유지",
+      "confidence": "low",
+      "signature": "15b696f687269e691834e4b7697e870bb26e8475",
+      "updatedAt": "2026-04-09T16:00:48.091653+00:00"
+    },
+    "708c8e44b6884abbc28080b22ccfd962197e37ee49dbe1dc9128dd12e1ed2c80": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "SoC 검증 엔지니어 역할",
+      "confidence": "low",
+      "signature": "cbc01e7bbfc820b8034ab658edfe0e664b96a267",
+      "updatedAt": "2026-04-10T16:33:38.312139+00:00"
+    },
+    "bc4ea07a6f45a0ccbc0f6d95c56568c3ea5f6208c3119e7a94173dd15791e0e3": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "GPU SoC 설계 및 구현",
+      "confidence": "medium",
+      "signature": "29a54c75c8de7ad4ed9283658eac2738c6b81d2f",
+      "updatedAt": "2026-04-12T05:17:10.820760+00:00"
+    },
+    "09a310ea09d21ee506d33a665992060afff42e933ad1c874cf1e7b078ecac6f3": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 에이전트 플랫폼 구축 및 운영",
+      "confidence": "high",
+      "signature": "50d5c70a44aa6f589099fbaa626e9a43335fabdd",
+      "updatedAt": "2026-04-10T16:26:49.158025+00:00"
+    },
+    "42d02b1dce71577df13337d769d36d14babff4356f4db3bb3d7aef1edc6731dd": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "RAG 및 LLM 파이프라인 구현",
+      "confidence": "high",
+      "signature": "f4dd4df6f5b819a90d9b186932e567a9ee6fb858",
+      "updatedAt": "2026-04-10T16:26:49.158025+00:00"
+    },
+    "f9fe665ad69db75dce19398efd1f348ef32a82ff9abc5a9dfc12d1d65d057cab": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 배포 CI/CD 및 API 개발",
+      "confidence": "high",
+      "signature": "2bfde1419f8ea9c481d05246140860a606e44733",
+      "updatedAt": "2026-04-10T16:26:49.158025+00:00"
+    },
+    "c8f8f557548bf73afc3514fe98c8543eb9efa7530b9f4cc25c21a7f811e8b822": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "음성인식 모델 개발 및 튜닝",
+      "confidence": "high",
+      "signature": "edf6b01016702fddeb5b1678d47f457d2516d6fb",
+      "updatedAt": "2026-04-10T16:26:49.158025+00:00"
+    },
+    "3df159f3833ac42a707314ca7d1d01c164fcebe7b0bb14fb6b71a6e8167f19fb": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 튜닝 및 AI 신뢰성 검증",
+      "confidence": "high",
+      "signature": "fcf8abf279b9a405e0de4452912d4a6794071723",
+      "updatedAt": "2026-04-10T16:26:49.158025+00:00"
+    },
+    "4edf5d71ede69bba8e2a1977ec561ebc254937a291afd7e3b61dc14db2e13c10": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "일반 SW 검증 역할",
+      "confidence": "low",
+      "signature": "5079b2b9c989d9284b76e64e3f1a5f4e3e7eada8",
+      "updatedAt": "2026-04-10T16:33:38.312139+00:00"
+    },
+    "7670db978bd54591e6665e3cdc71ad29e103bdedeaca605c275d717d932b4e66": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 학습 방법론 및 알고리즘 연구",
+      "confidence": "high",
+      "signature": "1de83354f43833a4146d7333e986497973af29eb",
+      "updatedAt": "2026-04-12T05:18:20.257004+00:00"
+    },
+    "4f1ad494f86464493921a068ec6dda48f02b8479274f05407c90030867708bc6": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 서빙 인프라 및 MLOps",
+      "confidence": "high",
+      "signature": "442a1f0a40553b233587f8653e4c15bd5ead4a90",
+      "updatedAt": "2026-04-12T05:18:20.257004+00:00"
+    },
+    "377016ae3732e0e4542ac512e72f575c2eccac5d0dad84690d424f82937896e8": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "RAG 기반 AI 앱 개발 및 구축",
+      "confidence": "high",
+      "signature": "1985c2501c8cdd9446441bb8bbd64fcaf44a99a2",
+      "updatedAt": "2026-04-10T16:27:11.247953+00:00"
+    },
+    "406df5892c5079e88c397a3ad001a6368b5537e0b0c290bbeb641a33e980c6c9": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "PMO 및 프로젝트 관리 중심",
+      "confidence": "high",
+      "signature": "e837c5fad8abd52aee0823006d51c2c14e60fd6e",
+      "updatedAt": "2026-04-09T16:11:22.981717+00:00"
+    },
+    "5fae0c92918a46d590304166e58f58c66a72156ec144f64c9f625d048f408990": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "PO 역할은 분석가군 분류",
+      "confidence": "high",
+      "signature": "d1b352ec0e955bebf4aeab2eb7830cba05d9135e",
+      "updatedAt": "2026-04-10T10:11:54.624850+00:00"
+    },
+    "80101b8cecf86a9359c810b9ddd6a5e108e108b2524919ded2125702a07b2b5e": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 서비스 구현 및 인프라 구축",
+      "confidence": "high",
+      "signature": "f2e545e9a725164548c02ee5deec7a8ccec1611b",
+      "updatedAt": "2026-04-10T10:09:17.585730+00:00"
+    },
+    "8cacf1a51d7ebb7b9570370b3cf8c73c1c0f7d91062f7849811806336a1a6bef": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "MLOps 환경 및 RAG 시스템 개발",
+      "confidence": "high",
+      "signature": "e80951a44530412b2c08e2de25c315d8d1d1b368",
+      "updatedAt": "2026-04-10T16:27:11.247953+00:00"
+    },
+    "d74e10a6fda101dbd30304cba0785a81958e0db077f330a10c2e4ad65365434f": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 시스템 검증 및 자동화 구축",
+      "confidence": "high",
+      "signature": "753f14d925759e7eda46d3a4fe8cf4ae2a849bf2",
+      "updatedAt": "2026-04-09T15:34:30.781925+00:00"
+    },
+    "0f9c8ea367833870d90dc5c9ac503ca3b4e887d82f6293bd40a0039d568c8614": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "ADAS 시스템 통합 및 검증",
+      "confidence": "high",
+      "signature": "044c6bb5e7b168f2264fcc6e8c7ab42c124880ab",
+      "updatedAt": "2026-04-12T05:18:29.087446+00:00"
+    },
+    "23e24ec61237c18ffac5c9ceda985a195be4b0ed6717753d92f406fce6a9da46": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "경로 계획 구현 및 최적화",
+      "confidence": "high",
+      "signature": "bf03e11b0a7b399015ddbc29fc64d78da5ed4b7c",
+      "updatedAt": "2026-04-10T16:33:38.312139+00:00"
+    },
+    "321b964b94e94439f0f34aa55dcc12330b7903b8d635cb323dd6eb4052b8ea7c": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "훈련 환경 구축 및 검증",
+      "confidence": "high",
+      "signature": "8cfc5b423e1d2d23da3f5f3d9747b20b2d407c24",
+      "updatedAt": "2026-04-09T15:34:39.906231+00:00"
+    },
+    "497c263a152ee4138e4aad3d98494d90f9826e0226ca4ff6a619cc5fec944a77": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 서빙 및 파이프라인",
+      "confidence": "high",
+      "signature": "891f1ec884713949ecd41707fc622f943d1fa3da",
+      "updatedAt": "2026-04-09T15:34:39.906231+00:00"
+    },
+    "4b881d193164e8d403d5283090ae8196a0811997794f8a6149d855f5fb2d4aa9": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "NPU 기반 모델 최적화 및 구현",
+      "confidence": "high",
+      "signature": "2da4d339fa609830d777485becbfa9fd6f7d3773",
+      "updatedAt": "2026-04-10T16:27:11.247953+00:00"
+    },
+    "54d607133077af3a3643568ce3c3d859ed7afd54fdcda5d192f48d84ea443af2": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 배포 및 양자화",
+      "confidence": "high",
+      "signature": "d339ce2c63fc819cbb567729f90cfd200e063dad",
+      "updatedAt": "2026-04-09T15:34:39.906231+00:00"
+    },
+    "6f259c260fd07e5d14192f6a169fc4ba13d5685c9a1c26a08cf2bafbf0b5d3d1": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "비전 모델 설계 및 임베디드 최적화",
+      "confidence": "high",
+      "signature": "04422ec54daa7e0475f3c949e923726f8fa336c8",
+      "updatedAt": "2026-04-10T16:27:11.247953+00:00"
+    },
+    "761197555be1dcf671699df9f75d45e1a8149d72774b8dccdfd3cbc156fd7854": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "DL 라이브러리 설계 및 포팅 중심",
+      "confidence": "high",
+      "signature": "792190e00a488a10a1a57fe9f9c4134cbae27659",
+      "updatedAt": "2026-04-09T15:34:49.401988+00:00"
+    },
+    "800d7f4b7af63cc4fcbd923b8d76aee2c4c2ebfdb3777297f9a976986c765009": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "컴퓨터비전 기반 엔지니어링",
+      "confidence": "high",
+      "signature": "4d1876b0ad03088081855c127145fd8d6f488180",
+      "updatedAt": "2026-04-12T05:16:33.433242+00:00"
+    },
+    "883393c600f8a4c4ede80abe865572c800625ff792def82b05f2cbd0809a7cc1": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "임베디드 구현 및 시스템 제어",
+      "confidence": "high",
+      "signature": "c9b5419b9771726b5f1e8b7be10f6e7a7c1ae035",
+      "updatedAt": "2026-04-09T15:50:44.153409+00:00"
+    },
+    "887f271c5c0b8422d834683dd5409acfd2f74d56e5c62eac5ef72008c00a0308": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "SW 테스트 자동화 및 구현",
+      "confidence": "high",
+      "signature": "2074a4cac85edf9cf75d5c3f11d76dbbfd5b4e49",
+      "updatedAt": "2026-04-10T16:27:32.605514+00:00"
+    },
+    "90f3a2f762cea9cf6a81023a012fc1a105dba34fd4b91744de1a57c7c401a1e9": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "합성 데이터셋 및 시나리오 생성",
+      "confidence": "high",
+      "signature": "b308bb2649cfd21288f114850dfdd2d4a728b3a4",
+      "updatedAt": "2026-04-10T16:27:32.605514+00:00"
+    },
+    "95e0bd563d26ffd7d9146e5fd040fd79c7a95d17a44b10de74e8ba093b26fcc3": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "VSLAM 임베디드 최적화 및 설계",
+      "confidence": "high",
+      "signature": "7327ed474f72390c979ffabeac88edca0d1a1349",
+      "updatedAt": "2026-04-10T16:54:06.795339+00:00"
+    },
+    "a4014f0e58cacdb8cc8d66cf2f08ce5dab40b3ede8848161bf19ececf6e591b7": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 설계 및 최적화 중심",
+      "confidence": "high",
+      "signature": "84e389b586dc15f683306b9222b681b01271f8d4",
+      "updatedAt": "2026-04-10T16:33:44.957049+00:00"
+    },
+    "b685cfa01a00aef947a357b05a0b88532075f84553a888591851f7baeb67181e": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "자율주행 시스템 통합 및 개발",
+      "confidence": "high",
+      "signature": "81c2e7be74a5a5943186c6ac6a10beeddb1f7e5a",
+      "updatedAt": "2026-04-10T16:27:32.605514+00:00"
+    },
+    "cf090531b692204dcf636b51b9c2b86b3b4a1860c7761966dcb676c594d455d2": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "ADAS 애플리케이션 개발",
+      "confidence": "medium",
+      "signature": "2542c7b2071c8750ec68e3e43cf0220c2295b1d3",
+      "updatedAt": "2026-04-09T15:53:53.411437+00:00"
+    },
+    "d3a4e2bff2d6fa6904ebf270d626db6382a2886adf904b57fcd80f9406f15fa3": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 학습용 데이터 수집 시스템 구축",
+      "confidence": "high",
+      "signature": "20c216d2ff8f616e2740eefd5595fae4d7d90062",
+      "updatedAt": "2026-04-10T16:27:32.605514+00:00"
+    },
+    "d8e2caf7690b4d1a3327ad80c420ae3ff7275a43a8532463ad535132768f54b9": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "데이터 수집 시스템 및 최적화",
+      "confidence": "high",
+      "signature": "51e17fc1acd087f60938da43e86474c735985d53",
+      "updatedAt": "2026-04-12T05:18:29.087446+00:00"
+    },
+    "63de83568195cbd071ff89ba6727634f622f63c83f3d36c0516947c4dcb78d4e": {
+      "roleGroup": "데이터 사이언티스트",
+      "source": "role_group_model_pipeline",
+      "reason": "통계 모델링 및 고객 행동 분석",
+      "confidence": "high",
+      "signature": "6cf25b393702c9e1be600445990e4ceb5160c146",
+      "updatedAt": "2026-04-10T16:27:32.605514+00:00"
+    },
+    "2dd5872cc3c2fb7ff34905a410a3f9c27119ecf14dcdb0ccb8f16fa55587c8fa": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 에이전트 개발 및 배포",
+      "confidence": "high",
+      "signature": "7fd3f8d802f6882f29a17ef6088dc6553ac6f9fa",
+      "updatedAt": "2026-04-10T16:27:32.605514+00:00"
+    },
+    "8863b1b8daebdf7556e861b3c69656f100382adeeff2dd571a2b89b850cdd427": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 소프트웨어 및 프레임워크 개발",
+      "confidence": "high",
+      "signature": "3c1b6f3a5e217d8ef480c6e6cf8fc8362ce8e2ba",
+      "updatedAt": "2026-04-10T16:38:23.673442+00:00"
+    },
+    "13948e77886872ef326a1ee9566cded1a6d2a6e26f32230d1643448e8f121b82": {
+      "roleGroup": "데이터 사이언티스트",
+      "source": "role_group_model_pipeline",
+      "reason": "위성 데이터 처리 및 분석 중심",
+      "confidence": "high",
+      "signature": "11a242756859fb49e1e78f9ca1f3ca9c41d6dcf0",
+      "updatedAt": "2026-04-09T16:11:31.899765+00:00"
+    },
+    "981269a67a0d9f0d961fd4ca48cd9134cdb6028adf125f6a3d42cb3faf0152b4": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "알고리즘 연구 및 실험 중심",
+      "confidence": "high",
+      "signature": "fed0d6710b16eb01601b96a244510186bc2bb051",
+      "updatedAt": "2026-04-10T16:27:53.995556+00:00"
+    },
+    "b12d2bb03c4b9cc46a7095a838f6885bc5925b0b30edb4e3ad6e8103d2acf69e": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 제품화 및 배포 중심",
+      "confidence": "medium",
+      "signature": "afb085cf8f3b01dd939f48bfb1d1ac92d9a4b964",
+      "updatedAt": "2026-04-12T05:19:11.359358+00:00"
+    },
+    "5ee2d7b14e690a3ae12bd7c746db01350776327c7fea219907f671ae9b9f947e": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "데이터 파이프라인 및 MLOps",
+      "confidence": "high",
+      "signature": "69a1ba98c516ed943fa64bee151b1d90ddbeac1d",
+      "updatedAt": "2026-04-12T05:18:29.087446+00:00"
+    },
+    "97bbbb5a3b77d0c5217c68f2430ca2707631942a39ac1a7593a35be20300b8d6": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "MLOps 파이프라인 구축 및 운영",
+      "confidence": "high",
+      "signature": "1cfe6b67ed0290002c38cb083d0024f34ca08203",
+      "updatedAt": "2026-04-12T05:18:37.772286+00:00"
+    },
+    "a6f2207233f56fadf5749e029b568eacd87240b63e39ddde269e7a13c9c89d50": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "RAG 기반 시스템 개발 및 구현",
+      "confidence": "high",
+      "signature": "7bcbabec98d467a83a953fe1daddd9d2dbb98541",
+      "updatedAt": "2026-04-12T05:18:37.772286+00:00"
+    },
+    "12de78d2a68403774e6f22dc29a7c506dce465708809b52e84980b904a53d12c": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "클라우드 인프라 및 DevOps",
+      "confidence": "high",
+      "signature": "9e4d3dec2a1d18aab47d529b1eb0c4d170c8ab23",
+      "updatedAt": "2026-04-10T16:27:53.995556+00:00"
+    },
+    "34a1d613558a8bbfd602ce7815d8c6314a46d9f03e1b9523db3843957935046b": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "로봇 학습 데이터 파이프라인 구축",
+      "confidence": "high",
+      "signature": "4a8024bbebcae3b3be057841eb1a058b24b94285",
+      "updatedAt": "2026-04-10T16:54:06.795339+00:00"
+    },
+    "cc0adeb93a5b46041d229ed86fa95db8bf8104c21ae04a4dcf17f27b124e1257": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "MLOps 및 파이프라인 구축 중심",
+      "confidence": "high",
+      "signature": "476d32567a07944a8490471ad3c2adc466b96e9c",
+      "updatedAt": "2026-04-10T16:28:15.550849+00:00"
+    },
+    "2b33ff845a05b9cb6dc3bf458a94cc3749c9b65cc3ebf41c20d86e649f199e5b": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "ML 모델 구축 및 MLOps 운영",
+      "confidence": "high",
+      "signature": "368ce190e2111dfbb8f86633a848b9dc2fe1a12b",
+      "updatedAt": "2026-04-12T05:18:37.772286+00:00"
+    },
+    "9ba7b9b4ab629bde0ece86efb05daa9d647efde59bace3f7fdb7db064ab19978": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 서비스 애플리케이션 개발",
+      "confidence": "high",
+      "signature": "b3a51d036c128021448a3c160a1443defd52cee2",
+      "updatedAt": "2026-04-10T10:10:09.616219+00:00"
+    },
+    "f9dbd3b1b8bf6a78c5a7c2fa61a906ad163a9269ea2930951c3a85f4ddafd4c8": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 서비스 백엔드 및 인프라 개발",
+      "confidence": "high",
+      "signature": "c10ccb6cf2ee0cb7b79bf887919d4b0c6794f4b7",
+      "updatedAt": "2026-04-10T16:28:15.550849+00:00"
+    },
+    "b8d4fc1212ba33ae4f5122bd92d275214820bac517a4503e4e8cd649baa35e60": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "논문 구현 및 모델 성능 고도화",
+      "confidence": "high",
+      "signature": "9365eee1cb95944270aa0077230046977438a506",
+      "updatedAt": "2026-04-12T05:18:37.772286+00:00"
+    },
+    "bc25f34d3dd3d875f38cbde5a29e6f9b7e355f08af05938aaec8dcaff56b155a": {
+      "roleGroup": "데이터 사이언티스트",
+      "source": "role_group_model_pipeline",
+      "reason": "실험 설계 및 성능 분석 중심",
+      "confidence": "high",
+      "signature": "fc21cddf941a001c8a1b91610e9bc399eef4e65c",
+      "updatedAt": "2026-04-09T15:35:52.054134+00:00"
+    },
+    "066babfbf04a840b279cfc5550a40155d27676a0e66e9598ec15df874bcc3ff8": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "최적화 및 프레임워크 구축",
+      "confidence": "high",
+      "signature": "17b46a89a7b73d3be1b31338d6fc71ce7936aac6",
+      "updatedAt": "2026-04-10T16:33:44.957049+00:00"
+    },
+    "0a60bff12deaac4b891ffcd0fbfe891dca75b9527fd2f40d641103c0a79657d4": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "데이터 파이프라인 및 구축 중심",
+      "confidence": "high",
+      "signature": "a0fb02079c2b522f86c914833622b07687fb97e4",
+      "updatedAt": "2026-04-09T15:51:02.343204+00:00"
+    },
+    "12fa8761d600d3689ed78c954c232d386991bf5ecb5dc467bfa67b8b0428c34f": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 배포 파이프라인 및 DevOps",
+      "confidence": "high",
+      "signature": "cfbbd75a6b17f1ca761444f4faf24312d05df882",
+      "updatedAt": "2026-04-10T16:28:15.550849+00:00"
+    },
+    "1b3f3f55e38ba7fee5c91ddb22e15cc70713d99a1a07655f6562167cf0bdf851": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 파인튜닝 및 솔루션 설치",
+      "confidence": "high",
+      "signature": "9d8931d059ec277e8e8fd112299356bfa8d64e38",
+      "updatedAt": "2026-04-10T16:28:15.550849+00:00"
+    },
+    "208f58b7862965a0799bc2a2c5a61debfc008d45c03e7081c2b0c57ab16b1293": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 서빙 및 파이프라인",
+      "confidence": "high",
+      "signature": "e088915e5d88b340e6069d38902f6f2ff1e91b0c",
+      "updatedAt": "2026-04-09T15:36:00.563082+00:00"
+    },
+    "27d87f5823728bd942a9fec26e6f1c0c0b828194eff15dafb89d7dca17fdb18d": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "평가 체계 설계 및 분석",
+      "confidence": "medium",
+      "signature": "2a9ea5f38401eebb31f97578d9dad9c675a2a822",
+      "updatedAt": "2026-04-10T16:33:44.957049+00:00"
+    },
+    "2eeb50f90af20cac9fea54684d0fe8b67e4534bd87608436fef980f75b1c39b1": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 사후학습 및 최적화",
+      "confidence": "high",
+      "signature": "57e0e5933d452d639897f8f226f1661f5c97f356",
+      "updatedAt": "2026-04-10T16:28:37.676034+00:00"
+    },
+    "3543a48f994851a41c5a1814c51c76c35b13843108c0ff133fbd68701685eee7": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "파이프라인 및 도구 구현 중심",
+      "confidence": "high",
+      "signature": "86b860590617fa6fa5840501895e8fc79e042d0d",
+      "updatedAt": "2026-04-10T16:33:53.865832+00:00"
+    },
+    "377fa1427fdb4007909b702b2b77de24a223284a4e43264c12e1e35f14e56817": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "제품화 및 기술 로드맵 설계",
+      "confidence": "medium",
+      "signature": "9b0e899645033ef64711a6bc9d02c0bf72c5e440",
+      "updatedAt": "2026-04-09T15:54:02.310464+00:00"
+    },
+    "41a6298917c4793bce21e553b44f1fc9a2ccdb962a63bfc174d3e1cf6fcafae9": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "PMO 역할이나 분석가 분류 불가",
+      "confidence": "low",
+      "signature": "f014b3af610ed317386cf231eb0e467944abbaa5",
+      "updatedAt": "2026-04-09T16:11:31.899765+00:00"
+    },
+    "48984c65a686325bb0af2d48c0f95fe08b739a77c53848c900313741e5fc1d22": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 플랫폼 설계 및 운영 중심",
+      "confidence": "high",
+      "signature": "87b6faf6d8effe5799219f50342702479007ea28",
+      "updatedAt": "2026-04-12T05:16:41.452047+00:00"
+    },
+    "59967ec4ea05dc47ccb18d4964ce3b6419749901408df7dd1eeb926073b727a3": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "사업개발 역할이나 분석가 분류 불가",
+      "confidence": "low",
+      "signature": "b999663b9defa3b4e02fe27788269c5d149a8053",
+      "updatedAt": "2026-04-09T16:11:31.899765+00:00"
+    },
+    "7a1c780ade0abea7e791b7c8d6a7a2e7f71464c2f96be2d67c02f41056a5c5f6": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "PMO 및 프로젝트 관리 중심",
+      "confidence": "high",
+      "signature": "97bee1230fd728d538e6e4359071cfd067de7d70",
+      "updatedAt": "2026-04-09T16:11:40.797956+00:00"
+    },
+    "80b8a7290e21e34ef41b61ceb8243739cdb1f195494cee402cf9082af197a1c7": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "데이터 파이프라인 및 구현 중심",
+      "confidence": "high",
+      "signature": "6e5f5f260b830a198511e1db1f52e575f02c55cc",
+      "updatedAt": "2026-04-10T16:33:53.865832+00:00"
+    },
+    "87bb95584caded0d8c92e2fb4136e749b12cb7f2f24aaa0ff0eba9cf86a80730": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "클라우드 아키텍처 설계 및 서빙",
+      "confidence": "high",
+      "signature": "49d01039435ddf38393a71be39c11007d8691b6d",
+      "updatedAt": "2026-04-09T15:36:22.663562+00:00"
+    },
+    "9ccd3bacba93c3054ae3d739f7c6998140b9158c9f866860d670d3f0d6e66fdc": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "MLOps 및 GPU 인프라 최적화",
+      "confidence": "high",
+      "signature": "7101eacda570f2b13c43d3300fc2835c959f6bb4",
+      "updatedAt": "2026-04-12T05:16:41.452047+00:00"
+    },
+    "a06cf74772938ff59cd49fae709184b34de8ce971a67ef21b8041822251cc224": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "GPU 클러스터 및 인프라 구축",
+      "confidence": "high",
+      "signature": "14300534837be1fd20e0b875f5e04d53f4464b5b",
+      "updatedAt": "2026-04-10T16:28:37.676034+00:00"
+    },
+    "a87c47fd3cc9feb0aff6293158ee3f7cfcd24f181032db54acd68e6bf2d0a535": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 배포 CI/CD 파이프라인",
+      "confidence": "high",
+      "signature": "e85fa8d646b6440507d5f82165974d1100cf0452",
+      "updatedAt": "2026-04-09T15:36:32.869054+00:00"
+    },
+    "af1a89895f143e7d2ee69df50e6e8f7f9a027c5af7aabb49e2770dec0a2e2c39": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 양자화 및 서빙 환경 구축",
+      "confidence": "high",
+      "signature": "5cfb1ead4605d996c1d42702cc0c9e8047ee3590",
+      "updatedAt": "2026-04-10T16:28:37.676034+00:00"
+    },
+    "d26c37ee2fd2135a4c8a95c82505ee048ac06a65e118c99235babc552aef0b90": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "사업개발 및 영업 중심",
+      "confidence": "high",
+      "signature": "b68799f9a4e28bcbfd786d09b661c48c7167f1aa",
+      "updatedAt": "2026-04-09T16:11:40.797956+00:00"
+    },
+    "d64d7ff555694db1670ac577fe972e05dfd02a2400426aa89144d59152eae05b": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 파인튜닝 및 RAG 구축",
+      "confidence": "high",
+      "signature": "9b7a2bd71a1e2480922b6e4f288839e3fbffb0dd",
+      "updatedAt": "2026-04-10T16:28:37.676034+00:00"
+    },
+    "e032085ccfa63ddf9d628d44c9d6aa258a3a740266aafa3e1436799b4dea1895": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "MLOps 및 인프라 자동화 중심",
+      "confidence": "high",
+      "signature": "d70222a256ddf172084923d2de6e3962d5e002e1",
+      "updatedAt": "2026-04-12T05:18:46.681138+00:00"
+    },
+    "e53e077c6639f291fe9c11da2e7ebdab7a7b3b9c047e99bb347d0647805a3329": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 시스템 설계 및 MLOps",
+      "confidence": "high",
+      "signature": "fb6c8fa8d1527078e9d35dd818929e2e38456ce5",
+      "updatedAt": "2026-04-10T16:28:37.676034+00:00"
+    },
+    "eb9b2ce000b4dc274a0832a14b682e2bc81b7c2584df27ecd2a8286adfb51ebc": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "직무 정보 부족으로 유지",
+      "confidence": "low",
+      "signature": "9db969f77f1a079edecd36b2a8d02af2cb576d1d",
+      "updatedAt": "2026-04-10T16:33:53.865832+00:00"
+    },
+    "efe154150be56e1c7a80a6240aed40cd2114fbd9a570db33a7cdaf6f88799f7b": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 서비스 및 도구 구현 중심",
+      "confidence": "high",
+      "signature": "cc43a1d8902185bbeafca4a85ac1411af0eac113",
+      "updatedAt": "2026-04-10T10:12:12.204400+00:00"
+    },
+    "2bbe77d9d82b1d99f78dee23dc210824f295a146f4865bc0ec6b312a72b7ec4c": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 경량화 및 학회 논문 중심",
+      "confidence": "high",
+      "signature": "5481a8237dc144e259debf6d69261993b484af1c",
+      "updatedAt": "2026-04-10T16:28:59.488450+00:00"
+    },
+    "5480e39adb88c8ae598ed0001bba9651a0bdf499efafd8fef3f04a541366d063": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "런타임 라이브러리 및 API 개발",
+      "confidence": "high",
+      "signature": "8ed419874cb2ddc75d90385ae569bcfe89bb1c47",
+      "updatedAt": "2026-04-10T16:28:59.488450+00:00"
+    },
+    "7a6ff0683f5b05ed36f85f4d571a2031229ae870cfbdcccec143a67352ad0e7d": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "컴파일러 개발 및 커널 최적화",
+      "confidence": "high",
+      "signature": "631dac801574bf05e2608b4951bbafdf3f463004",
+      "updatedAt": "2026-04-10T16:28:59.488450+00:00"
+    },
+    "e749af38a2956b86e02f54b3785e06e3539369bdfbe72d321f33d7526da68c9a": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "양자화 및 추론 엔진 최적화 중심",
+      "confidence": "high",
+      "signature": "69f3da406486835e553a2c3ea891d35c1f35362a",
+      "updatedAt": "2026-04-10T16:33:53.865832+00:00"
+    },
+    "6161e6b5bfbd352f532707bb56b54cbd92c553f50854df63cc2f373d50301874": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "멀티모달 모델 연구 및 논문 작성",
+      "confidence": "high",
+      "signature": "99570f966fb587d2834b107682f48a93b0c334dd",
+      "updatedAt": "2026-04-10T16:28:59.488450+00:00"
+    },
+    "6cc457dbc0ba62de75b2c9f89a7b2fc250ae3e2cacdf8cd653778b90deee5999": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 설계 및 파이프라인 구축",
+      "confidence": "high",
+      "signature": "d8a70efd679eac0f12892ce7fbba80d4f6a828b6",
+      "updatedAt": "2026-04-12T05:18:46.681138+00:00"
+    },
+    "07e11a8aedd101c1866abfd0b2e02148b3b2387f067b8c9e42df3e02fc228b3b": {
+      "roleGroup": "데이터 사이언티스트",
+      "source": "role_group_model_pipeline",
+      "reason": "가설 검증 및 통계적 데이터 분석",
+      "confidence": "high",
+      "signature": "b856f800950d4fab4b2f000d124ad51a5dfd6605",
+      "updatedAt": "2026-04-10T16:28:59.488450+00:00"
+    },
+    "249b8846d2daa33f1da68a92a833aca541fb623ed6e939963f0f39ea60bbf848": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "RAG 시스템 및 MLOps 구축",
+      "confidence": "high",
+      "signature": "4a7cb5f7808dda30e55fdea3f101aad3a4293a5f",
+      "updatedAt": "2026-04-10T16:29:20.785737+00:00"
+    },
+    "630ba403dd988d6ce986c230a06048ae2bcbdfd16b4d980dc1ed3589451b4f87": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "데이터 파이프라인 구현 중심",
+      "confidence": "high",
+      "signature": "ff3bbfac130e74b6d49cc428cade002d31d865a6",
+      "updatedAt": "2026-04-10T16:34:02.073733+00:00"
+    },
+    "c096dbe43acbb917fe6739200ff4695818e345f6cdb2d06efa0fbdfd62a3c083": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "영업직으로 역할군 부적합",
+      "confidence": "low",
+      "signature": "9f6f5d4ac45b0b65fc8536b385c2a974dd51756c",
+      "updatedAt": "2026-04-10T16:34:02.073733+00:00"
+    },
+    "a6c1cc7d676d21d78c8106578a721a4067dd579b6b72032485ff4b1d8ad4a98d": {
+      "roleGroup": "데이터 사이언티스트",
+      "source": "role_group_model_pipeline",
+      "reason": "데이터 표준화 및 관리 중심",
+      "confidence": "high",
+      "signature": "e58d841398fc6bc672189f07df930031d7175e31",
+      "updatedAt": "2026-04-10T16:54:15.380573+00:00"
+    },
+    "5b4f8e3e9780f545d6799eab3ca771b99b613c314e2523637a3cee0bce1fd135": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "강화학습 및 동작 인식 연구",
+      "confidence": "high",
+      "signature": "d5cd0fd33bc5dbcb602417f805ae21ff05196cb2",
+      "updatedAt": "2026-04-10T16:29:20.785737+00:00"
+    },
+    "b6c642d755dfdc4e939fd13e2fe674f94ae30145f4c3f546fe776780e618b750": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "최적화 알고리즘 및 논문 작성",
+      "confidence": "high",
+      "signature": "d5af0f6e06440493bd44a70f4eb2daf6579b9195",
+      "updatedAt": "2026-04-10T16:29:20.785737+00:00"
+    },
+    "9ee5628ba80966d9b22aace1f416d7ef3f1408cf386acb3c3af252966a6d0911": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "그로스 마케팅 및 성과 분석 중심",
+      "confidence": "high",
+      "signature": "b7cb34e7ecdb503459b587c1132263c46f7c5b7a",
+      "updatedAt": "2026-04-09T15:37:17.828949+00:00"
+    },
+    "cc39b724ea84660c46d4cd03cbd74ee4962de9cfb4b39d560a23c0dd6cce16b1": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "CRM 및 그로스 마케팅 분석",
+      "confidence": "high",
+      "signature": "227d49fea9d1cbe58ba1733698a467c9a20bba4c",
+      "updatedAt": "2026-04-10T10:11:18.831137+00:00"
+    },
+    "e1dbaf629c9956f7fc820231d450ca3ca3af620e97e48d49d636f711441d1ee0": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "퍼널 분석 및 UX 지표 분석",
+      "confidence": "high",
+      "signature": "7d95c72c47389ef926a67b821622792ef945cecc",
+      "updatedAt": "2026-04-09T15:37:27.076668+00:00"
+    },
+    "e99e437ef225a71cf168a39d05444636d417106923146556dacb6eb15204d779": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "그로스 분석 및 대시보드 구축",
+      "confidence": "high",
+      "signature": "9b1c360a1db0066148516a337dd688e77616f37e",
+      "updatedAt": "2026-04-10T16:29:20.785737+00:00"
+    },
+    "64dc79b2cdbece3799a0106abab6ec84dc38b770910b9f1ca66d312f8851b4e9": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "퍼널, 리텐션, 지표 분석 중심",
+      "confidence": "high",
+      "signature": "e9299825ef67af7f865ecc8e56a47e5408ca1c3e",
+      "updatedAt": "2026-04-09T15:54:30.450230+00:00"
+    },
+    "a97318abd9d6f3a4c644e1f2ba0e8d85c80dcdcbb58cd31ea723040ec0d490b9": {
+      "roleGroup": "데이터 사이언티스트",
+      "source": "role_group_model_pipeline",
+      "reason": "추천 모델링 및 통계 분석",
+      "confidence": "high",
+      "signature": "62fe1301d7d753e6720f5b0d1a0a4648b4fc2c5b",
+      "updatedAt": "2026-04-10T16:29:20.785737+00:00"
+    },
+    "3170c4b0fc0e96a3efe3350c5e154400538fda97480034caf53515ff05adcdc9": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "MLOps 및 서빙 아키텍처 설계",
+      "confidence": "high",
+      "signature": "bd4f33d80f143406c8b0ad44438c49891b2ea464",
+      "updatedAt": "2026-04-10T10:11:28.571277+00:00"
+    },
+    "9ed26b7e51f69cd0cb568086fff3fad1ab225f70ec509053bf6f0740444927e2": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 기반 개발 환경 구축",
+      "confidence": "high",
+      "signature": "de4b9178cdd36508b0f76b5b66f675a44d68aaff",
+      "updatedAt": "2026-04-09T15:58:45.585797+00:00"
+    },
+    "f3765941ec9a7d9959982b760a8d1aa1ae41c4f833def39918dadcf862d63179": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI요소 없는 백엔드 개발",
+      "confidence": "low",
+      "signature": "869481dedfed44fd4bdbaf136b3268f20420195b",
+      "updatedAt": "2026-04-10T16:34:02.073733+00:00"
+    },
+    "3bbd4030db95fc7517d3a364e840a168aab2329a250a93257f825e53fbb4581d": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "신경망 최적화 및 경량화",
+      "confidence": "high",
+      "signature": "f50066f9eed7a004e0fe3d0558fdcc8470661034",
+      "updatedAt": "2026-04-10T16:29:41.821279+00:00"
+    },
+    "2a805a7ba0ec84b09ef7fb1a16fa7be61dad3cbfbc70b24d187c13e53c621798": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM/RAG 시스템 구현 및 MLOps",
+      "confidence": "high",
+      "signature": "2c43118f58eb281f59e694f428f20c0ce94a87dc",
+      "updatedAt": "2026-04-10T16:29:41.821279+00:00"
+    },
+    "15e489b1ea72df2c08f08e6c273779bc96432bcfda7950a3f1c03df2dc5223d3": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "MLOps 및 서빙 파이프라인",
+      "confidence": "high",
+      "signature": "a2cbbf6996087dda58b7c4e9917fba139650727e",
+      "updatedAt": "2026-04-10T16:29:41.821279+00:00"
+    },
+    "ccb24a48c4416a64eec3d3b5c708c67471817498d221cc6667135730f6fe682c": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "의료 AI 모델 및 서비스 개발",
+      "confidence": "high",
+      "signature": "9fb8748d2f901bdf33eaa389709b471b0abdbdc1",
+      "updatedAt": "2026-04-10T16:29:41.821279+00:00"
+    },
+    "937cb03faad4a5d12cd5d56a799050f570a5c2466923121fc3e6d91fc1565bac": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "MLOps 및 모델 배포 최적화",
+      "confidence": "high",
+      "signature": "d7e4dbd8922fcdbac7d3d06ad71b423f3ba3220c",
+      "updatedAt": "2026-04-12T05:18:46.681138+00:00"
+    },
+    "0168cc040b60baa7e9efe8fdf221d53a699e25742cc3a2a00bfb32597f4ca52e": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "RAG 기반 AI 서비스 구현",
+      "confidence": "high",
+      "signature": "221e81fcc1b4d8db6b65f43072837a005826f3b1",
+      "updatedAt": "2026-04-10T10:13:11.809388+00:00"
+    },
+    "018466efaa295b0a260ebd8a08ca1dc15fb4a03817dbe3b23ab31d39ef95d08c": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "CAD AI 솔루션 구현/운영",
+      "confidence": "high",
+      "signature": "b612acdb9d1a4e523b7eeec78c4e1b9268af7ab5",
+      "updatedAt": "2026-04-10T10:13:11.809388+00:00"
+    },
+    "2284e6c9342420836a55e2f5c2af756d82ce6c79b26574286e7d7abdb929c39e": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "PI 및 ERP 기반 성과 관리",
+      "confidence": "high",
+      "signature": "02e0ecc0aa92605f1b0e5a1b1e0249379ae66711",
+      "updatedAt": "2026-04-10T16:38:34.367578+00:00"
+    },
+    "2a04a1ac006b4a449dd6456402f07774a5a25ae1c62723ca61f6176875a8ce2c": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 에이전트 및 RAG 구현",
+      "confidence": "high",
+      "signature": "f46dcb793aef75b935a0c5a66b9afc13429bfbe9",
+      "updatedAt": "2026-04-12T05:18:46.681138+00:00"
+    },
+    "3a1af736e9641b8bf16d7565680bcfa5d13c3e65fa63e1cefbf425314fc351e5": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "구현 및 MLOps 중심 업무",
+      "confidence": "high",
+      "signature": "39f7d42502838c1228a069eb8a74d04282c16221",
+      "updatedAt": "2026-04-10T16:34:19.491426+00:00"
+    },
+    "47e4d045a62863c95267ea5ddbc5d0ca444da3c38620b8310a82166d7fcbff94": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 기능 및 시스템 개발 중심",
+      "confidence": "high",
+      "signature": "b9dec98c3c92709afae74032ad5610f02148e154",
+      "updatedAt": "2026-04-12T05:18:55.899643+00:00"
+    },
+    "62cceb68f69153b5e6b2b41001dc0c344e58fbb9e1f7f6b5a0b71a947f547e14": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM, RAG 기반 자동화 개발",
+      "confidence": "high",
+      "signature": "668162dedb0589d968667b31c23f08081b8a99c8",
+      "updatedAt": "2026-04-12T05:18:55.899643+00:00"
+    },
+    "8b05a92fbca6b18dd22424854b77f8d34945cd9604facd03f01fc1ead8b0c0c7": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "AX 전략 및 PMO 중심",
+      "confidence": "high",
+      "signature": "ec2ad4bbda764091f173856c858cfbffa18f23e7",
+      "updatedAt": "2026-04-10T16:34:19.491426+00:00"
+    },
+    "a292ee69f41ee72d171ae1a0e11207cebf3d05eb65fa4de0ee2a1f23c4f57d55": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 양자화 및 아키텍처 설계",
+      "confidence": "high",
+      "signature": "7931e85edce0c5b0e6955efa1dbbf32ebad09b5f",
+      "updatedAt": "2026-04-10T16:54:24.230658+00:00"
+    },
+    "ad671d88a85f3f0bcd241e5e982527bd66d98338b9d8cd2eb3b34d347e4aa343": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 솔루션 설계 및 연동 중심",
+      "confidence": "high",
+      "signature": "51a27a1ee1ef0c01972e14ab861c089c266a41f2",
+      "updatedAt": "2026-04-09T15:51:59.254936+00:00"
+    },
+    "ca8c9da93d0cc2f8190c6489fd5c9e5d71d7f42d720044052a86933994fd9159": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "PMO 및 대시보드 기획 중심",
+      "confidence": "high",
+      "signature": "68740a48232007428c5a826f09ca0ce1b524ab58",
+      "updatedAt": "2026-04-10T10:13:02.798246+00:00"
+    },
+    "dbd54bc66e2843f4d57676bdc40fce5a7f27cb025f776523f68b46a4ef280995": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "풀스택 개발자로 분석가 부적합",
+      "confidence": "low",
+      "signature": "85742ba24fcc2520d79eeda44910bf30ce7f1328",
+      "updatedAt": "2026-04-10T10:16:13.044705+00:00"
+    },
+    "e345e8da94d5b3a642e1bd9c871ba67b0664a9c78edd17d5a0ea6bfcadcdd37c": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 에이전트 시스템 설계",
+      "confidence": "high",
+      "signature": "09458570433794822d15a84c125826b122e9837c",
+      "updatedAt": "2026-04-10T16:30:26.529259+00:00"
+    },
+    "ad7fc9c4a8db86b4b8233a9d791343da488d37ef2b54665a44af232e3731f2e2": {
+      "roleGroup": "데이터 사이언티스트",
+      "source": "role_group_model_pipeline",
+      "reason": "시계열 예측 및 통계 모델링",
+      "confidence": "high",
+      "signature": "6c09f45c933353731be10d9c7cdb472fe09db5de",
+      "updatedAt": "2026-04-10T16:30:26.529259+00:00"
+    },
+    "bcde1d33b19a041ccb62d453edc5e050369c50444e69b71282761b473b70b3ae": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "데이터 파이프라인 및 MLOps",
+      "confidence": "high",
+      "signature": "70962c9a42e1f6e342095109ea4cfe571a606be2",
+      "updatedAt": "2026-04-10T16:30:26.529259+00:00"
+    },
+    "3cb3db2f34b7a32b979a75df4885c614a7c276a624272b9b19ee6c9c076e59b5": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "BI 도구 및 지표 분석 중심",
+      "confidence": "high",
+      "signature": "32b078bcc2a291eddce7df3b95d49dffee59e14e",
+      "updatedAt": "2026-04-09T15:38:35.960312+00:00"
+    },
+    "87bc1176a6f2a0490ae82dab6c7afc87767384d3ead94bcfb12a98d46b524c4b": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "SW 개발 및 구현 중심",
+      "confidence": "medium",
+      "signature": "c45a41f96882f6efc5cadad42b3c2e2a143cef64",
+      "updatedAt": "2026-04-09T15:54:52.114067+00:00"
+    },
+    "8b10f0b2767212dafcf3d485a175fd94475d66955aaadbd8e400e75e5f468896": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 학습 및 서빙 파이프라인",
+      "confidence": "high",
+      "signature": "e0c8d0267defa1e69c1110950b9e0d492b804d25",
+      "updatedAt": "2026-04-10T16:30:26.529259+00:00"
+    },
+    "8c3c80fa449746930a5522dbd252fbab8ee9814ec2af896fae3f7d2205728b6b": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "CX 전략 및 응답 데이터 분석",
+      "confidence": "high",
+      "signature": "f448cf0054c31324409c434c2430fbe3aa7cb765",
+      "updatedAt": "2026-04-09T16:11:50.709368+00:00"
+    },
+    "dce333d77248bd7413631cd2588c8de6b4839a499b5b7abc37ccbb06562c4c0a": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 솔루션 구현 및 프로토타입",
+      "confidence": "high",
+      "signature": "5c5bd4e1aa0d9808c9ccd0a9265ade4d7d147bbe",
+      "updatedAt": "2026-04-10T16:30:26.529259+00:00"
+    },
+    "d7f790d12b27f5614ef15d78a1a61d1e512ad8e4e7e7620642012094b89951d9": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "KPI 설계 및 대시보드 분석",
+      "confidence": "high",
+      "signature": "1e99e017afe322e5a5251a385457427aefbaa382",
+      "updatedAt": "2026-04-10T16:30:26.529259+00:00"
+    },
+    "2995885abbad62dda7aa2c7bcbc37cf1bc5751c0b3bb0ce0c244e4f3611720b9": {
+      "roleGroup": "데이터 사이언티스트",
+      "source": "role_group_model_pipeline",
+      "reason": "최적화 알고리즘 및 ML 모델링",
+      "confidence": "high",
+      "signature": "0b2b8da6a32613519ffa4bc915d91f88f9f4f0ec",
+      "updatedAt": "2026-04-10T16:30:48.135875+00:00"
+    },
+    "88bfb39de21a7032c1d9a50ad339b426487ae5d70bc571a96582306455671b31": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "SLAM 및 공간 인식 알고리즘 연구",
+      "confidence": "high",
+      "signature": "d034ea44a005656be32c000ddb83faa27b1e4257",
+      "updatedAt": "2026-04-10T16:30:48.135875+00:00"
+    },
+    "ea930cef9a46307b12d24b12d296707644c8bef17d59d59ded91b0d5405524d2": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "차세대 측위 알고리즘 선행 연구",
+      "confidence": "high",
+      "signature": "c5ff2dd5bb49038e39345d8d9131ae7106e37f5b",
+      "updatedAt": "2026-04-10T16:30:48.135875+00:00"
+    },
+    "038a7d2110999be04050ae638ee3fef822139e55940da2ee7f9695d6c2823816": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "보안 자동화 도구 개발",
+      "confidence": "medium",
+      "signature": "98aecc66ce32aed0bdc4af2148d9cd8864496a91",
+      "updatedAt": "2026-04-10T16:34:19.491426+00:00"
+    },
+    "7c9fdd47aed8bc388b254a61d42aec6247724d9fd0a8223448047f05e84a68ca": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "MLOps 파이프라인 및 로직 개발",
+      "confidence": "high",
+      "signature": "d8896bde4a630214d193883c26bcd04927d1dcb3",
+      "updatedAt": "2026-04-10T16:30:48.135875+00:00"
+    },
+    "82e50434f58b1dc89b05bcbb6e1a752aba1172aae070795508b9d0f960ba0b3d": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "MLOps 플랫폼 및 서빙 인프라 구축",
+      "confidence": "high",
+      "signature": "5bb380f5bf2ee63e1a81bd28ea30944d6b4b3dba",
+      "updatedAt": "2026-04-10T16:30:48.135875+00:00"
+    },
+    "e43ee461668570f4960362c2ab6148c9fb00169c11c24f6ca24f78e0405012fb": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "멀티모달 및 LLM 추론 구조 연구",
+      "confidence": "high",
+      "signature": "e008bda33d20809a0d979063f29800a000a4bb5d",
+      "updatedAt": "2026-04-10T16:30:48.135875+00:00"
+    },
+    "9b0654078e9a0ab2e1ea3982b4377465f14af34a047610b7864b9f8f7177be4e": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 기능 구현 및 백엔드",
+      "confidence": "high",
+      "signature": "edd9c2b84c78e1fe67f9e6fe0f6d25449ebd39c5",
+      "updatedAt": "2026-04-10T10:13:55.326879+00:00"
+    },
+    "9c932a0a27b486bb9d4f67f5c6912010dc03b233b28101e1dbad95e661bc6da5": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "솔루션 개발 및 엔지니어 역할",
+      "confidence": "high",
+      "signature": "029941f51261dbf47dd52d338730151d0929445e",
+      "updatedAt": "2026-04-10T16:31:07.694277+00:00"
+    },
+    "b7cd343f31600421ea16fd66c441b20aafe3e71023438405a0df6f45ddd7fac3": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "배포, MLOps 및 인프라 운영",
+      "confidence": "high",
+      "signature": "670de018c911ce3bba30e7c959a238ba9fe032e7",
+      "updatedAt": "2026-04-10T16:31:07.694277+00:00"
+    },
+    "bc37e2981eb8f66a4e50ce5ec37b8e3716c0b60770554f448d4213271dc92ad2": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "비전 모델 및 알고리즘 구현",
+      "confidence": "high",
+      "signature": "f028c2108d17f7dc205595edb4b6a545e6baab15",
+      "updatedAt": "2026-04-10T16:31:07.694277+00:00"
+    },
+    "493ca87aa26d795d7b988c7c12ab0579f92bd9a7da64fae11c6ddc7fef98bda5": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "CX 지표 모니터링 및 분석",
+      "confidence": "high",
+      "signature": "b74eab17ad9c23798d863b4359747e2a4fa414a4",
+      "updatedAt": "2026-04-10T10:14:11.762024+00:00"
+    },
+    "5f1fbd7e50cff8930f6659062fc0db07a12a1d33a4c1b1e8f639826f19f8d0e1": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "SQL, BI 기반 감사 데이터 분석",
+      "confidence": "high",
+      "signature": "830bcd620f8216bf327fc6dd7dadf8e311887801",
+      "updatedAt": "2026-04-09T15:39:13.261629+00:00"
+    },
+    "b96ca577f0441ef7d0f728eb6dfff08b175014b28df7999472fb0e9202e813fa": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "CX 및 VOC 분석 중심",
+      "confidence": "high",
+      "signature": "87f612b20087fbcb79b295e2a34c3044a2afabed",
+      "updatedAt": "2026-04-10T10:14:29.941977+00:00"
+    },
+    "bb00c64b097e61ed77026c76f1ef94f3599324daa0d32f4b2e348af95d163908": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "PMO 및 지표 설정 중심",
+      "confidence": "high",
+      "signature": "548ff4b21d6050fd59409c5748aba892d7abddc2",
+      "updatedAt": "2026-04-09T15:39:22.308604+00:00"
+    },
+    "bdde58a719b1a0ddaac253a3ad9c2f8a9e61c343948c15480483c1b7a3bde753": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "SQL, BI 기반 운영 분석",
+      "confidence": "high",
+      "signature": "a61494fba049204092f225f528578fc07a0f7f47",
+      "updatedAt": "2026-04-10T10:14:29.941977+00:00"
+    },
+    "c513c75934264438b7326d46f7d4df465ae58860fe40d7eaf3354cefda5890b7": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "QA 엔지니어링 중심",
+      "confidence": "low",
+      "signature": "af3e5cc80348c1308cea6363c423aa863b8bc55a",
+      "updatedAt": "2026-04-09T16:11:50.709368+00:00"
+    },
+    "d5c9a30281916d1b5a3425d960313f61416056b0247ba017c6dbde082862592d": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "BI 도구 활용 성과 분석",
+      "confidence": "high",
+      "signature": "25138fe2de12958f2007080b760f5979b9f56420",
+      "updatedAt": "2026-04-10T10:14:29.941977+00:00"
+    },
+    "dcb40dae886b668ef3691b9896ae16e0582aba071921b1955c2f94bf018d6847": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "CX 데이터 및 SQL 분석",
+      "confidence": "high",
+      "signature": "60affdb765ef3b4dcb1d77cf514ff36fae435d24",
+      "updatedAt": "2026-04-10T10:14:29.941977+00:00"
+    },
+    "7cfdc34eb72e4ae46eb2a1862f45c0624b52b7b6528083232a963416aa2ef400": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "데이터 파이프라인 및 MLOps 중심",
+      "confidence": "high",
+      "signature": "f4107ae37b7198eae0218d77efa7692db2ce7b6d",
+      "updatedAt": "2026-04-10T16:54:19.526408+00:00"
+    },
+    "a5e5d12cfc83d2ac1f5978da028d6246f5bdfe6988a410df518109eb20396faf": {
+      "roleGroup": "데이터 사이언티스트",
+      "source": "role_group_model_pipeline",
+      "reason": "SCM 최적화 및 통계 모델링",
+      "confidence": "high",
+      "signature": "d8725bebb66cc12bfd63d8f4a520248cb4729e47",
+      "updatedAt": "2026-04-10T16:31:30.152179+00:00"
+    },
+    "f185db8f96ffc5ff14872c72ae96fdf99bdd67b6727a95f8c1818631921e43c5": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "SQL, BI, 지표 분석 중심",
+      "confidence": "high",
+      "signature": "55ce19fc174637b2f68805a8f474b9f7fc2e214f",
+      "updatedAt": "2026-04-12T05:18:55.899643+00:00"
+    },
+    "2db9b511394c252478ae61b7ab677208ee8b1764799a7fae5f07cfaa32ead0e9": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "PM 역할 및 전략 총괄 중심",
+      "confidence": "high",
+      "signature": "72388d1a9d513bc19ee2ecb112acbbc7354dda06",
+      "updatedAt": "2026-04-09T16:11:59.687796+00:00"
+    },
+    "30e3e9d5dc04902b1c072806ae150c3517eb943ac457780f007110b7f02715a7": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 기반 자동화 파이프라인 구현",
+      "confidence": "high",
+      "signature": "8fe980f4adf9d2cdf39f3e858334a094d736d39a",
+      "updatedAt": "2026-04-09T15:39:44.038386+00:00"
+    },
+    "57faeba617a9a504cfa3f699efbec3098e6f443aaa0c72f8d4c26683a0d705f9": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "ML 인프라 및 MLOps 운영",
+      "confidence": "high",
+      "signature": "95e32a01400e95860962977e26f5d057f5284dff",
+      "updatedAt": "2026-04-12T05:18:55.899643+00:00"
+    },
+    "7d5c15626be939f3219f28f50a345bf4e289b5a7ff4164df2562cf4ba0414bc6": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "에이전트 구현 및 파이프라인 중심",
+      "confidence": "high",
+      "signature": "5fb3c7e0080697bcee5eecd0c10a1da92c706b49",
+      "updatedAt": "2026-04-10T16:34:28.319915+00:00"
+    },
+    "afba2a68973054c06b421a0cdbd40dfe64c4f870ff9cb72590f02bf0607c6b05": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 애플리케이션 및 시스템 배포 중심",
+      "confidence": "high",
+      "signature": "ff36ad25094c50caa7049db2450f7444aa53814d",
+      "updatedAt": "2026-04-10T10:14:48.350324+00:00"
+    },
+    "b33029b3fa4b078833f2c9cd321e3e5b4e2e75855399d0e9c00ded833cfe37fe": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "컴퓨터 비전 및 로봇 제어 시스템 구현",
+      "confidence": "high",
+      "signature": "090a9a15c4e7b3ce370ab61e43b0ec34ba666d85",
+      "updatedAt": "2026-04-09T15:39:54.910590+00:00"
+    },
+    "b76f5113e1aeac811a6cd5451b2063a77cdefb46b2884b817951a7c2abf6cf0b": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 인프라 및 MLOps 운영 중심",
+      "confidence": "high",
+      "signature": "074d0d497db5d12a288d963e76e1272add33baff",
+      "updatedAt": "2026-04-10T16:54:19.526408+00:00"
+    },
+    "b20ffa5477618312b08f389cb62d57e0ccf45a0d5626144ea585df8e30f3a5f5": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "HR 리크루터 직무임",
+      "confidence": "high",
+      "signature": "e43a779ae68d99ed25c6027167f3085ea0658f86",
+      "updatedAt": "2026-04-09T16:11:59.687796+00:00"
+    },
+    "ab9e81081949c824334f4746d47fa2a7571f9cf9bb800c8df76e31f75164bf40": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 아키텍처 이론적 분석 및 연구",
+      "confidence": "high",
+      "signature": "dd2a38bfdd07cd325ad6d07f3846c47f113fb0bc",
+      "updatedAt": "2026-04-10T16:31:57.672103+00:00"
+    },
+    "feaf358e742c4ba454500b6a89d233ba7f80235c86063b76c68ac2da411c144b": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "딥러닝 모델 이론적 분석 및 연구",
+      "confidence": "high",
+      "signature": "d8dd117224b99735b85a2ac0684d012dced202ff",
+      "updatedAt": "2026-04-10T16:31:57.672103+00:00"
+    },
+    "2a5db1e041cdf760b5c9714e2e4b43788df180c01d3b75c11889362f475ab82b": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 선행 연구 및 논문 발표 중심",
+      "confidence": "high",
+      "signature": "2c9ac27642ee0652540221b071549a69f05f58af",
+      "updatedAt": "2026-04-10T16:31:57.672103+00:00"
+    },
+    "35ba5f1c61535af1fb74045b8011c7c7a83647bea2549e861b718b342c0e0b62": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "RAG 기반 AI 솔루션 및 에이전트 구현",
+      "confidence": "high",
+      "signature": "45e651df06602823dbd415cd215fa62a94ebc7f1",
+      "updatedAt": "2026-04-10T16:31:57.672103+00:00"
+    },
+    "3c52a7adbbfc4acd4f1488299ff2eb3a9138d639a196967733e2d00934c007ee": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "VLA 모델 및 로봇 제어 알고리즘 연구",
+      "confidence": "high",
+      "signature": "bed393bd77ba6e0b7e97c38e8904b92cf526dc02",
+      "updatedAt": "2026-04-10T16:31:57.672103+00:00"
+    },
+    "41dc0825b91a32253f38da6d96d971e0b26f632a4e813b8c72b2d3aa4edbf1de": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 동작 원리 분석 및 선행 연구",
+      "confidence": "high",
+      "signature": "b8c3755dcd38aed4571d8117733429478c665966",
+      "updatedAt": "2026-04-10T16:31:57.672103+00:00"
+    },
+    "76c1f0158203915986594e9d2cc0553215821badf7eafa1522a0d9b6dc3780ce": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 인프라 및 파이프라인 구축",
+      "confidence": "high",
+      "signature": "12eb27002d92f736edf54377fb4f264b05a90222",
+      "updatedAt": "2026-04-09T15:40:13.112715+00:00"
+    },
+    "8d140a43ee067ad6d9a2700bdec34ceb6598618c55510e89d23d7fedbe802318": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "분산 학습 환경 및 실험 파이프라인 구축",
+      "confidence": "high",
+      "signature": "57d9d449fb50fdae50ee3510426ccf0d477536cc",
+      "updatedAt": "2026-04-10T16:31:57.672103+00:00"
+    },
+    "c2eacd122a2291912d8ab2ff5451b05703800e4720a4573adc07116fc8256c11": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 최적화 및 서빙 중심",
+      "confidence": "high",
+      "signature": "e0cf60c88ba0490dcf4a86bd6f47ca86a35b9c0c",
+      "updatedAt": "2026-04-12T05:19:02.431054+00:00"
+    },
+    "e6ea40767beafd0d6efe2310ff8612032bfe1febe217f742cb78ee512ff76b4b": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "서빙 최적화 및 파이프라인 구축 중심",
+      "confidence": "high",
+      "signature": "9b8a09377d131733666899dc542e401c0e96cf81",
+      "updatedAt": "2026-04-10T16:34:28.319915+00:00"
+    },
+    "56e4dc4b06be37fe1a42ce294749b37b8de9396522a6311fa5d83ea01ae94b5c": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "데이터 분석 및 인사이트 도출",
+      "confidence": "high",
+      "signature": "e285c381ed826a992101a834bcb53affab756237",
+      "updatedAt": "2026-04-09T15:40:21.739959+00:00"
+    },
+    "46e1b0537157b0b053db4b6519b3432261c9e0a1c13ca89dd537bb1d59fe7ae1": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "자동화 파이프라인 구축",
+      "confidence": "high",
+      "signature": "88a43a94a1ba6feb8a97df7e9eb2d679ccfae1cf",
+      "updatedAt": "2026-04-10T16:32:21.317243+00:00"
+    },
+    "daed64407984422dd9b5cbd36fd39bc3b0bf2a2bce651abb6ed375973be39db6": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "정보 부족, currentRole 유지",
+      "confidence": "low",
+      "signature": "2f3eb2189210103921560bdeb718211da0127e59",
+      "updatedAt": "2026-04-09T16:00:58.192586+00:00"
+    },
+    "045a162f9ec867151fdf741ec2be7f686b02e37ab67f613a2c79ceadaacc1722": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "ERP 및 GA 데이터 분석",
+      "confidence": "high",
+      "signature": "6955506bf4a63d4d38969a7fe1a76180c0a8e770",
+      "updatedAt": "2026-04-10T16:32:21.317243+00:00"
+    },
+    "4986f3c9f3d430b6679afccbc9b1df91c86b8df0e0af26a2b26e02cb12c469a4": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "추론 인프라 및 파이프라인 구축",
+      "confidence": "high",
+      "signature": "e6ca2f3c814c184519fb92a952d1a855508fac16",
+      "updatedAt": "2026-04-12T05:19:02.431054+00:00"
+    },
+    "3b411de52bc9db8f21c41605f9889b846c7e994dd43cce76742741871c0847cd": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "학회 논문 게재 및 최첨단 연구",
+      "confidence": "high",
+      "signature": "a978e709fd9ec94846ca6d28cb2ff58f1c9c96b3",
+      "updatedAt": "2026-04-12T05:19:02.431054+00:00"
+    },
+    "f35dcba448565a83607904f5ee253bae8e5ede3f1581f364a5da1bff9adfab86": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 양자화 및 도구 개발",
+      "confidence": "high",
+      "signature": "b3e94970cc6963f419898df81c6779b092d7a285",
+      "updatedAt": "2026-04-10T16:32:44.820643+00:00"
+    },
+    "53e58a53691a5cc2403347332cbfa09a3717a46b5f770c6a626ae0e6dfd545bc": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "하드웨어 설계직으로 역할군 부적합",
+      "confidence": "low",
+      "signature": "689e8860d4cb02738d75b0dd34b39a02c5c48e98",
+      "updatedAt": "2026-04-10T16:34:28.319915+00:00"
+    },
+    "6b05164bb2c48c397a3ed7be1f0e01ae1359ecfbfa2260c1360341ebfa5a93f7": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "NPU 런타임 및 시스템 최적화",
+      "confidence": "high",
+      "signature": "5212f0ff3901cea9d93e942ea5e0b6bde1dc1f97",
+      "updatedAt": "2026-04-12T05:17:02.736876+00:00"
+    },
+    "f950f5536d005afc1b7fb432a7cf5bff0bdc29fb81f1e427b43542de54b89912": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "ML 인프라 및 클러스터 설계",
+      "confidence": "high",
+      "signature": "aac5d2666dcfbc8db3cf24a9c273d45323d77b10",
+      "updatedAt": "2026-04-10T16:32:44.820643+00:00"
+    },
+    "44e491a0292ba18f05b06c83fbc77b00f3060a6c04d073b4ae3e692921e6fd97": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "수익화 지표 및 BM 분석",
+      "confidence": "high",
+      "signature": "c9e24148b25d4381c9fd20a1cc8501890eed522a",
+      "updatedAt": "2026-04-10T16:32:44.820643+00:00"
+    },
+    "ce49f79e1c6448a53fa40b063920f21a336256f544c706c436c018c90b8cec8e": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "A/B 테스트 및 제품 분석",
+      "confidence": "high",
+      "signature": "e90ec650428b764f9a1ca8a6968b75aa9dd52066",
+      "updatedAt": "2026-04-10T16:32:44.820643+00:00"
+    },
+    "a617ad7034646872db75df9362d6326a12eb72929b5c9922e65029975551c046": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 앱 개발 및 시스템 운영",
+      "confidence": "high",
+      "signature": "9f0f0f33ea0f7f6d1662ae12e7d8b4db4d2e36d8",
+      "updatedAt": "2026-04-10T16:32:44.820643+00:00"
+    },
+    "c87c8c0eb73def91e3004b9cad1fd4d7f1cff3df9c6511cb3e43ac92803eb4ae": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "ML 파이프라인 및 모델 배포",
+      "confidence": "high",
+      "signature": "6ae895699bcfc18726393cb351d57c077717467e",
+      "updatedAt": "2026-04-10T16:32:44.820643+00:00"
+    },
+    "e7bdb35202c0b6e7e009e1296ff9748e02e294a2cc1a4a5d9834f06ecf3b8646": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "ML 모델 연구 및 논문 게재",
+      "confidence": "high",
+      "signature": "0ece326ca0ad004d82c24b8b906699f097aa957a",
+      "updatedAt": "2026-04-10T16:32:44.820643+00:00"
+    },
+    "db2d1564b340b5b31a0113c4df702f709861e1a8e4b58745b1a11fb031bf8651": {
+      "roleGroup": "데이터 사이언티스트",
+      "source": "role_group_model_pipeline",
+      "reason": "의료 데이터 모델링 및 검증",
+      "confidence": "high",
+      "signature": "9499f6d087fb62e532d1bffaa4f9a2625cffad2b",
+      "updatedAt": "2026-04-10T16:34:34.646606+00:00"
+    },
+    "340d2d95861f4158083a6312ff2611a4810e0535ea6f488eafbb1390b93f573e": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "제시된 정보 부족",
+      "confidence": "low",
+      "signature": "e1d4255c357a87a4acd5a5fb07ae716f9bea48a4",
+      "updatedAt": "2026-04-10T09:59:09.019861+00:00"
+    },
+    "1ca357b80df38943238b62a05c7565408b612ce1d13af84710e2ba1c3abf59cc": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 최적화 및 서빙 구현",
+      "confidence": "high",
+      "signature": "0d2b05816a9c389f2e3dd14a366f42635faa0069",
+      "updatedAt": "2026-04-10T16:38:23.673442+00:00"
+    },
+    "7d82997de2d751cca66deac40290fc6bf563db6050d0b9cc5e12c3e271092ddf": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 추론 인프라 설계 및 최적화",
+      "confidence": "high",
+      "signature": "50533da05a5694df7fa12f3e4c4c62833ed22c98",
+      "updatedAt": "2026-04-10T16:24:40.885081+00:00"
+    },
+    "ba9d41db62556f54c71f042b58eea60079ba9d7d2eebe21630301048e1a8f473": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "NPU 라이브러리 및 연산 최적화",
+      "confidence": "high",
+      "signature": "1f8b8940eaa27f4ae2b87978706260a137e040a3",
+      "updatedAt": "2026-04-10T16:54:06.795339+00:00"
+    },
+    "b8b2fff13f42640489832974f5d0d914170617a3a5fd2534056e99aa47c979df": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "ML 엔지니어 및 모델 구현",
+      "confidence": "high",
+      "signature": "ac39f4730d705cef29cfdfcb3157749b9616c5bf",
+      "updatedAt": "2026-04-12T05:16:29.731074+00:00"
+    },
+    "8276f363942d373702856aaa8469f0132dcd2c0d7dcf665d1327d0d98985e961": {
+      "roleGroup": "데이터 사이언티스트",
+      "source": "role_group_model_pipeline",
+      "reason": "임상 데이터 과학 및 통계 분석",
+      "confidence": "high",
+      "signature": "e80ba0c01d3bbc4f306a3db7d7946dbd3322f18b",
+      "updatedAt": "2026-04-10T16:33:22.262903+00:00"
+    },
+    "d76ec340dfc5c7073f4ee0a6cd574ead5ec30c68f06827f2392331a9180f7adf": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "GPU 및 LLM 추론 최적화 중심",
+      "confidence": "high",
+      "signature": "a7adcafe864e7a2022d5768bc08498a65eb9bd41",
+      "updatedAt": "2026-04-10T16:26:27.924748+00:00"
+    },
+    "46533418b07ea3bcbf28e53b5992f60761da78725a1b93d93508ca3dc583631b": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "데이터 파이프라인 및 MLOps 구축",
+      "confidence": "high",
+      "signature": "844e5200b95039c10aeb43b084805a6dced9df8d",
+      "updatedAt": "2026-04-10T16:27:11.247953+00:00"
+    },
+    "14ac45625bdb2881ff30ddd874871663eb1bea0e55b86eef907e11f42f0a6a65": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "의료 AI 시스템 연동 및 앱 개발",
+      "confidence": "high",
+      "signature": "412b410fbc5238a22d73392347982b3d2776c0ad",
+      "updatedAt": "2026-04-10T16:24:20.240389+00:00"
+    },
+    "d82ee9868386aa10a7bb90c5074d0dac10b8bc46d813dc005e8f9a20609ffc34": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 설계, 학습 및 배포 최적화",
+      "confidence": "high",
+      "signature": "d14942c5a5613d70e943c64c2faf2ea74b7ac9c2",
+      "updatedAt": "2026-04-10T16:28:59.488450+00:00"
+    },
+    "664aaee2f0217c1cbf38b22f3e60c03f6db4be43cd6d734daba47bb0c073afb9": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "재무 지표 및 성과 분석 중심",
+      "confidence": "high",
+      "signature": "0757b8e03c2067c82b404b2b70f5c3133365bc75",
+      "updatedAt": "2026-04-10T10:11:18.831137+00:00"
+    },
+    "0327c7450ca17a82c3a0086b9fd8ba062b9803727c07b5e15187f56b7ab9cb6d": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "특허 데이터 분석 및 컨설팅",
+      "confidence": "high",
+      "signature": "e070c0c79fcea4e6565a8abbf014e2290c3e5ecb",
+      "updatedAt": "2026-04-10T16:29:41.821279+00:00"
+    },
+    "fa070d5aca80533fd9b38a4cb43c1af154b2e5d2e456f2b552775f24ca3a85f3": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "일반 SW개발로 역할군 부적합",
+      "confidence": "low",
+      "signature": "86a3c2aa7089deca6e591dc1e2777472238f3b81",
+      "updatedAt": "2026-04-10T16:34:02.073733+00:00"
+    },
+    "0100638195e8e55f8d12e3c6cdd261cd1f5a0ae1fb6ae3f03ab49ee847565163": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "인재풀 내 직무 명시 유지",
+      "confidence": "medium",
+      "signature": "c65ec3121984296729044fa56606aa280ee0e8a4",
+      "updatedAt": "2026-04-10T10:16:04.141496+00:00"
+    },
+    "0417f5b24df6f2260e7f4dd7d2566ad02e517690b6abb15dd80d2d0349ef4347": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "도메인 데이터 분석 및 검증 중심",
+      "confidence": "high",
+      "signature": "816d91bcd6930760a9d4ef6538082a5852438c10",
+      "updatedAt": "2026-04-10T10:12:45.401063+00:00"
+    },
+    "298cbf8dbea1f5b22cd6d6df6cb770be7b65b72b577048028c66ffa368a6e371": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "SQL 활용 내부 데이터 심층 분석",
+      "confidence": "high",
+      "signature": "9dc831f051108f0c0e0888e23891f7b778499444",
+      "updatedAt": "2026-04-10T10:12:45.401063+00:00"
+    },
+    "2a564196b2776464366b8e0eecae1e2396a4295096520bab9f63ac3f403fd41f": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "영업직이나 prior 유지",
+      "confidence": "low",
+      "signature": "8dea7fbdc22fcc3d67b9f8affb25e8a7ac8080a7",
+      "updatedAt": "2026-04-10T10:16:04.141496+00:00"
+    },
+    "46c759c267ce50a074a37b51307d0887620cd6769c019803d962e06bfe7a5161": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "영업직이나 prior 유지",
+      "confidence": "low",
+      "signature": "0a0b0ec539bfcf941ea411f91ad91d09f944d140",
+      "updatedAt": "2026-04-10T10:16:04.141496+00:00"
+    },
+    "57dc52ab25c838a98061efd981f4a4ccc62a821b9e3e6b2c94b64d9efff0c6b0": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "UX/UI 디자인 직무임",
+      "confidence": "low",
+      "signature": "71575accf6e5fe8068d2ae12b4cd1ac4340206ab",
+      "updatedAt": "2026-04-10T16:34:10.582398+00:00"
+    },
+    "5ea48fd185581a04e00a55729ddb90a5da1e822ce5b739bfc5ab0419ad66d2d0": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "TPO 역할로 분석가 부적합",
+      "confidence": "low",
+      "signature": "560c58e700dcb8fd8eccdb52c6aef3357ef28997",
+      "updatedAt": "2026-04-10T10:16:13.044705+00:00"
+    },
+    "f08790544272f60db0cfe5b9fd84a7e49d9fc5c391b884af36f09e6b31735ef2": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "구매 담당자로 분석가 부적합",
+      "confidence": "low",
+      "signature": "314fa067bb2f357c14e1019535be77e90185fcb6",
+      "updatedAt": "2026-04-10T10:16:13.044705+00:00"
+    },
+    "fbf2a46fb385daffaf7e34a05fb2d389c8d59667286179cbf271746a519ba8fb": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "사업비 및 운영 관리 중심",
+      "confidence": "medium",
+      "signature": "cbb5d7271de62ee0884136ef816040d5e25cbf13",
+      "updatedAt": "2026-04-10T16:34:10.582398+00:00"
+    },
+    "cbebe0b2a5b86185ce4b94aee90218265cd343c8436c1434dd4cac5a8bee3b31": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 배포 및 시스템 구축 중심",
+      "confidence": "high",
+      "signature": "cb86c2e9a1943f066125dc79e790f85c7727a9bf",
+      "updatedAt": "2026-04-10T10:13:29.994351+00:00"
+    },
+    "f118d5970076abfa1876bfbc9f44ca963608963577aa0eeafbdd7f9561d39653": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "SQL,태블로 기반 지표 분석",
+      "confidence": "high",
+      "signature": "39daf084c7932b22a609c74f3b04a086c6b59df3",
+      "updatedAt": "2026-04-10T16:30:48.135875+00:00"
+    },
+    "57a9f79cec6ce4ea7a2efb24feb33f9b5653e439261f772beab6d4ed4e5cfa57": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "역할 신호가 데이터 분석가임",
+      "confidence": "high",
+      "signature": "77abc17b972212b765f1263feca6df4dc430b7bd",
+      "updatedAt": "2026-04-10T16:31:07.694277+00:00"
+    },
+    "dcc6666c4ec968b53098490e72dfd5f1c44f71fe349e22165c0ba6bbbdcf73c4": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM/RAG 제품 개발 중심",
+      "confidence": "high",
+      "signature": "f3ef33230639992de70a75161b31c773757e48ea",
+      "updatedAt": "2026-04-10T16:34:19.491426+00:00"
+    },
+    "06847ce334ec1e8d54c9f5f009e9ddc39c7450ffa975f809caa93abab3c0ccd8": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "운영 지표 및 대시보드 분석",
+      "confidence": "high",
+      "signature": "48476ad20ee79dee11f730928a767e08d286ccfa",
+      "updatedAt": "2026-04-10T10:14:03.587648+00:00"
+    },
+    "088c016ba793aa1013c2f97882859862780320d3e59aff4765a2109bb50619a7": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "FP&A 및 재무 모델 분석",
+      "confidence": "high",
+      "signature": "36bdef1ea59e18bea8d8a907231938d2d7ce407a",
+      "updatedAt": "2026-04-10T16:38:31.701862+00:00"
+    },
+    "147aecb9e306996c4f37c02ac9ba36040fc0b76a78dade6646424b202e255f24": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "퍼널분석 및 SQL 활용 분석",
+      "confidence": "high",
+      "signature": "5b7df26ec50a2723d9a56e64239d02a7ef4113a2",
+      "updatedAt": "2026-04-10T10:14:11.762024+00:00"
+    },
+    "4e0e9d02d52daf4cd024d90ee8078e2faf12b1f08c0c933fb3d20f35781ca2be": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "커머스 매출 및 상품 데이터 분석",
+      "confidence": "high",
+      "signature": "a0fd88dd5eeb78d0b8d06c243a3b249c0a3b78de",
+      "updatedAt": "2026-04-10T16:31:07.694277+00:00"
+    },
+    "54eaebb40395b400c541361742b2545215256a03e7148fbfb2713a968a8a0979": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "손익 분석 및 재무 예측",
+      "confidence": "high",
+      "signature": "6b9a8f101d4b43dac0514bc7b4b2e73a6db92702",
+      "updatedAt": "2026-04-10T16:38:31.701862+00:00"
+    },
+    "622883fbbd16868273457d6967950b4f9c6f20ee6c1740db3a12ac308320bed5": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "그로스 마케팅 및 성과 분석",
+      "confidence": "high",
+      "signature": "38088d2e7f7d5ed4fbdcadef78ea8f5caa0a2337",
+      "updatedAt": "2026-04-10T16:31:30.152179+00:00"
+    },
+    "85146feb54a82c42e51b11ee4b2459b986eac6b35a972ee1a255ea3ccdb972ef": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "CX 및 VOC 성과 분석",
+      "confidence": "high",
+      "signature": "274d8144e70b9298449b79f29cf145d79cec32a8",
+      "updatedAt": "2026-04-10T10:14:19.987332+00:00"
+    },
+    "aaba1b6a0b1727602c72d21cd77531b4a85e6d29fa21deb66f238eaa0492300a": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "CX 지표 및 VOC 분석",
+      "confidence": "high",
+      "signature": "7eda58ad7fc28574401d2f505c83aa42f95f9d61",
+      "updatedAt": "2026-04-10T10:14:19.987332+00:00"
+    },
+    "f4ec071c9093d3638dc48f49562ed8e829540ec1df81cb8eb62ea4966b1ff599": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "데이터 품질 관리 및 SQL 분석 중심",
+      "confidence": "high",
+      "signature": "54add9ed8dc246cec0b8f89bd3d39b0ac775dd9b",
+      "updatedAt": "2026-04-10T10:14:39.056227+00:00"
+    },
+    "066c0d7422ced8e07f5ceeeae611e744e4af40f0ae50a4315f9a730494983479": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "손익 분석 및 정산 자동화",
+      "confidence": "high",
+      "signature": "d3d36422cdfe83317c8d33338916ce6a96c8a9ea",
+      "updatedAt": "2026-04-10T16:32:21.317243+00:00"
+    },
+    "12fc951ea71c214ab98d64b906c104facb4b11d60fe4e7b3d7c8ebcf8c51f732": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "SQL 기반 지표 모니터링",
+      "confidence": "high",
+      "signature": "a2ce1acfc8519b8f9eabf1b89a64f980dab2579f",
+      "updatedAt": "2026-04-10T10:15:14.885769+00:00"
+    },
+    "1feaa78233f2dcf7f086a50df44931c62bcd0f0b54338d7338a2d75a1964cff8": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "SQL 활용 프로모션 결과 분석",
+      "confidence": "high",
+      "signature": "030a08f4ed230bda019d1650fe8955676a15df53",
+      "updatedAt": "2026-04-10T10:15:14.885769+00:00"
+    },
+    "b50b515518831c5f63852f10f193369cf13e050a976c1a4dbac9f20801dff9f9": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "리텐션 전략 및 성과 분석",
+      "confidence": "high",
+      "signature": "80d7fc990c9ad86acf528ccb3650257c9066bf6f",
+      "updatedAt": "2026-04-10T16:32:21.317243+00:00"
+    },
+    "dbbef60f582e17bdf6a9c629ecc5d22934f2ecb234689e3442582efe3278b93b": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "플랫폼 및 작품 운영 전략",
+      "confidence": "high",
+      "signature": "a4181fde1cc717e22a2d5cb3dd256238565c3a0f",
+      "updatedAt": "2026-04-10T16:38:31.701862+00:00"
+    },
+    "e3043b57dfe5e6841b87414bedbf2b33eaef50f2d08232082d3f2ef9d283eadf": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "대화 데이터 분석 및 UX 개선",
+      "confidence": "high",
+      "signature": "39b72e51cecfa24b7b2f35a37aad468139de7177",
+      "updatedAt": "2026-04-10T10:16:39.354020+00:00"
+    },
+    "80dd8761e1cf512f819ae16fd447624ad5cd753f05f0be1fc736e73dfa96fb81": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "행정직 추정 및 직무 내용 부족",
+      "confidence": "low",
+      "signature": "3a033e5f16d12b2aac5b520f97f6854d8452074e",
+      "updatedAt": "2026-04-10T16:34:28.319915+00:00"
+    },
+    "84584e02a8f3fd15f2d9099ccb5bb1b8da5d1bec6df53d1ea35b3a89e1ef2d2b": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "행정 및 사업 관리 중심",
+      "confidence": "high",
+      "signature": "dcfbba6c247c744eeb0cf0b3bfb0a17b43986d66",
+      "updatedAt": "2026-04-10T16:34:34.646606+00:00"
+    },
+    "ccb72064162209088093c8f39fdd5aae570517312bc1112b9444199b2a4e08ca": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "Post-Doc 및 연구직 채용",
+      "confidence": "high",
+      "signature": "a19ae04b9094d2732bff1307c7d79ff7caea4d3c",
+      "updatedAt": "2026-04-10T16:34:34.646606+00:00"
+    },
+    "b069c168e7db9f950e1be45aeec8fdf37bf63dc55e9242bcb4b2dabb776b8c72": {
+      "roleGroup": "인공지능 리서처",
+      "source": "role_group_model_pipeline",
+      "reason": "RAG 및 제조 AI 연구 중심",
+      "confidence": "high",
+      "signature": "85e42daece299ce17a58889f2be3eae6b61bfe97",
+      "updatedAt": "2026-04-10T16:32:56.401964+00:00"
+    },
+    "c72caa6f3cb7f3bf8b1139d162fb206ceeba37b9bdaaeb893afc77fa8029e052": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "백엔드 개발 중심이나 유지",
+      "confidence": "low",
+      "signature": "ab03f459110540a0e8bf60b7652a2d18bb4c2876",
+      "updatedAt": "2026-04-10T10:08:15.716704+00:00"
+    },
+    "053211466c12ccae4e349e2eb0d7895a998b4349a588301d2d6abc4cfcf3930b": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "인프라 운영 중심이나 유지",
+      "confidence": "low",
+      "signature": "7b60a4b6a9fdb5878a45fb9c79b1553cefe3b071",
+      "updatedAt": "2026-04-10T10:08:23.640942+00:00"
+    },
+    "92cbaca9761c7898dfb6773cc9308e2b77d09ce3244b0bb6ceb8d71c5c5548bd": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "ML 모델 및 파이프라인 개발",
+      "confidence": "high",
+      "signature": "c154ed4f19cf6a957f18556c8947a59f2cedeeb7",
+      "updatedAt": "2026-04-10T10:08:23.640942+00:00"
+    },
+    "b0182fab3007a45c522ddb8d061ce115d875ebdc425f25e18d97127c03a78a5e": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "MLOps/인프라 운영 성격",
+      "confidence": "medium",
+      "signature": "9ddf633ef327d7cd74eda8bdd7d003d46d3045ff",
+      "updatedAt": "2026-04-10T16:33:29.993610+00:00"
+    },
+    "ca9d71d3f98c12b26f506473862073a1f1b051ae1e64edf5ffb3bc8bbbaa343e": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 솔루션 아키텍처 및 배포 관리",
+      "confidence": "high",
+      "signature": "cd9bd9fd65b7e07b9494bd5fb6f63b01bebeca5a",
+      "updatedAt": "2026-04-10T10:11:37.134195+00:00"
+    },
+    "ee5a2e075cc8d949b8b5171db7ec8777b38d2b2778deaa685c997bd60a5dbec3": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "검색 엔진 및 서빙 파이프라인",
+      "confidence": "high",
+      "signature": "c836e0ba0344c725c26c9d088f1f62800de94def",
+      "updatedAt": "2026-04-10T16:29:41.821279+00:00"
+    },
+    "3453f05348740f808e0fbab79dbc6c403c626744aa45ffb3762483526af76d37": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "데이터 파이프라인 설계 및 구축 중심",
+      "confidence": "high",
+      "signature": "27a72d2c80a7ec4f555813c64432a4c49ee84e44",
+      "updatedAt": "2026-04-12T05:16:17.763305+00:00"
+    },
+    "e6dbf84cf0f23910bc499fa5a6629097e0de61b10278189ca6ad8fe6eda5e555": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "인프라 및 모델 서빙 중심",
+      "confidence": "medium",
+      "signature": "e3644bce836d2d6f8d259738cd2a3bbb22fceed6",
+      "updatedAt": "2026-04-12T05:17:07.149407+00:00"
+    },
+    "5b6acb9ae5b2a41bd54b7bf427cb308d4f6bf27b0d1197facd74e8d96094c779": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 서비스 클라이언트 개발",
+      "confidence": "high",
+      "signature": "cf8cb7d03eddddbe3150eb1959acdfdb588f0426",
+      "updatedAt": "2026-04-12T05:16:33.433242+00:00"
+    },
+    "52b449ba9e386190ca9134debbb8ed3fe5152b1d4dc8f1b6862e29f1b28339f5": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "GPU 설계 및 하드웨어 구현",
+      "confidence": "medium",
+      "signature": "4b877e8183487f640fe8017ef53ea619447eccd7",
+      "updatedAt": "2026-04-12T05:17:10.820760+00:00"
+    },
+    "d2d66165e6c3bd206f67aa16e0c14a32799abdbf7652a8cec243834f81681188": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "GPU 구현 및 설계 중심",
+      "confidence": "medium",
+      "signature": "94bfabee74eac94c08608b2b63a9dbcabd94181d",
+      "updatedAt": "2026-04-12T05:17:14.600342+00:00"
+    },
+    "98c630f66025e119ef57d8a632eabd1828e26c4e2c5be6d7651daa306fd8c081": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "모델 서빙 및 MLOps 중심",
+      "confidence": "high",
+      "signature": "e5b34e760ea8fb26f5e84668765b47a0bbcc6e9e",
+      "updatedAt": "2026-04-12T05:16:45.387540+00:00"
+    },
+    "295f24c5156e197ea7a2f0370415d710c1f391e2f88fd95a1a95d7c9889d8a32": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 개발자 역할 명시",
+      "confidence": "high",
+      "signature": "88105d4f0b7a5ff22b130ee425103432680256b4",
+      "updatedAt": "2026-04-12T05:17:14.600342+00:00"
+    },
+    "5f920781cdc8e1391db5eb6437e77d463748efa13d30c40b25c6532821aa5c81": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "LLM 개발 및 구현 중심",
+      "confidence": "high",
+      "signature": "43759dabd83635a94b38b9b785ac69863258b819",
+      "updatedAt": "2026-04-12T05:16:49.037290+00:00"
+    },
+    "1944dd875c1f1cc95a71f449745f14ac6b53afb6e36c74e5d81335d6a2d5a966": {
+      "roleGroup": "데이터 분석가",
+      "source": "role_group_model_pipeline",
+      "reason": "금융 데이터 분석 컨설팅",
+      "confidence": "high",
+      "signature": "fe86a29bac977027633f0c758bc6a7872b0d2f3d",
+      "updatedAt": "2026-04-12T05:16:49.037290+00:00"
+    },
+    "bfa16c8e7b677d3b51e73d62c3ac4331b2470ce69eecbcd9c8e118004a8f4ecc": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "데이터 파이프라인 구축 및 운영 중심",
+      "confidence": "high",
+      "signature": "eb6b5bd44c855f7b89e387583cf32ba009855cfa",
+      "updatedAt": "2026-04-12T05:16:53.106425+00:00"
+    },
+    "b7fc4f3645448dd74cc7332c1fdaa30ee8f55d7adb3cdf35aa8b9d7e6b03a822": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "AI 보안 시스템 구현 중심",
+      "confidence": "medium",
+      "signature": "a46d1757886c331a66627af65e05bc455c50e480",
+      "updatedAt": "2026-04-12T05:17:18.691136+00:00"
+    },
+    "8c1efb2c9ed1b99a4f9bf527e888f422717487b587c53a3f059db97d6f1de7d3": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "HW 설계이나 currentRole 유지",
+      "confidence": "low",
+      "signature": "e722c850ea315bfc4c21d4bc688dca9c7bf0cc90",
+      "updatedAt": "2026-04-12T05:17:18.691136+00:00"
+    },
+    "800c930f817175a5b21d7cd8ebb472b13718b2be83a019d227977ce3c1dc6979": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "하드웨어 설계 직무임",
+      "confidence": "low",
+      "signature": "08664906c67b8f9a4bb016e74f1d5df6312c03fa",
+      "updatedAt": "2026-04-12T05:17:22.402855+00:00"
+    },
+    "bd9903da56200d00c4120bd504a65935699a8ccbeb97d0b1d34370e2a43fe3a9": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "하드웨어 설계 직무임",
+      "confidence": "low",
+      "signature": "6c962373e42b355cdd832240926f840b91216513",
+      "updatedAt": "2026-04-12T05:17:22.402855+00:00"
+    },
+    "f8316d3bdd6605a9eaebcc4a41a27e87db716137a0320e4509b8ac920b35eabc": {
+      "roleGroup": "인공지능 엔지니어",
+      "source": "role_group_model_pipeline",
+      "reason": "HW검증이나 AI엔지니어 유지",
+      "confidence": "low",
+      "signature": "224c06a772dbb6df06c1310270f6fcc4c545cd18",
+      "updatedAt": "2026-04-12T05:17:24.327178+00:00"
+    }
+  }
+}

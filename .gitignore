@@ -1,0 +1,62 @@
+# 환경변수 / 비밀키
+.env
+
+# macOS
+.DS_Store
+
+# Codex runner
+.codex-runner/
+
+# Python 캐시
+__pycache__/
+*.pyc
+.venv/
+
+# 로그
+logs/
+
+# 서비스 불필요 data 파일 (개발/검수/벤치마크용)
+data/prompt_benchmarks/
+data/quality_iterations/
+data/model_runs/
+data/release_gates/
+data/model_improvement_backups/
+data/harness_family_benchmarks/
+data/pre_stage2_operating_sync_*/
+data/rollback_backup_*/
+data/*_tmp.json
+data/eval_set.json
+data/incremental_eval_set.json
+data/full_dataset_harness_latest.json
+data/goldset_expansion*
+data/harness_remediation_wave_001.json
+data/job_summaries_broken_*.json
+data/model_comparisons/
+data/model_improvement_gate_*.json
+data/model_improvement_quality_gate_config.json
+data/quality_optimization_loop_config.json
+data/role_group_benchmark_latest.json
+data/role_group_model_review.json
+data/role_group_remediation_wave_*.json
+data/role_group_remediation_wave_*.csv
+data/service_scope_adjudication_*
+data/service_scope_audit.json
+data/service_scope_goldset_*.json
+data/service_scope_guard_recovery_*
+data/service_scope_model_benchmark_*.json
+data/service_scope_model_benchmark_*.csv
+data/service_scope_model_review*.json
+data/service_scope_shadow_guard_off*.json
+data/structured_signal_validation_*
+data/stage2_*.json
+data/stage2_*.csv
+data/incremental_*.json
+data/incremental_*.txt
+data/summary_snapshot_latest.json
+data/release_remediation_*.json
+data/release_remediation_*.csv
+data/review_*.json
+data/review_*.jsonl
+data/review_*.csv
+data/review_*.xlsx
+data/final_confirmation_package_*.json
