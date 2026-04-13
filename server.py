@@ -566,7 +566,7 @@ def request_company_insight_from_model(row: dict, config: dict | None = None) ->
         "Content-Type": "application/json",
     }
     if merged.get("apiKey"):
-        headers["Authorization"] = f"Bearer {merged['apiKey']}"
+        headers["Authorization"] = f"Bearer {str(merged['apiKey']).strip()}"
     request = urllib.request.Request(
         f"{str(merged['baseUrl']).rstrip('/')}/chat/completions",
         data=json.dumps(payload).encode("utf-8"),
@@ -1515,7 +1515,7 @@ def request_role_resume_guides_from_model(market_profile: dict, config: dict | N
         "Content-Type": "application/json",
     }
     if merged.get("apiKey"):
-        headers["Authorization"] = f"Bearer {merged['apiKey']}"
+        headers["Authorization"] = f"Bearer {str(merged['apiKey']).strip()}"
     request = urllib.request.Request(
         f"{str(merged['baseUrl']).rstrip('/')}/chat/completions",
         data=json.dumps(payload).encode("utf-8"),
@@ -1555,7 +1555,7 @@ def request_role_resume_guides_from_model_streaming(
         "Content-Type": "application/json",
     }
     if merged.get("apiKey"):
-        headers["Authorization"] = f"Bearer {merged['apiKey']}"
+        headers["Authorization"] = f"Bearer {str(merged['apiKey']).strip()}"
 
     emit("status", {"message": "AI 연결을 시작하고 있습니다."})
     request = urllib.request.Request(
