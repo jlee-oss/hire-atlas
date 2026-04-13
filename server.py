@@ -134,6 +134,8 @@ def merge_model_config(config: dict | None) -> dict:
     merged = default_model_config()
     for key, value in (config or {}).items():
         if value not in (None, ""):
+            if ON_VERCEL and key == "baseUrl" and is_local_model_base_url(str(value)):
+                continue
             merged[key] = value
     return merged
 
@@ -827,6 +829,9 @@ def merge_role_resume_model_config(config: dict | None) -> dict:
     merged = default_role_resume_model_config()
     for key, value in (config or {}).items():
         if value not in (None, ""):
+            # Vercel 환경에서 클라이언트가 로컬 Ollama URL을 보내면 서버 기본값(Gemma) 사용
+            if ON_VERCEL and key == "baseUrl" and is_local_model_base_url(str(value)):
+                continue
             merged[key] = value
     return merged
 
